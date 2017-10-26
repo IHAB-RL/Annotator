@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray">
+
+    <Button
+        android:id="@+id/buttonUebung"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Übung"
+        android:layout_marginLeft="97dp"
+        android:layout_marginTop="55dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/buttonMessung"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:text="Messung"
+        android:layout_below="@+id/buttonUebung"
+        android:layout_alignStart="@+id/buttonUebung" />
+
+    <TextView
+        android:id="@+id/textViewCodenummerProband"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:text="Codenummer Proband:"
+        android:layout_below="@+id/buttonMessung"
+        android:layout_alignStart="@+id/editTextRater" />
+
+    <TextView
+        android:id="@+id/textViewCodenummerRater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="Codenummer Rater:"
+        android:layout_below="@+id/editTextProband"
+        android:layout_alignStart="@+id/editTextProband" />
+
+    <EditText
+        android:id="@+id/editTextProband"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/textViewCodenummerProband"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:background="@android:color/white"
+        android:paddingStart="4dp"/>
+
+    <EditText
+        android:id="@+id/editTextRater"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignEnd="@+id/editTextProband"
+        android:layout_below="@+id/textViewCodenummerRater"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:background="@android:color/white"
+        android:paddingStart="4dp"/>
+
+    <Button
+        android:id="@+id/buttonBeginn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Beginn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/buttonMessung"
+        android:layout_marginBottom="54dp" />
+
+
+</RelativeLayout>

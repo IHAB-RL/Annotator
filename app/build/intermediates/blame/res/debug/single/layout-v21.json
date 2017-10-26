@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/ulrikkowalk/Annotator/app/build/intermediates/res/merged/debug/layout-v21/notification_action.xml",
+        "source": "/Users/ulrikkowalk/.android/build-cache/9a643dbcf97b90e10a960b4e8cc33420d9206549/output/res/layout-v21/notification_action.xml"
+    },
+    {
+        "merged": "/Users/ulrikkowalk/Annotator/app/build/intermediates/res/merged/debug/layout-v21/notification_template_custom_big.xml",
+        "source": "/Users/ulrikkowalk/.android/build-cache/9a643dbcf97b90e10a960b4e8cc33420d9206549/output/res/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/Users/ulrikkowalk/Annotator/app/build/intermediates/res/merged/debug/layout-v21/notification_action_tombstone.xml",
+        "source": "/Users/ulrikkowalk/.android/build-cache/9a643dbcf97b90e10a960b4e8cc33420d9206549/output/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/Users/ulrikkowalk/Annotator/app/build/intermediates/res/merged/debug/layout-v21/notification_template_icon_group.xml",
+        "source": "/Users/ulrikkowalk/.android/build-cache/9a643dbcf97b90e10a960b4e8cc33420d9206549/output/res/layout-v21/notification_template_icon_group.xml"
+    }
+]
