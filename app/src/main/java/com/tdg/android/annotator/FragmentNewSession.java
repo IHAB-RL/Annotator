@@ -50,6 +50,13 @@ public class FragmentNewSession extends Fragment {
             }
         });
 
+        buttonBeginn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MainActivity.mViewPager.setCurrentItem(1);
+            }
+        });
+
         return view;
     }
 

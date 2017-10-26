@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
 
     private String LOG = "MainActivity";
     private SectionsPagerAdapter mSectionsPagerAdapter;
-    private ViewPager mViewPager;
+    public static ViewPager mViewPager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

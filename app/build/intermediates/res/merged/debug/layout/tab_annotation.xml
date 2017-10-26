@@ -9,7 +9,8 @@
     android:orientation="horizontal"
     android:gravity="center"
     android:layout_gravity="center"
-    android:layout_margin="8dp">
+    android:layout_margin="8dp"
+    android:background="@color/colorPrimaryDark">
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -22,7 +23,8 @@
         android:layout_height="100dp"
         android:text="Button"
         android:layout_margin="2dp"
-        android:background="@color/annoDarkerBlue"/>
+        android:textColor="@color/colorButtonText"
+        android:background="@drawable/button_ripple_dark_blue"/>
 
     <Button
         android:id="@+id/buttonAnnotation3"
@@ -30,7 +32,8 @@
         android:layout_height="100dp"
         android:text="Button"
         android:layout_margin="2dp"
-        android:background="@color/annoDarkerBlue"/>
+        android:textColor="@color/colorButtonText"
+        android:background="@drawable/button_ripple_dark_blue"/>
 
     <Button
         android:id="@+id/buttonAnnotation5"
@@ -38,7 +41,8 @@
         android:layout_height="100dp"
         android:text="Button"
         android:layout_margin="2dp"
-        android:background="@color/annoLighterBlue"/>
+        android:textColor="@color/colorButtonText"
+        android:background="@drawable/button_ripple_light_blue"/>
 
     <Button
         android:id="@+id/buttonAnnotation7"
@@ -46,7 +50,8 @@
         android:layout_height="100dp"
         android:text="Button"
         android:layout_margin="2dp"
-        android:background="@color/annoYellow"/>
+        android:textColor="@color/colorButtonText"
+        android:background="@drawable/button_ripple_yellow"/>
 
     </LinearLayout>
 
@@ -62,7 +67,8 @@
         android:layout_height="100dp"
         android:text="Button"
         android:layout_margin="2dp"
-        android:background="@color/annoDarkerBlue"/>
+        android:textColor="@color/colorButtonText"
+        android:background="@drawable/button_ripple_dark_blue"/>
 
     <Button
         android:id="@+id/buttonAnnotation4"
@@ -70,7 +76,8 @@
         android:layout_height="100dp"
         android:text="Button"
         android:layout_margin="2dp"
-        android:background="@color/annoDarkerBlue"/>
+        android:textColor="@color/colorButtonText"
+        android:background="@drawable/button_ripple_dark_blue"/>
 
     <Button
         android:id="@+id/buttonAnnotation6"
@@ -78,7 +85,8 @@
         android:layout_height="100dp"
         android:text="Button"
         android:layout_margin="2dp"
-        android:background="@color/annoLighterBlue"/>
+        android:textColor="@color/colorButtonText"
+        android:background="@drawable/button_ripple_light_blue"/>
 
     <Button
         android:id="@+id/buttonAnnotation8"
@@ -86,7 +94,8 @@
         android:layout_height="100dp"
         android:text="Button"
         android:layout_margin="2dp"
-        android:background="@color/annoYellow"/>
+        android:textColor="@color/colorButtonText"
+        android:background="@drawable/button_ripple_yellow"/>
 
     </LinearLayout>
 
