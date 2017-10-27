@@ -1,8 +1,8 @@
 <ripple xmlns:android="http://schemas.android.com/apk/res/android"
-    android:color="@color/annoLighterBlueChecked">
+    android:color="@color/annoRedChecked">
     <item>
         <shape android:shape="rectangle">
-            <solid android:color="@color/annoLighterBlue" />
+            <solid android:color="@color/annoRed" />
             <stroke
                 android:width="1dp"
                 android:color="@color/colorPrimaryDark" />

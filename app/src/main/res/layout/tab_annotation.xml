@@ -1,102 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/linearLayoutAnnotationMain"
-    android:layout_width="wrap_content"
+    android:id="@+id/linearLayoutContainer"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     android:gravity="center"
     android:layout_gravity="center"
-    android:layout_margin="8dp"
     android:background="@color/colorPrimaryDark">
 
+
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:id="@+id/linearLayoutAnnotationMain"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="0dp"
+        android:layout_weight = "0"
+        android:background="@color/colorPrimaryDark">
 
-    <Button
-        android:id="@+id/buttonAnnotation1"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:text="Button"
-        android:layout_margin="2dp"
-        android:textColor="@color/colorButtonText"
-        android:background="@drawable/button_ripple_dark_blue"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    <Button
-        android:id="@+id/buttonAnnotation3"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:text="Button"
-        android:layout_margin="2dp"
-        android:textColor="@color/colorButtonText"
-        android:background="@drawable/button_ripple_dark_blue"/>
+        <Button
+            android:id="@+id/buttonAnnotation1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="Button"
+            android:layout_margin="0dp"
+            android:textColor="@color/colorButtonText"
+            android:background="@drawable/button_ripple_dark_blue"/>
 
-    <Button
-        android:id="@+id/buttonAnnotation5"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:text="Button"
-        android:layout_margin="2dp"
-        android:textColor="@color/colorButtonText"
-        android:background="@drawable/button_ripple_light_blue"/>
+        <Button
+            android:id="@+id/buttonAnnotation3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="Button"
+            android:layout_margin="0dp"
+            android:textColor="@color/colorButtonText"
+            android:background="@drawable/button_ripple_dark_blue"/>
 
-    <Button
-        android:id="@+id/buttonAnnotation7"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:text="Button"
-        android:layout_margin="2dp"
-        android:textColor="@color/colorButtonText"
-        android:background="@drawable/button_ripple_yellow"/>
+        <Button
+            android:id="@+id/buttonAnnotation5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="Button"
+            android:layout_margin="0dp"
+            android:textColor="@color/colorButtonText"
+            android:background="@drawable/button_ripple_light_blue"/>
+
+        <Button
+            android:id="@+id/buttonAnnotation7"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="Button"
+            android:layout_margin="0dp"
+            android:textColor="@color/colorButtonText"
+            android:background="@drawable/button_ripple_yellow"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <Button
+            android:id="@+id/buttonAnnotation2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="Button"
+            android:layout_margin="0dp"
+            android:textColor="@color/colorButtonText"
+            android:background="@drawable/button_ripple_dark_blue"/>
+
+        <Button
+            android:id="@+id/buttonAnnotation4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="Button"
+            android:layout_margin="0dp"
+            android:textColor="@color/colorButtonText"
+            android:background="@drawable/button_ripple_dark_blue"/>
+
+        <Button
+            android:id="@+id/buttonAnnotation6"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="Button"
+            android:layout_margin="0dp"
+            android:textColor="@color/colorButtonText"
+            android:background="@drawable/button_ripple_light_blue"/>
+
+        <Button
+            android:id="@+id/buttonAnnotation8"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="Button"
+            android:layout_margin="0dp"
+            android:textColor="@color/colorButtonText"
+            android:background="@drawable/button_ripple_yellow"/>
+
+        </LinearLayout>
 
     </LinearLayout>
 
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
     <Button
-        android:id="@+id/buttonAnnotation2"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:text="Button"
-        android:layout_margin="2dp"
-        android:textColor="@color/colorButtonText"
-        android:background="@drawable/button_ripple_dark_blue"/>
-
-    <Button
-        android:id="@+id/buttonAnnotation4"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:text="Button"
-        android:layout_margin="2dp"
-        android:textColor="@color/colorButtonText"
-        android:background="@drawable/button_ripple_dark_blue"/>
-
-    <Button
-        android:id="@+id/buttonAnnotation6"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:text="Button"
-        android:layout_margin="2dp"
-        android:textColor="@color/colorButtonText"
-        android:background="@drawable/button_ripple_light_blue"/>
-
-    <Button
-        android:id="@+id/buttonAnnotation8"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:text="Button"
-        android:layout_margin="2dp"
-        android:textColor="@color/colorButtonText"
-        android:background="@drawable/button_ripple_yellow"/>
-
-    </LinearLayout>
+        android:id="@+id/buttonRemove"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:text="Letzten Eintrag löschen"
+        android:background="@drawable/button_ripple_red"
+        android:layout_weight = "1"
+        android:textColor="@color/colorButtonText"/>
 
 </LinearLayout>

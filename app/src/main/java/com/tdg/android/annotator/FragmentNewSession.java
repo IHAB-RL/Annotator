@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import static com.tdg.android.annotator.MainActivity.mViewPager;
 
 
 public class FragmentNewSession extends Fragment {
@@ -19,6 +20,8 @@ public class FragmentNewSession extends Fragment {
     private Button buttonUebung, buttonMessung, buttonBeginn;
     private TextView textViewCodenummerProband, textViewCodenummerRater;
     private EditText editTextProband, editTextRater;
+    private String raterID = "", subjectID = "";
+
 
     @Nullable
     @Override
@@ -34,33 +37,40 @@ public class FragmentNewSession extends Fragment {
         textViewCodenummerRater = (TextView) view.findViewById(R.id.textViewCodenummerRater);
 
         editTextProband = (EditText) view.findViewById(R.id.editTextProband);
+        editTextProband.setText(subjectID);
         editTextRater = (EditText) view.findViewById(R.id.editTextRater);
+        editTextRater.setText(raterID);
 
         buttonUebung.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                disableMessung();
+                disableAnnotation();
             }
         });
 
         buttonMessung.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                enableMessung();
+                enableAnnotation();
             }
         });
 
         buttonBeginn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                MainActivity.mViewPager.setCurrentItem(1);
+
+                subjectID = editTextProband.getText().toString();
+                raterID = editTextRater.getText().toString();
+
+                ((MainActivity) getActivity()).setAnnotationIDs(raterID, subjectID);
+                ((MainActivity) getActivity()).mViewPager.setCurrentItem(1);
             }
         });
 
         return view;
     }
 
-    private void disableMessung() {
+    private void disableAnnotation() {
         editTextRater.setEnabled(false);
         editTextRater.setBackgroundColor(Color.LTGRAY);
         editTextProband.setEnabled(false);
@@ -69,7 +79,7 @@ public class FragmentNewSession extends Fragment {
         textViewCodenummerProband.setEnabled(false);
     }
 
-    private void enableMessung() {
+    private void enableAnnotation() {
         editTextRater.setEnabled(true);
         editTextRater.setBackgroundColor(Color.WHITE);
         editTextProband.setEnabled(true);

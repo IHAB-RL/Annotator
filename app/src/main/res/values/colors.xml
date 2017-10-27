@@ -10,6 +10,8 @@
     <color name="annoLighterBlueChecked">#6666DD</color>
     <color name="annoYellow">#FFDD00</color>
     <color name="annoYellowChecked">#BB9900</color>
+    <color name="annoRed">#FF0000</color>
+    <color name="annoRedChecked">#990000</color>
 
     <color name="colorButtonText">#FFFFFF</color>
 </resources>

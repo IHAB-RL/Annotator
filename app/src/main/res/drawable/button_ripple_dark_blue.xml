@@ -1,13 +1,23 @@
 <ripple xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:color="@color/annoDarkerBlueChecked"
-    tools:targetApi="lollipop">
-    <item android:id="@android:id/mask">
+    android:color="@color/annoDarkerBlueChecked">
+    <item>
         <shape android:shape="rectangle">
             <solid android:color="@color/annoDarkerBlue" />
+            <stroke
+                android:width="1dp"
+                android:color="@color/colorPrimaryDark" />
         </shape>
     </item>
-    <item
-    android:id="@android:id/background"
-    android:drawable="@color/annoDarkerBlue" />
+
+    <item android:id="@android:id/mask">
+        <inset android:insetBottom="2dp"
+            android:insetLeft="2dp"
+            android:insetRight="2dp"
+            android:insetTop="2dp">
+            <shape android:shape="rectangle">
+                <!-- Color doesn't matter -->
+                <solid android:color="@android:color/white"/>
+            </shape>
+        </inset>
+    </item>
 </ripple>
