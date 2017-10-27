@@ -28,10 +28,9 @@ public class FragmentFinalise extends Fragment {
         buttonFinalise.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getActivity(), "Finalised.", Toast.LENGTH_SHORT).show();
+                ((MainActivity) getActivity()).finishAnnotation();
             }
         });
-
 
         return view;
     }

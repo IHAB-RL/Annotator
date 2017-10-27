@@ -12,6 +12,8 @@ import android.util.Log;
 import android.view.Display;
 import android.widget.TextView;
 
+import static android.os.Build.VERSION_CODES.M;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     private SectionsPagerAdapter mSectionsPagerAdapter;
     public static ViewPager mViewPager;
     private AnnotationKeeper annotationKeeper;
+    FileWriter fileWriter;
 
 
     @Override
@@ -34,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
         tabLayout.setupWithViewPager(mViewPager);
 
         annotationKeeper = new AnnotationKeeper();
+        fileWriter = new FileWriter();
 
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
     }
@@ -46,11 +50,16 @@ public class MainActivity extends AppCompatActivity {
         viewPager.setAdapter(mSectionsPagerAdapter);
     }
 
-    public void setAnnotationIDs(String raterId, String subjectId) {
+    public void beginAnnotation(String raterId, String subjectId) {
         annotationKeeper.setRaterID(raterId);
         annotationKeeper.setSubjectID(subjectId);
+        annotationKeeper.setTimeStart();
+    }
 
-        Log.i(LOG, "Rater ID set to: "+raterId+", Subject ID set to: "+subjectId);
+    public boolean finishAnnotation() {
+        annotationKeeper.setTimeEnd();
+        return fileWriter.saveToFile(this, annotationKeeper.getFileName(),
+                annotationKeeper.flushAnnotations());
     }
 
     public void addAnnotation(String string) {

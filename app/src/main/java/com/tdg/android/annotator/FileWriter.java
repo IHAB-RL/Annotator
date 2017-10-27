@@ -25,6 +25,7 @@ public class FileWriter {
             Log.e(LOG, "Directory does not exist -> create");
             baseDirectory.mkdir();
         }
+        Log.e(LOG, "Path: "+baseDirectory.getAbsolutePath());
         return baseDirectory.getAbsolutePath();
     }
 
@@ -66,7 +67,7 @@ public class FileWriter {
             fOut.flush();
             fOut.close();
 
-            //new SingleMediaScanner(context, file);
+            new FileUpdater(context, file);
 
             if (BuildConfig.DEBUG) {
                 Log.i(LOG, "Data successfully written.");

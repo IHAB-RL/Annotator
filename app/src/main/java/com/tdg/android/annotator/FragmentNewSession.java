@@ -62,7 +62,7 @@ public class FragmentNewSession extends Fragment {
                 subjectID = editTextProband.getText().toString();
                 raterID = editTextRater.getText().toString();
 
-                ((MainActivity) getActivity()).setAnnotationIDs(raterID, subjectID);
+                ((MainActivity) getActivity()).beginAnnotation(raterID, subjectID);
                 ((MainActivity) getActivity()).mViewPager.setCurrentItem(1);
             }
         });

@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml:2:1-24:12
+ADDED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml:2:1-27:12
 	package
 		ADDED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml:3:5-40
 		INJECTED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml
@@ -13,8 +13,16 @@ ADDED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml:2:1-24:
 	android:versionCode
 		INJECTED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml:5:5-80
+	android:name
+		ADDED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml:5:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml:6:5-80
+	android:name
+		ADDED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml:6:22-78
 application
-ADDED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml:5:5-22:19
+ADDED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml:8:5-25:19
 MERGED from [com.android.support:design:25.3.1] /Users/ulrikkowalk/.android/build-cache/d266fe42e46e4fc5472772a936754e5579c5f8bc/output/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/ulrikkowalk/.android/build-cache/9a643dbcf97b90e10a960b4e8cc33420d9206549/output/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/ulrikkowalk/.android/build-cache/998d2ce4775efa96e08770dba24bf14b650fa514/output/AndroidManifest.xml:26:5-20
@@ -27,35 +35,35 @@ MERGED from [com.android.support:support-core-ui:25.3.1] /Users/ulrikkowalk/.and
 MERGED from [com.android.support:support-core-utils:25.3.1] /Users/ulrikkowalk/.android/build-cache/1cdbd58777684d38d74e4bdd04ee1e5fb9f0b905/output/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-compat:25.3.1] /Users/ulrikkowalk/.android/build-cache/3617abc4b5137c6f2840e763cfb00cef26d8f4cd/output/AndroidManifest.xml:29:5-20
 	android:label
-		ADDED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml:8:9-41
+		ADDED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml:11:9-41
 	android:supportsRtl
-		ADDED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml:10:9-35
+		ADDED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml:13:9-35
 	android:roundIcon
-		ADDED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml:9:9-54
+		ADDED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml:12:9-54
 	android:allowBackup
-		ADDED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml:6:9-35
+		ADDED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml:9:9-35
 	android:icon
-		ADDED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml:7:9-43
+		ADDED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml:10:9-43
 	android:theme
-		ADDED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml:11:9-40
+		ADDED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml:14:9-40
 activity#com.tdg.android.annotator.MainActivity
-ADDED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml:12:9-21:20
+ADDED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml:15:9-24:20
 	android:label
-		ADDED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml:14:13-45
+		ADDED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml:17:13-45
 	android:theme
-		ADDED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml:15:13-56
+		ADDED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml:18:13-56
 	android:name
-		ADDED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml:13:13-41
+		ADDED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml:16:13-41
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml:16:13-20:29
+ADDED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml:19:13-23:29
 action#android.intent.action.MAIN
-ADDED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml:17:17-69
+ADDED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml:20:17-69
 	android:name
-		ADDED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml:17:25-66
+		ADDED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml:20:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml:19:17-77
+ADDED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml:22:17-77
 	android:name
-		ADDED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml:19:27-74
+		ADDED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml:22:27-74
 uses-sdk
 INJECTED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:design:25.3.1] /Users/ulrikkowalk/.android/build-cache/d266fe42e46e4fc5472772a936754e5579c5f8bc/output/AndroidManifest.xml:21:5-23:62
