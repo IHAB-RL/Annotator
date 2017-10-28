@@ -57,18 +57,20 @@ public class MainActivity extends AppCompatActivity {
             annotationKeeper.setAdditionalData(results);
             annotationKeeper.setFreiText(freitext);
             annotationKeeper.setTimeEnd();
+            mViewPager.setCurrentItem(0);
             return fileWriter.saveToFile(this, annotationKeeper.getFileName(),
                     annotationKeeper.flushResults());
         } else {
             annotationKeeper.reset();
             Toast.makeText(this, R.string.toast_No_Data_kept, Toast.LENGTH_SHORT).show();
+            mViewPager.setCurrentItem(0);
             return false;
         }
     }
 
-    public void addAnnotation(String string) {
-        annotationKeeper.addAnnotation(string);
-        Log.i(LOG, "New annotation ["+annotationKeeper.getNumberOfAnnotations()+"]: "+string);
+    public void addAnnotation(int code) {
+        annotationKeeper.addAnnotation(code);
+        Log.i(LOG, "New annotation ["+annotationKeeper.getNumberOfAnnotations()+"]: "+code);
     }
 
     public void removeLastAnnotation() {

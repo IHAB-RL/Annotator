@@ -8,7 +8,7 @@ import java.util.TimeZone;
 
 public class AnnotationKeeper {
 
-    ArrayList<String> listOfAnnotations;
+    private ArrayList<Integer> listOfAnnotations;
     private String ID_RATER, ID_SUBJECT, ADDITIONAL_DATA, FREITEXT;
     private SimpleDateFormat DATE_FORMAT;
     private String TIME_START, TIME_END;
@@ -50,12 +50,12 @@ public class AnnotationKeeper {
         return ID_SUBJECT;
     }
 
-    public void addAnnotation(String string) {
-        listOfAnnotations.add(string);
+    public void addAnnotation(int code) {
+        listOfAnnotations.add(code);
     }
 
-    public void addAnnotation(ArrayList<String> listOfStrings) {
-        for (String annotation : listOfStrings) {
+    public void addAnnotation(ArrayList<Integer> listOfIntegers) {
+        for (int annotation : listOfIntegers) {
             listOfAnnotations.add(annotation);
         }
     }
@@ -94,12 +94,11 @@ public class AnnotationKeeper {
         streamOfAnnotations += "-----------------------------";
         streamOfAnnotations += "\n";
 
-        for (String annotation : listOfAnnotations) {
-            streamOfAnnotations += annotation;
+        for (int annotation : listOfAnnotations) {
+            streamOfAnnotations += "" + annotation;
             streamOfAnnotations += "\n";
         }
 
-        streamOfAnnotations += "\n";
         streamOfAnnotations += "-----------------------------";
 
         return streamOfAnnotations;

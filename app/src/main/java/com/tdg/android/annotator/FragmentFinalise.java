@@ -37,7 +37,6 @@ public class FragmentFinalise extends Fragment {
             @Override
             public void onClick(View v) {
                 gatherResults();
-                //((MainActivity) getActivity()).finishAnnotation();
             }
         });
 
@@ -79,19 +78,16 @@ public class FragmentFinalise extends Fragment {
 
     private void gatherResults() {
         getFreiText();
-        String results = "Charakterisierung: ";
-        results += resLichtverhaeltnisse+", "+resLautstaerke+", "+
+        String charakterisierung = getResources().getString(R.string.output_Charakterisierung)+": ";
+        charakterisierung += resLichtverhaeltnisse+", "+resLautstaerke+", "+
                 resRaumbeschreibung+", "+resHoersituation;
 
-        ((MainActivity) getActivity()).finishAnnotation(results, stringFreiText);
+        ((MainActivity) getActivity()).finishAnnotation(charakterisierung, stringFreiText);
     }
 
     private void getFreiText() {
-        //if (!freiText.getText().toString().isEmpty()) {
-            stringFreiText = freiText.getText().toString();
-            stringFreiText.replace(System.lineSeparator(), " ");
-        //}
+        stringFreiText = freiText.getText().toString();
+        stringFreiText.replace(System.lineSeparator(), " ");
+        stringFreiText.replace("\n", " ");
     }
-
-
 }

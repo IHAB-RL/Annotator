@@ -35,4 +35,17 @@
     <string name="button_Messung">Messung</string>
     <string name="button_Beginn">Beginn</string>
     <string name="toast_No_Data_kept">No data is kept in Practise Mode.</string>
+
+    <string name="category_1">F-t-F DP_N PR_N</string>
+    <string name="category_2">F-t-F DP_N PR_D</string>
+    <string name="category_3">F-t-F DP_D PR_N</string>
+    <string name="category_4">F-t-F DP_D PR_D</string>
+    <string name="category_5">Gruppe PR_N</string>
+    <string name="category_6">Gruppe PR_D</string>
+    <string name="category_7">NichtSprache PR_N</string>
+    <string name="category_8">NichtSprache PR_D</string>
+    <string name="button_eraseLast">Letzten Eintrag löschen</string>
+
+    <string name="output_Charakterisierung">Charakterisierung</string>
+
 </resources>

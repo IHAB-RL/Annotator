@@ -31,7 +31,7 @@
             android:id="@+id/buttonAnnotation1"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:text="Button"
+            android:text="@string/category_1"
             android:layout_margin="0dp"
             android:textColor="@color/colorButtonText"
             android:background="@drawable/button_ripple_dark_blue"/>
@@ -40,7 +40,7 @@
             android:id="@+id/buttonAnnotation3"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:text="Button"
+            android:text="@string/category_3"
             android:layout_margin="0dp"
             android:textColor="@color/colorButtonText"
             android:background="@drawable/button_ripple_dark_blue"/>
@@ -49,7 +49,7 @@
             android:id="@+id/buttonAnnotation5"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:text="Button"
+            android:text="@string/category_5"
             android:layout_margin="0dp"
             android:textColor="@color/colorButtonText"
             android:background="@drawable/button_ripple_light_blue"/>
@@ -58,7 +58,7 @@
             android:id="@+id/buttonAnnotation7"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:text="Button"
+            android:text="@string/category_7"
             android:layout_margin="0dp"
             android:textColor="@color/colorButtonText"
             android:background="@drawable/button_ripple_yellow"/>
@@ -75,7 +75,7 @@
             android:id="@+id/buttonAnnotation2"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:text="Button"
+            android:text="@string/category_2"
             android:layout_margin="0dp"
             android:textColor="@color/colorButtonText"
             android:background="@drawable/button_ripple_dark_blue"/>
@@ -84,7 +84,7 @@
             android:id="@+id/buttonAnnotation4"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:text="Button"
+            android:text="@string/category_4"
             android:layout_margin="0dp"
             android:textColor="@color/colorButtonText"
             android:background="@drawable/button_ripple_dark_blue"/>
@@ -93,7 +93,7 @@
             android:id="@+id/buttonAnnotation6"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:text="Button"
+            android:text="@string/category_6"
             android:layout_margin="0dp"
             android:textColor="@color/colorButtonText"
             android:background="@drawable/button_ripple_light_blue"/>
@@ -102,7 +102,7 @@
             android:id="@+id/buttonAnnotation8"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:text="Button"
+            android:text="@string/category_8"
             android:layout_margin="0dp"
             android:textColor="@color/colorButtonText"
             android:background="@drawable/button_ripple_yellow"/>
@@ -115,7 +115,7 @@
         android:id="@+id/buttonRemove"
         android:layout_width="match_parent"
         android:layout_height="100px"
-        android:text="Letzten Eintrag löschen"
+        android:text="@string/button_eraseLast"
         android:background="@drawable/button_ripple_red"
         android:layout_weight = "1"
         android:textColor="@color/colorButtonText"/>

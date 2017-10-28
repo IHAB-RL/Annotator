@@ -32,11 +32,8 @@ public class FragmentAnnotation extends Fragment {
     private int mButtonWidth, mButtonHeight;
     private int mButtonRemoveWidth, mButtonRemoveHeight = 120;
     private int mNumButtonsVertical = 4, mNumButtonsHorizontal = 2;
-    private String codeButton1 = "F-t-F\nDP_N PR_N", codeButton2 = "F-t-F\nDP_N PR_D",
-            codeButton3 = "F-t-F\nDP_D PR_N", codeButton4 = "F-t-F\nDP_D PR_D",
-            codeButton5 = "Gruppe\nPR_N", codeButton6 = "Gruppe\nPR_D",
-            codeButton7 = "NichtSprache\nPR_N", codeButton8 = "NichtSprache\nPR_D";
-
+    private static int CODE_1 = 1, CODE_2 = 2, CODE_3 = 3, CODE_4 = 4,
+            CODE_5 = 5, CODE_6 = 6, CODE_7 = 7, CODE_8 = 8;
     private Resources mResources;
     DisplayMetrics mMetrics;
     private static int SCREEN_SIZE_HEIGHT;
@@ -67,49 +64,49 @@ public class FragmentAnnotation extends Fragment {
         mButtonAnnotation1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ((MainActivity) getActivity()).addAnnotation(codeButton1);
+                ((MainActivity) getActivity()).addAnnotation(CODE_1);
             }
         });
         mButtonAnnotation2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ((MainActivity) getActivity()).addAnnotation(codeButton2);
+                ((MainActivity) getActivity()).addAnnotation(CODE_2);
             }
         });
         mButtonAnnotation3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ((MainActivity) getActivity()).addAnnotation(codeButton3);
+                ((MainActivity) getActivity()).addAnnotation(CODE_3);
             }
         });
         mButtonAnnotation4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ((MainActivity) getActivity()).addAnnotation(codeButton4);
+                ((MainActivity) getActivity()).addAnnotation(CODE_4);
             }
         });
         mButtonAnnotation5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ((MainActivity) getActivity()).addAnnotation(codeButton5);
+                ((MainActivity) getActivity()).addAnnotation(CODE_5);
             }
         });
         mButtonAnnotation6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ((MainActivity) getActivity()).addAnnotation(codeButton6);
+                ((MainActivity) getActivity()).addAnnotation(CODE_6);
             }
         });
         mButtonAnnotation7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ((MainActivity) getActivity()).addAnnotation(codeButton7);
+                ((MainActivity) getActivity()).addAnnotation(CODE_7);
             }
         });
         mButtonAnnotation8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ((MainActivity) getActivity()).addAnnotation(codeButton8);
+                ((MainActivity) getActivity()).addAnnotation(CODE_8);
             }
         });
         mButtonRemove.setOnClickListener(new View.OnClickListener() {
@@ -151,42 +148,34 @@ public class FragmentAnnotation extends Fragment {
         LinearLayout.LayoutParams lpButtonAnno1 = new LinearLayout.LayoutParams(mButtonWidth, mButtonHeight);
         lpButtonAnno1.setMargins(mPadding, mPadding, mPadding, mPadding);
         mButtonAnnotation1.setLayoutParams(lpButtonAnno1);
-        mButtonAnnotation1.setText(codeButton1);
 
         LinearLayout.LayoutParams lpButtonAnno2 = new LinearLayout.LayoutParams(mButtonWidth, mButtonHeight);
         lpButtonAnno2.setMargins(mPadding, mPadding, mPadding, mPadding);
         mButtonAnnotation2.setLayoutParams(lpButtonAnno2);
-        mButtonAnnotation2.setText(codeButton2);
 
         LinearLayout.LayoutParams lpButtonAnno3 = new LinearLayout.LayoutParams(mButtonWidth, mButtonHeight);
         lpButtonAnno3.setMargins(mPadding, mPadding, mPadding, mPadding);
         mButtonAnnotation3.setLayoutParams(lpButtonAnno3);
-        mButtonAnnotation3.setText(codeButton3);
 
         LinearLayout.LayoutParams lpButtonAnno4 = new LinearLayout.LayoutParams(mButtonWidth, mButtonHeight);
         lpButtonAnno4.setMargins(mPadding, mPadding, mPadding, mPadding);
         mButtonAnnotation4.setLayoutParams(lpButtonAnno4);
-        mButtonAnnotation4.setText(codeButton4);
 
         LinearLayout.LayoutParams lpButtonAnno5 = new LinearLayout.LayoutParams(mButtonWidth, mButtonHeight);
         lpButtonAnno5.setMargins(mPadding, mPadding, mPadding, mPadding);
         mButtonAnnotation5.setLayoutParams(lpButtonAnno5);
-        mButtonAnnotation5.setText(codeButton5);
 
         LinearLayout.LayoutParams lpButtonAnno6 = new LinearLayout.LayoutParams(mButtonWidth, mButtonHeight);
         lpButtonAnno6.setMargins(mPadding, mPadding, mPadding, mPadding);
         mButtonAnnotation6.setLayoutParams(lpButtonAnno6);
-        mButtonAnnotation6.setText(codeButton6);
 
         LinearLayout.LayoutParams lpButtonAnno7 = new LinearLayout.LayoutParams(mButtonWidth, mButtonHeight);
         lpButtonAnno7.setMargins(mPadding, mPadding, mPadding, mPadding);
         mButtonAnnotation7.setLayoutParams(lpButtonAnno7);
-        mButtonAnnotation7.setText(codeButton7);
 
         LinearLayout.LayoutParams lpButtonAnno8 = new LinearLayout.LayoutParams(mButtonWidth, mButtonHeight);
         lpButtonAnno8.setMargins(mPadding, mPadding, mPadding, mPadding);
         mButtonAnnotation8.setLayoutParams(lpButtonAnno8);
-        mButtonAnnotation8.setText(codeButton8);
     }
 
     public int getUsableHeight() {
