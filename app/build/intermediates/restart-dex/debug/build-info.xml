@@ -6,23 +6,26 @@
     density="xxhdpi"
     format="10"
     plugin-version="2.3.3"
-    timestamp="1509194914829"
+    timestamp="1509196023201"
     token="6017043701756804809"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="239" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="27" />
     <task
         name="verifier"
-        duration="0" />
+        duration="2" />
 
+    <artifact
+        location="/Users/ulrikkowalk/Annotator/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+        type="SPLIT" />
     <artifact
         location="/Users/ulrikkowalk/Annotator/app/build/outputs/apk/app-debug.apk"
         type="SPLIT_MAIN" />
@@ -81,14 +84,14 @@
         <artifact
             location="/Users/ulrikkowalk/Annotator/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
             type="SPLIT" />
-        <artifact
-            location="/Users/ulrikkowalk/Annotator/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
-            type="SPLIT" />
     </build>
     <build
         build-mode="COLD"
-        timestamp="1509194914829"
+        timestamp="1509196023201"
         verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/Users/ulrikkowalk/Annotator/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+            type="SPLIT" />
         <artifact
             location="/Users/ulrikkowalk/Annotator/app/build/outputs/apk/app-debug.apk"
             type="SPLIT_MAIN" />

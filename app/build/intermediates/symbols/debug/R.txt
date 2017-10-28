@@ -1037,6 +1037,7 @@ int string subtitle_Raumbeschreibung 0x7f070046
 int string subtitle_Weitere_Angaben 0x7f070047
 int string title_Charakterisierung_der_situation 0x7f070048
 int string title_Neue_Datenaufnahme 0x7f070049
+int string toast_No_Data_kept 0x7f07004a
 int style AlertDialog_AppCompat 0x7f0900a1
 int style AlertDialog_AppCompat_Light 0x7f0900a2
 int style Animation_AppCompat_Dialog 0x7f0900a3

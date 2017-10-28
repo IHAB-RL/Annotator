@@ -6,6 +6,7 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     public ViewPager mViewPager;
     private AnnotationKeeper annotationKeeper;
     FileWriter fileWriter;
+    private boolean keepResults = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,11 +53,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public boolean finishAnnotation(String results, String freitext) {
-        annotationKeeper.setAdditionalData(results);
-        annotationKeeper.setFreiText(freitext);
-        annotationKeeper.setTimeEnd();
-        return fileWriter.saveToFile(this, annotationKeeper.getFileName(),
-                annotationKeeper.flushResults());
+        if (keepResults) {
+            annotationKeeper.setAdditionalData(results);
+            annotationKeeper.setFreiText(freitext);
+            annotationKeeper.setTimeEnd();
+            return fileWriter.saveToFile(this, annotationKeeper.getFileName(),
+                    annotationKeeper.flushResults());
+        } else {
+            annotationKeeper.reset();
+            Toast.makeText(this, R.string.toast_No_Data_kept, Toast.LENGTH_SHORT).show();
+            return false;
+        }
     }
 
     public void addAnnotation(String string) {
@@ -67,6 +75,11 @@ public class MainActivity extends AppCompatActivity {
         annotationKeeper.removeLastAnnotation();
         Log.i(LOG, "Annotation removed ["+annotationKeeper.getNumberOfAnnotations()+"]");
     }
+
+    public void keepResults(boolean keep) {
+        keepResults = keep;
+    }
+
 
     @Override
     public void onBackPressed() {

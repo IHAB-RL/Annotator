@@ -14,11 +14,7 @@ public class AnnotationKeeper {
     private String TIME_START, TIME_END;
 
     public AnnotationKeeper() {
-        clearAllAnnotations();
-        ID_RATER = "";
-        ID_SUBJECT = "";
-        ADDITIONAL_DATA = "";
-        FREITEXT = "";
+        reset();
         DATE_FORMAT = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss", Locale.ROOT);
     }
 
@@ -117,8 +113,12 @@ public class AnnotationKeeper {
         return listOfAnnotations.size();
     }
 
-    public void clearAllAnnotations() {
+    public void reset() {
         listOfAnnotations = new ArrayList<>();
+        setSubjectID("");
+        setRaterID("");
+        setAdditionalData("");
+        setFreiText("");
     }
 
     private String generateTimeNowUTC() {

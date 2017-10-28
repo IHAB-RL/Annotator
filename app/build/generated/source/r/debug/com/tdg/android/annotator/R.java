@@ -3025,6 +3025,7 @@ containing a value of this type.
         public static final int subtitle_Weitere_Angaben=0x7f070047;
         public static final int title_Charakterisierung_der_situation=0x7f070048;
         public static final int title_Neue_Datenaufnahme=0x7f070049;
+        public static final int toast_No_Data_kept=0x7f07004a;
     }
     public static final class style {
         public static final int AlertDialog_AppCompat=0x7f0900a1;

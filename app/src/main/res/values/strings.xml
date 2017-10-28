@@ -34,4 +34,5 @@
     <string name="button_Ubeung">Übung</string>
     <string name="button_Messung">Messung</string>
     <string name="button_Beginn">Beginn</string>
+    <string name="toast_No_Data_kept">No data is kept in Practise Mode.</string>
 </resources>

@@ -32,10 +32,10 @@ public class FragmentAnnotation extends Fragment {
     private int mButtonWidth, mButtonHeight;
     private int mButtonRemoveWidth, mButtonRemoveHeight = 120;
     private int mNumButtonsVertical = 4, mNumButtonsHorizontal = 2;
-    private String codeButton1 = "F-t-F DP_N PR_N", codeButton2 = "F-t-F DP_N PR_D",
-            codeButton3 = "F-t-F DP_D PR_N", codeButton4 = "F-t-F DP_D PR_D",
-            codeButton5 = "Gruppe PR_N", codeButton6 = "Gruppe PR_D",
-            codeButton7 = "NichtSprache PR_N", codeButton8 = "NichtSprache PR_D";
+    private String codeButton1 = "F-t-F\nDP_N PR_N", codeButton2 = "F-t-F\nDP_N PR_D",
+            codeButton3 = "F-t-F\nDP_D PR_N", codeButton4 = "F-t-F\nDP_D PR_D",
+            codeButton5 = "Gruppe\nPR_N", codeButton6 = "Gruppe\nPR_D",
+            codeButton7 = "NichtSprache\nPR_N", codeButton8 = "NichtSprache\nPR_D";
 
     private Resources mResources;
     DisplayMetrics mMetrics;

@@ -2,8 +2,8 @@
 
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_height="match_parent"
-    android:layout_width="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
 <LinearLayout
 
@@ -16,23 +16,23 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:layout_marginBottom="@dimen/radioElementsMargin"
-        android:layout_marginTop="@dimen/radioElementsMargin">
+        android:layout_marginTop="@dimen/radioElementsMargin"
+        android:orientation="vertical">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
             android:text="@string/title_Charakterisierung_der_situation"
             android:textSize="@dimen/headLineFontSize"
-            android:textStyle="bold"
-            android:layout_marginBottom="20dp"/>
+            android:textStyle="bold"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/subtitle_Lichtverh_ltnisse"
-            android:layout_marginBottom="@dimen/radioElementsMargin"/>
+            android:layout_marginBottom="@dimen/radioElementsMargin"
+            android:text="@string/subtitle_Lichtverh_ltnisse"/>
 
         <RadioGroup
             android:id="@+id/radioLichtverhaeltnisse"
@@ -76,16 +76,16 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:layout_marginBottom="@dimen/radioElementsMargin"
-        android:layout_marginTop="@dimen/radioElementsMargin">
+        android:layout_marginTop="@dimen/radioElementsMargin"
+        android:orientation="vertical">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/subtitle_Laustaerke_der_Umgebungsgeraeusche"
         android:layout_marginBottom="@dimen/radioElementsMargin"
-        android:layout_marginTop="@dimen/radioElementsMargin"/>
+        android:layout_marginTop="@dimen/radioElementsMargin"
+        android:text="@string/subtitle_Laustaerke_der_Umgebungsgeraeusche"/>
 
     <RadioGroup
         android:id="@+id/radioLautstaerke"
@@ -129,16 +129,16 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/radioElementsMargin"
         android:layout_marginBottom="@dimen/radioElementsMargin"
+        android:layout_marginTop="@dimen/radioElementsMargin"
         android:orientation="vertical">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/subtitle_Raumbeschreibung"
         android:layout_marginBottom="@dimen/radioElementsMargin"
-        android:layout_marginTop="@dimen/radioElementsMargin"/>
+        android:layout_marginTop="@dimen/radioElementsMargin"
+        android:text="@string/subtitle_Raumbeschreibung"/>
 
     <RadioGroup
         android:id="@+id/radioRaumbeschreibung"
@@ -172,16 +172,16 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:layout_marginBottom="@dimen/radioElementsMargin"
-        android:layout_marginTop="@dimen/radioElementsMargin">
+        android:layout_marginTop="@dimen/radioElementsMargin"
+        android:orientation="vertical">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/subtitle_Hoersituation_des_Probanden"
         android:layout_marginBottom="@dimen/radioElementsMargin"
-        android:layout_marginTop="@dimen/radioElementsMargin"/>
+        android:layout_marginTop="@dimen/radioElementsMargin"
+        android:text="@string/subtitle_Hoersituation_des_Probanden"/>
 
     <RadioGroup
         android:id="@+id/radioHoersituation"
@@ -215,24 +215,24 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:layout_marginBottom="@dimen/radioElementsMargin"
-        android:layout_marginTop="@dimen/radioElementsMargin">
+        android:layout_marginTop="@dimen/radioElementsMargin"
+        android:orientation="vertical">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/subtitle_Weitere_Angaben"
             android:layout_marginBottom="@dimen/radioElementsMargin"
-            android:layout_marginTop="@dimen/radioElementsMargin"/>
+            android:layout_marginTop="@dimen/radioElementsMargin"
+            android:text="@string/subtitle_Weitere_Angaben"/>
 
         <EditText
             android:id="@+id/freitext"
             android:layout_width="match_parent"
             android:layout_height="@dimen/textFieldHeight"
-            android:hint="@string/hint_Texteingabe_hier"
             android:background="@android:color/white"
             android:ems="10"
+            android:hint="@string/hint_Texteingabe_hier"
             android:paddingStart="@dimen/editTextPaddingStart"/>
 
     </LinearLayout>
@@ -242,8 +242,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="@string/button_Abschliessen"
-        android:layout_marginTop="@dimen/radioElementsMargin" />
+        android:layout_marginTop="@dimen/radioElementsMargin"
+        android:text="@string/button_Abschliessen" />
 
 </LinearLayout>
 

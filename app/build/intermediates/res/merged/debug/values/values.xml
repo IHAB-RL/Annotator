@@ -647,6 +647,7 @@
     <string name="subtitle_Weitere_Angaben">Weitere Angaben / Besonderheiten zur Beobachtungssituation</string>
     <string name="title_Charakterisierung_der_situation">Charakterisierung der Situation</string>
     <string name="title_Neue_Datenaufnahme">Neue Datenaufnahme</string>
+    <string name="toast_No_Data_kept">No data is kept in Practise Mode.</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>

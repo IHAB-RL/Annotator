@@ -74,6 +74,7 @@ public class FragmentNewSession extends Fragment {
         editTextProband.setBackgroundColor(Color.LTGRAY);
         textViewCodenummerRater.setEnabled(false);
         textViewCodenummerProband.setEnabled(false);
+        ((MainActivity) getActivity()).keepResults(false);
     }
 
     private void enableAnnotation() {
@@ -83,6 +84,7 @@ public class FragmentNewSession extends Fragment {
         editTextProband.setBackgroundColor(Color.WHITE);
         textViewCodenummerRater.setEnabled(true);
         textViewCodenummerProband.setEnabled(true);
+        ((MainActivity) getActivity()).keepResults(true);
     }
 
 }
