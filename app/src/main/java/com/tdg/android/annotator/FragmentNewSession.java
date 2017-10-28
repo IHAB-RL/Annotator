@@ -11,9 +11,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import static com.tdg.android.annotator.MainActivity.mViewPager;
-
-
 public class FragmentNewSession extends Fragment {
 
     private String LOG = "FragmentNewSession";

@@ -9,7 +9,7 @@ import java.util.TimeZone;
 public class AnnotationKeeper {
 
     ArrayList<String> listOfAnnotations;
-    private String ID_RATER, ID_SUBJECT;
+    private String ID_RATER, ID_SUBJECT, ADDITIONAL_DATA, FREITEXT;
     private SimpleDateFormat DATE_FORMAT;
     private String TIME_START, TIME_END;
 
@@ -17,6 +17,8 @@ public class AnnotationKeeper {
         clearAllAnnotations();
         ID_RATER = "";
         ID_SUBJECT = "";
+        ADDITIONAL_DATA = "";
+        FREITEXT = "";
         DATE_FORMAT = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss", Locale.ROOT);
     }
 
@@ -26,6 +28,14 @@ public class AnnotationKeeper {
 
     public void setSubjectID(String string) {
         ID_SUBJECT = string;
+    }
+
+    public void setAdditionalData(String string) {
+        ADDITIONAL_DATA = string;
+    }
+
+    public void setFreiText(String string) {
+        FREITEXT = string;
     }
 
     public void setTimeStart() {
@@ -60,7 +70,7 @@ public class AnnotationKeeper {
         }
     }
 
-    public String flushAnnotations() {
+    public String flushResults() {
         String streamOfAnnotations = "";
 
         streamOfAnnotations += "Rater ID: ";
@@ -71,6 +81,13 @@ public class AnnotationKeeper {
         streamOfAnnotations += "\n";
         streamOfAnnotations += "Number of Ratings: ";
         streamOfAnnotations += ""+getNumberOfAnnotations();
+        streamOfAnnotations += "\n";
+        streamOfAnnotations += "Additional Data:";
+        streamOfAnnotations += "\n";
+        streamOfAnnotations += ADDITIONAL_DATA;
+        streamOfAnnotations += "\n";
+        streamOfAnnotations += "Freitext:";
+        streamOfAnnotations += FREITEXT;
         streamOfAnnotations += "\n";
         streamOfAnnotations += "Time Start: ";
         streamOfAnnotations += TIME_START;

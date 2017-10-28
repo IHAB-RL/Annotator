@@ -13,7 +13,7 @@ import java.io.OutputStreamWriter;
 public class FileWriter {
 
     private static String LOG = "FileWriter";
-    private static String MAIN_FOLDER = "ANNOTATOR";
+    private static String MAIN_FOLDER = "Annotator";
     private static String DATA_FOLDER = "annotations";
 
     public FileWriter() {}

@@ -6,4 +6,11 @@
     <dimen name="appbar_padding_top">0dp</dimen>
     <dimen name="toolBarHeightWithPadding">48dp</dimen>
     <dimen name="actionBarHeight">32dp</dimen>
+
+    <dimen name="textFieldHeight">30dp</dimen>
+    <dimen name="editTextPaddingStart">4dp</dimen>
+    <dimen name="radioElementsMargin">8dp</dimen>
+    <dimen name="radioContainerPadding">16dp</dimen>
+    <dimen name="hLineWidth">1dp</dimen>
+    <dimen name="headLineFontSize">20sp</dimen>
 </resources>

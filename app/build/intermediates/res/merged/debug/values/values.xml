@@ -514,7 +514,10 @@
     <dimen name="design_tab_text_size_2line">12sp</dimen>
     <item format="float" name="disabled_alpha_material_dark" type="dimen">0.30</item>
     <item format="float" name="disabled_alpha_material_light" type="dimen">0.26</item>
+    <dimen name="editTextPaddingStart">4dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
+    <dimen name="hLineWidth">1dp</dimen>
+    <dimen name="headLineFontSize">20sp</dimen>
     <item format="float" name="highlight_alpha_material_colored" type="dimen">0.26</item>
     <item format="float" name="highlight_alpha_material_dark" type="dimen">0.20</item>
     <item format="float" name="highlight_alpha_material_light" type="dimen">0.12</item>
@@ -540,6 +543,9 @@
     <dimen name="notification_subtext_size">13sp</dimen>
     <dimen name="notification_top_pad">10dp</dimen>
     <dimen name="notification_top_pad_large_text">5dp</dimen>
+    <dimen name="radioContainerPadding">16dp</dimen>
+    <dimen name="radioElementsMargin">8dp</dimen>
+    <dimen name="textFieldHeight">30dp</dimen>
     <dimen name="toolBarHeightWithPadding">48dp</dimen>
     <drawable name="notification_template_icon_bg">#3333B5E5</drawable>
     <drawable name="notification_template_icon_low_bg">#0cffffff</drawable>
@@ -602,8 +608,30 @@
     <string name="app_name">Annotator</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
     <string name="bottom_sheet_behavior" translatable="false">android.support.design.widget.BottomSheetBehavior</string>
+    <string name="button_Abschliessen">Abschließen</string>
+    <string name="button_Beginn">Beginn</string>
+    <string name="button_Messung">Messung</string>
+    <string name="button_Ubeung">Übung</string>
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hint_Dateneingabe">Dateneingabe hier</string>
+    <string name="hint_Texteingabe_hier">Texteingabe hier</string>
+    <string name="option_Hoergeraete_erfahren">Hörgeräte - erfahrener Hörgeräteträger</string>
+    <string name="option_Hoergeraete_unerfahren">Hörgeräte - unerfahrener Hörgerätertäger</string>
+    <string name="option_angemessene_Raumgroesse">angemessene Raumgröße</string>
+    <string name="option_eher_dunkel">eher dunkel</string>
+    <string name="option_eher_hell">eher hell</string>
+    <string name="option_grosser_geraeumiger_Raum">großer, geräumiger Raum</string>
+    <string name="option_keine_Hoergeraete">keine Hörgeräte</string>
+    <string name="option_kleiner_beengter_Raum">kleiner, beengter Raum</string>
+    <string name="option_laut">laut</string>
+    <string name="option_leise">leise</string>
+    <string name="option_mittel">mittel</string>
+    <string name="option_mittel_angenehmes_Tageslicht">mittel - angenehmes Tageslicht</string>
+    <string name="option_sehr_dunkel">sehr dunkel</string>
+    <string name="option_sehr_hell">sehr hell</string>
+    <string name="option_sehr_laut">sehr laut</string>
+    <string name="option_sehr_leise">sehr leise / keine</string>
     <string name="password_toggle_content_description">Toggle password visibility</string>
     <string name="path_password_eye" translatable="false">M12,4.5C7,4.5 2.73,7.61 1,12c1.73,4.39 6,7.5 11,7.5s9.27,-3.11 11,-7.5c-1.73,-4.39 -6,-7.5 -11,-7.5zM12,17c-2.76,0 -5,-2.24 -5,-5s2.24,-5 5,-5 5,2.24 5,5 -2.24,5 -5,5zM12,9c-1.66,0 -3,1.34 -3,3s1.34,3 3,3 3,-1.34 3,-3 -1.34,-3 -3,-3z</string>
     <string name="path_password_eye_mask_strike_through" translatable="false">M2,4.27 L19.73,22 L22.27,19.46 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
@@ -612,6 +640,13 @@
     <string name="search_menu_title">Search</string>
     <string name="section_format">Hello World from section: %1$d</string>
     <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="subtitle_Hoersituation_des_Probanden">Hörsituation des Probanden</string>
+    <string name="subtitle_Laustaerke_der_Umgebungsgeraeusche">Lautstärke der Umgebungsgeräusche</string>
+    <string name="subtitle_Lichtverh_ltnisse">Lichtverhältnisse</string>
+    <string name="subtitle_Raumbeschreibung">Raumbeschreibung</string>
+    <string name="subtitle_Weitere_Angaben">Weitere Angaben / Besonderheiten zur Beobachtungssituation</string>
+    <string name="title_Charakterisierung_der_situation">Charakterisierung der Situation</string>
+    <string name="title_Neue_Datenaufnahme">Neue Datenaufnahme</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>

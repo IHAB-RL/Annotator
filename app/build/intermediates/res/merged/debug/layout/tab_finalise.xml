@@ -1,24 +1,250 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark">
+    android:layout_width="match_parent">
+
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    android:padding="@dimen/radioContainerPadding">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/radioElementsMargin"
+        android:layout_marginTop="@dimen/radioElementsMargin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/title_Charakterisierung_der_situation"
+            android:textSize="@dimen/headLineFontSize"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/subtitle_Lichtverh_ltnisse"
+            android:layout_marginBottom="@dimen/radioElementsMargin"/>
+
+        <RadioGroup
+            android:id="@+id/radioLichtverhaeltnisse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/option_sehr_hell"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/option_eher_hell"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/option_mittel_angenehmes_Tageslicht"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/option_eher_dunkel"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/option_sehr_dunkel"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hLineWidth"
+        android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/radioElementsMargin"
+        android:layout_marginTop="@dimen/radioElementsMargin">
 
     <TextView
-        android:id="@+id/textViewFinalise"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="And now we finalise"
-        android:layout_above="@+id/buttonFinalise"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="106dp" />
+        android:text="@string/subtitle_Laustaerke_der_Umgebungsgeraeusche"
+        android:layout_marginBottom="@dimen/radioElementsMargin"
+        android:layout_marginTop="@dimen/radioElementsMargin"/>
+
+    <RadioGroup
+        android:id="@+id/radioLautstaerke"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/option_sehr_laut"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/option_laut"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/option_mittel"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/option_leise"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/option_sehr_leise"/>
+
+    </RadioGroup>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hLineWidth"
+        android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/radioElementsMargin"
+        android:layout_marginBottom="@dimen/radioElementsMargin"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/subtitle_Raumbeschreibung"
+        android:layout_marginBottom="@dimen/radioElementsMargin"
+        android:layout_marginTop="@dimen/radioElementsMargin"/>
+
+    <RadioGroup
+        android:id="@+id/radioRaumbeschreibung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/option_kleiner_beengter_Raum"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/option_angemessene_Raumgroesse"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/option_grosser_geraeumiger_Raum"/>
+
+    </RadioGroup>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hLineWidth"
+        android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/radioElementsMargin"
+        android:layout_marginTop="@dimen/radioElementsMargin">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/subtitle_Hoersituation_des_Probanden"
+        android:layout_marginBottom="@dimen/radioElementsMargin"
+        android:layout_marginTop="@dimen/radioElementsMargin"/>
+
+    <RadioGroup
+        android:id="@+id/radioHoersituation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/option_keine_Hoergeraete"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/option_Hoergeraete_unerfahren"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/option_Hoergeraete_erfahren"/>
+
+    </RadioGroup>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hLineWidth"
+        android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/radioElementsMargin"
+        android:layout_marginTop="@dimen/radioElementsMargin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/subtitle_Weitere_Angaben"
+            android:layout_marginBottom="@dimen/radioElementsMargin"
+            android:layout_marginTop="@dimen/radioElementsMargin"/>
+
+        <EditText
+            android:id="@+id/freitext"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/textFieldHeight"
+            android:hint="@string/hint_Texteingabe_hier"
+            android:background="@android:color/white"
+            android:ems="10"
+            android:paddingStart="@dimen/editTextPaddingStart"/>
+
+    </LinearLayout>
 
     <Button
         android:id="@+id/buttonFinalise"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="FInalise" />
-</RelativeLayout>
+        android:layout_gravity="center"
+        android:text="@string/button_Abschliessen"
+        android:layout_marginTop="@dimen/radioElementsMargin" />
+
+</LinearLayout>
+
+</ScrollView>

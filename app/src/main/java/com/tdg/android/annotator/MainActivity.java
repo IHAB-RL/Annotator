@@ -1,28 +1,19 @@
 package com.tdg.android.annotator;
 
-
 import android.content.pm.ActivityInfo;
-import android.graphics.Point;
-import android.net.Uri;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.Display;
-import android.widget.TextView;
-
-import static android.os.Build.VERSION_CODES.M;
-
 
 public class MainActivity extends AppCompatActivity {
 
     private String LOG = "MainActivity";
     private SectionsPagerAdapter mSectionsPagerAdapter;
-    public static ViewPager mViewPager;
+    public ViewPager mViewPager;
     private AnnotationKeeper annotationKeeper;
     FileWriter fileWriter;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,11 +23,14 @@ public class MainActivity extends AppCompatActivity {
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
         mViewPager = (ViewPager) findViewById(R.id.container);
         setupViewPager(mViewPager);
+        mViewPager.setOffscreenPageLimit(3);
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(mViewPager);
 
         annotationKeeper = new AnnotationKeeper();
+        // Just in case someone forgets to hit "Begin"
+        annotationKeeper.setTimeStart();
         fileWriter = new FileWriter();
 
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
@@ -56,10 +50,12 @@ public class MainActivity extends AppCompatActivity {
         annotationKeeper.setTimeStart();
     }
 
-    public boolean finishAnnotation() {
+    public boolean finishAnnotation(String results, String freitext) {
+        annotationKeeper.setAdditionalData(results);
+        annotationKeeper.setFreiText(freitext);
         annotationKeeper.setTimeEnd();
         return fileWriter.saveToFile(this, annotationKeeper.getFileName(),
-                annotationKeeper.flushAnnotations());
+                annotationKeeper.flushResults());
     }
 
     public void addAnnotation(String string) {

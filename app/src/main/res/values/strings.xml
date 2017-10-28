@@ -5,4 +5,33 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_Charakterisierung_der_situation">Charakterisierung der Situation</string>
+    <string name="title_Neue_Datenaufnahme">Neue Datenaufnahme</string>
+    <string name="subtitle_Lichtverh_ltnisse">Lichtverhältnisse</string>
+    <string name="option_sehr_hell">sehr hell</string>
+    <string name="option_eher_hell">eher hell</string>
+    <string name="option_mittel_angenehmes_Tageslicht">mittel - angenehmes Tageslicht</string>
+    <string name="option_eher_dunkel">eher dunkel</string>
+    <string name="option_sehr_dunkel">sehr dunkel</string>
+    <string name="button_Abschliessen">Abschließen</string>
+    <string name="hint_Texteingabe_hier">Texteingabe hier</string>
+    <string name="subtitle_Weitere_Angaben">Weitere Angaben / Besonderheiten zur Beobachtungssituation</string>
+    <string name="option_Hoergeraete_erfahren">Hörgeräte - erfahrener Hörgeräteträger</string>
+    <string name="option_Hoergeraete_unerfahren">Hörgeräte - unerfahrener Hörgerätertäger</string>
+    <string name="option_keine_Hoergeraete">keine Hörgeräte</string>
+    <string name="subtitle_Hoersituation_des_Probanden">Hörsituation des Probanden</string>
+    <string name="option_grosser_geraeumiger_Raum">großer, geräumiger Raum</string>
+    <string name="option_angemessene_Raumgroesse">angemessene Raumgröße</string>
+    <string name="option_kleiner_beengter_Raum">kleiner, beengter Raum</string>
+    <string name="subtitle_Raumbeschreibung">Raumbeschreibung</string>
+    <string name="option_sehr_leise">sehr leise / keine</string>
+    <string name="option_leise">leise</string>
+    <string name="option_mittel">mittel</string>
+    <string name="option_laut">laut</string>
+    <string name="option_sehr_laut">sehr laut</string>
+    <string name="subtitle_Laustaerke_der_Umgebungsgeraeusche">Lautstärke der Umgebungsgeräusche</string>
+    <string name="hint_Dateneingabe">Dateneingabe hier</string>
+    <string name="button_Ubeung">Übung</string>
+    <string name="button_Messung">Messung</string>
+    <string name="button_Beginn">Beginn</string>
 </resources>
