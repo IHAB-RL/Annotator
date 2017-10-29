@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="http://schemas.android.com/tools">
+    <string-array name="categories">
+        <item>F-t-F DP_N PR_N</item>
+        <item>F-t-F DP_N PR_D</item>
+        <item>F-t-F DP_D PR_N</item>
+        <item>F-t-F DP_D PR_D</item>
+        <item>Gruppe PR_N</item>
+        <item>Gruppe PR_D</item>
+        <item>NichtSprache PR_N</item>
+        <item>NichtSprache PR_D</item>
+    </string-array>
     <attr format="reference" name="drawerArrowStyle"/>
     <attr format="dimension" name="height"/>
     <attr format="boolean" name="isLightTheme"/>
@@ -655,6 +665,10 @@
     <string name="subtitle_Lichtverh_ltnisse">Lichtverhältnisse</string>
     <string name="subtitle_Raumbeschreibung">Raumbeschreibung</string>
     <string name="subtitle_Weitere_Angaben">Weitere Angaben / Besonderheiten zur Beobachtungssituation</string>
+    <string name="tab_Annotation">Annotation</string>
+    <string name="tab_Finalise">Finalise</string>
+    <string name="tab_New_Session">New Session</string>
+    <string name="tab_Statistics">Statistics</string>
     <string name="title_Charakterisierung_der_situation">Charakterisierung der Situation</string>
     <string name="title_Neue_Datenaufnahme">Neue Datenaufnahme</string>
     <string name="toast_No_Data_kept">No data is kept in Practise Mode.</string>

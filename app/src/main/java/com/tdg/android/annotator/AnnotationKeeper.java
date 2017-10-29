@@ -1,7 +1,8 @@
 package com.tdg.android.annotator;
 
+import android.util.Log;
+
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.Locale;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -9,37 +10,38 @@ import java.util.TimeZone;
 
 public class AnnotationKeeper {
 
+    private String LOG = "AnnotationKeeper";
     private ArrayList<DateAndAnnotation> listOfAnnotations;
     private String ID_RATER, ID_SUBJECT, ADDITIONAL_DATA, FREITEXT;
     private SimpleDateFormat DATE_FORMAT;
     private String TIME_START, TIME_END;
 
-    public AnnotationKeeper() {
+    AnnotationKeeper() {
         reset();
         DATE_FORMAT = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss", Locale.ROOT);
     }
 
-    public void setRaterID(String string) {
+    void setRaterID(String string) {
         ID_RATER = string;
     }
 
-    public void setSubjectID(String string) {
+    void setSubjectID(String string) {
         ID_SUBJECT = string;
     }
 
-    public void setAdditionalData(String string) {
+    void setAdditionalData(String string) {
         ADDITIONAL_DATA = string;
     }
 
-    public void setFreiText(String string) {
+    void setFreiText(String string) {
         FREITEXT = string;
     }
 
-    public void setTimeStart() {
+    void setTimeStart() {
         TIME_START = generateTimeNowUTC();
     }
 
-    public void setTimeEnd() {
+    void setTimeEnd() {
         TIME_END = generateTimeNowUTC();
     }
 
@@ -51,17 +53,21 @@ public class AnnotationKeeper {
         return ID_SUBJECT;
     }
 
-    public void addAnnotation(int code) {
+    public ArrayList<DateAndAnnotation> getListOfAnnotations() {
+        return listOfAnnotations;
+    }
+
+    void addAnnotation(int code) {
         listOfAnnotations.add(new DateAndAnnotation(generateTimeNowUTC(), code));
     }
 
-    public void removeLastAnnotation() {
+    void removeLastAnnotation() {
         if (getNumberOfAnnotations() > 0) {
             listOfAnnotations.remove(getNumberOfAnnotations() - 1);
         }
     }
 
-    public String flushResults() {
+    String flushResults() {
         String streamOfAnnotations = "";
 
         streamOfAnnotations += "Rater ID: ";
@@ -100,15 +106,15 @@ public class AnnotationKeeper {
         return streamOfAnnotations;
     }
 
-    public String getFileName() {
+    String getFileName() {
         return generateTimeNowUTC()+"_"+ID_SUBJECT+"_"+ID_RATER+".txt";
     }
 
-    public int getNumberOfAnnotations() {
+    int getNumberOfAnnotations() {
         return listOfAnnotations.size();
     }
 
-    public void reset() {
+    void reset() {
         listOfAnnotations = new ArrayList<>();
         setSubjectID("");
         setRaterID("");

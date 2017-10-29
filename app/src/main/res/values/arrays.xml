@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name = "categories">
+        <item>F-t-F DP_N PR_N</item>
+        <item>F-t-F DP_N PR_D</item>
+        <item>F-t-F DP_D PR_N</item>
+        <item>F-t-F DP_D PR_D</item>
+        <item>Gruppe PR_N</item>
+        <item>Gruppe PR_D</item>
+        <item>NichtSprache PR_N</item>
+        <item>NichtSprache PR_D</item>
+    </string-array>
+
+</resources>

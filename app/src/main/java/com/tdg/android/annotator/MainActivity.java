@@ -40,31 +40,37 @@ public class MainActivity extends AppCompatActivity {
 
     private void setupViewPager(ViewPager viewPager) {
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
-        mSectionsPagerAdapter.addFragment(new FragmentNewSession(), "New Session");
-        mSectionsPagerAdapter.addFragment(new FragmentAnnotation(), "Annotation");
-        mSectionsPagerAdapter.addFragment(new FragmentFinalise(), "Finalise");
+        mSectionsPagerAdapter.addFragment(new FragmentNewSession(),
+                getResources().getString(R.string.tab_New_Session));
+        mSectionsPagerAdapter.addFragment(new FragmentAnnotation(),
+                getResources().getString(R.string.tab_Annotation));
+        mSectionsPagerAdapter.addFragment(new FragmentFinalise(),
+                getResources().getString(R.string.tab_Finalise));
         viewPager.setAdapter(mSectionsPagerAdapter);
     }
 
     public void beginAnnotation(String raterId, String subjectId) {
+        annotationKeeper.reset();
         annotationKeeper.setRaterID(raterId);
         annotationKeeper.setSubjectID(subjectId);
         annotationKeeper.setTimeStart();
     }
 
-    public boolean finishAnnotation(String results, String freitext) {
+    public void finishAnnotation(String results, String freitext) {
         if (keepResults) {
             annotationKeeper.setAdditionalData(results);
             annotationKeeper.setFreiText(freitext);
             annotationKeeper.setTimeEnd();
             mViewPager.setCurrentItem(0);
-            return fileWriter.saveToFile(this, annotationKeeper.getFileName(),
+            fileWriter.saveToFile(this, annotationKeeper.getFileName(),
                     annotationKeeper.flushResults());
-        } else {
+            buildStatistics();
             annotationKeeper.reset();
+        } else {
             Toast.makeText(this, R.string.toast_No_Data_kept, Toast.LENGTH_SHORT).show();
-            mViewPager.setCurrentItem(0);
-            return false;
+            //mViewPager.setCurrentItem(0);
+            buildStatistics();
+            annotationKeeper.reset();
         }
     }
 
@@ -85,5 +91,29 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         // Back button disabled
+    }
+
+    private void buildStatistics() {
+        if (mSectionsPagerAdapter.getCount() > 3) {
+            mViewPager.setAdapter(null);
+            mSectionsPagerAdapter.removeFragment(3);
+            mSectionsPagerAdapter.addFragment(new FragmentStatistics(),
+                    getResources().getString(R.string.tab_Statistics));
+            mViewPager.setOffscreenPageLimit(3);
+            mSectionsPagerAdapter.notifyDataSetChanged();
+            mViewPager.setAdapter(mSectionsPagerAdapter);
+        } else {
+            mViewPager.setAdapter(null);
+            mSectionsPagerAdapter.addFragment(new FragmentStatistics(),
+                    getResources().getString(R.string.tab_Statistics));
+            mViewPager.setOffscreenPageLimit(3);
+            mSectionsPagerAdapter.notifyDataSetChanged();
+            mViewPager.setAdapter(mSectionsPagerAdapter);
+        }
+    }
+
+    public int[] getHistData() {
+        AnnotationStatistics Statistics = new AnnotationStatistics();
+        return Statistics.getHist(annotationKeeper.getListOfAnnotations());
     }
 }

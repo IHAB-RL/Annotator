@@ -3,7 +3,11 @@
     <string name="action_settings">Settings</string>
     <string name="section_format">Hello World from section: %1$d</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
+    <string name="tab_New_Session">New Session</string>
+    <string name="tab_Annotation">Annotation</string>
+    <string name="tab_Finalise">Finalise</string>
+    <string name="tab_Statistics">Statistics</string>
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_Charakterisierung_der_situation">Charakterisierung der Situation</string>
     <string name="title_Neue_Datenaufnahme">Neue Datenaufnahme</string>

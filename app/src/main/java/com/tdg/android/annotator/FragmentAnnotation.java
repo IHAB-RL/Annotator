@@ -8,7 +8,6 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.util.DisplayMetrics;
-import android.util.Log;
 import android.view.Display;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,9 +15,6 @@ import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.LinearLayout;
-
-import java.util.ArrayList;
-
 
 public class FragmentAnnotation extends Fragment {
 
@@ -115,8 +111,6 @@ public class FragmentAnnotation extends Fragment {
                 ((MainActivity) getActivity()).removeLastAnnotation();
             }
         });
-
-        Log.i(LOG, "Width: "+mButtonRemoveWidth+", Height: "+mButtonRemoveHeight);
 
         return view;
     }

@@ -28,6 +28,11 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
         mListOfFragmentTitles.add(string);
     }
 
+    public void removeFragment(int num) {
+        mListOfFragments.remove(num);
+        mListOfFragmentTitles.remove(num);
+    }
+
     @Override
     public CharSequence getPageTitle(int position) {
         return mListOfFragmentTitles.get(position);
