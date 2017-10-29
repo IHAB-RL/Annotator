@@ -78,16 +78,17 @@ public class FragmentFinalise extends Fragment {
 
     private void gatherResults() {
         getFreiText();
-        String charakterisierung = getResources().getString(R.string.output_Charakterisierung)+": ";
-        charakterisierung += resLichtverhaeltnisse+", "+resLautstaerke+", "+
+        String charakterisierung = resLichtverhaeltnisse+", "+resLautstaerke+", "+
                 resRaumbeschreibung+", "+resHoersituation;
 
         ((MainActivity) getActivity()).finishAnnotation(charakterisierung, stringFreiText);
     }
 
     private void getFreiText() {
-        stringFreiText = freiText.getText().toString();
-        stringFreiText.replace(System.lineSeparator(), " ");
-        stringFreiText.replace("\n", " ");
+        stringFreiText = formatText(freiText.getText().toString());
+    }
+
+    private String formatText(String string) {
+        return string.replaceAll(System.lineSeparator(), " ");
     }
 }

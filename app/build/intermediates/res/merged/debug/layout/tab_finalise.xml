@@ -229,9 +229,11 @@
         <EditText
             android:id="@+id/freitext"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/textFieldHeight"
+            android:layout_height="wrap_content"
             android:background="@android:color/white"
             android:ems="10"
+            android:inputType="textMultiLine"
+            android:padding="@dimen/editTextPaddingStart"
             android:hint="@string/hint_Texteingabe_hier"
             android:paddingStart="@dimen/editTextPaddingStart"/>
 

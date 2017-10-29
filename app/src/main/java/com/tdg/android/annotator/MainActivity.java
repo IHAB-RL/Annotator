@@ -82,7 +82,6 @@ public class MainActivity extends AppCompatActivity {
         keepResults = keep;
     }
 
-
     @Override
     public void onBackPressed() {
         // Back button disabled

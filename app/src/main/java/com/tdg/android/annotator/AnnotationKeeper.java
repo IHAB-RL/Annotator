@@ -1,6 +1,7 @@
 package com.tdg.android.annotator;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.Locale;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -8,7 +9,7 @@ import java.util.TimeZone;
 
 public class AnnotationKeeper {
 
-    private ArrayList<Integer> listOfAnnotations;
+    private ArrayList<DateAndAnnotation> listOfAnnotations;
     private String ID_RATER, ID_SUBJECT, ADDITIONAL_DATA, FREITEXT;
     private SimpleDateFormat DATE_FORMAT;
     private String TIME_START, TIME_END;
@@ -51,13 +52,7 @@ public class AnnotationKeeper {
     }
 
     public void addAnnotation(int code) {
-        listOfAnnotations.add(code);
-    }
-
-    public void addAnnotation(ArrayList<Integer> listOfIntegers) {
-        for (int annotation : listOfIntegers) {
-            listOfAnnotations.add(annotation);
-        }
+        listOfAnnotations.add(new DateAndAnnotation(generateTimeNowUTC(), code));
     }
 
     public void removeLastAnnotation() {
@@ -82,7 +77,7 @@ public class AnnotationKeeper {
         streamOfAnnotations += "\n";
         streamOfAnnotations += ADDITIONAL_DATA;
         streamOfAnnotations += "\n";
-        streamOfAnnotations += "Freitext:";
+        streamOfAnnotations += "Free Text:";
         streamOfAnnotations += FREITEXT;
         streamOfAnnotations += "\n";
         streamOfAnnotations += "Time Start: ";
@@ -94,8 +89,9 @@ public class AnnotationKeeper {
         streamOfAnnotations += "-----------------------------";
         streamOfAnnotations += "\n";
 
-        for (int annotation : listOfAnnotations) {
-            streamOfAnnotations += "" + annotation;
+        for (DateAndAnnotation annotation : listOfAnnotations) {
+            streamOfAnnotations += annotation.date;
+            streamOfAnnotations += ": " + annotation.annotation;
             streamOfAnnotations += "\n";
         }
 
