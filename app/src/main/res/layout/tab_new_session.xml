@@ -2,12 +2,14 @@
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_height="match_parent"
-    android:layout_width="match_parent">
-<LinearLayout
-
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:id="@+id/fragment_newSession">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
+    android:gravity="center"
     android:padding="@dimen/radioContainerPadding"
     android:background="@color/colorPrimaryDark">
 
@@ -19,21 +21,36 @@
         android:textStyle="bold"
         android:layout_marginBottom="20dp"/>
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
     <Button
         android:id="@+id/buttonUebung"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/button_Ubeung"
-        android:layout_marginTop="@dimen/radioElementsMargin"
-        android:layout_marginBottom="@dimen/radioElementsMargin"/>
+        android:layout_margin="@dimen/radioElementsMargin"
+        />
 
     <Button
         android:id="@+id/buttonMessung"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/button_Messung"
-        android:layout_marginTop="@dimen/radioElementsMargin"
-        android:layout_marginBottom="@dimen/radioElementsMargin"/>
+        android:layout_margin="@dimen/radioElementsMargin"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/layout_border"
+        android:padding="12dp"
+        >
 
     <TextView
         android:id="@+id/textViewCodenummerProband"
@@ -45,7 +62,13 @@
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="12dp"
+            android:layout_height="0dp"
+            android:visibility="invisible"/>
 
     <EditText
         android:id="@+id/editTextProband"
@@ -55,7 +78,7 @@
         android:ems="10"
         android:text=""
         android:padding="@dimen/editTextPaddingStart"
-        android:hint="@string/hint_Dateneingabe"
+        android:hint="@string/hint_Dateneingabe_Proband"
         android:background="@android:color/white"
         android:layout_marginTop="@dimen/radioElementsMargin"
         android:layout_marginBottom="@dimen/radioElementsMargin"/>
@@ -64,7 +87,7 @@
             android:id="@+id/textViewFehlerhaftProband"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="fehlerhafte Eingabe"
+            android:text="!"
             android:textColor="@color/annoRed"
             android:layout_gravity="center"
             android:paddingStart="8dp"
@@ -81,7 +104,13 @@
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="12dp"
+            android:layout_height="0dp"
+            android:visibility="invisible"/>
 
     <EditText
         android:id="@+id/editTextRater"
@@ -89,7 +118,7 @@
         android:layout_height="@dimen/textFieldHeight"
         android:inputType="textPersonName"
         android:text=""
-        android:hint="@string/hint_Dateneingabe"
+        android:hint="@string/hint_Dateneingabe_Rater"
         android:ems="10"
         android:padding="@dimen/editTextPaddingStart"
         android:background="@android:color/white"
@@ -100,13 +129,14 @@
         android:id="@+id/textViewFehlerhaftRater"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="fehlerhafte Eingabe"
+        android:text="!"
         android:textColor="@color/annoRed"
         android:layout_gravity="center"
         android:paddingStart="8dp"
         android:visibility="invisible"/>
 </LinearLayout>
 
+    </LinearLayout>
 
     <Button
         android:id="@+id/buttonBeginn"

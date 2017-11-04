@@ -8,12 +8,12 @@
         "source": "/Users/ulrikkowalk/.android/build-cache/9a643dbcf97b90e10a960b4e8cc33420d9206549/output/res/layout/abc_alert_dialog_button_bar_material.xml"
     },
     {
-        "merged": "/Users/ulrikkowalk/Annotator/app/build/intermediates/res/merged/debug/layout/tab_finalise.xml",
-        "source": "/Users/ulrikkowalk/Annotator/app/src/main/res/layout/tab_finalise.xml"
-    },
-    {
         "merged": "/Users/ulrikkowalk/Annotator/app/build/intermediates/res/merged/debug/layout/design_navigation_menu.xml",
         "source": "/Users/ulrikkowalk/.android/build-cache/d266fe42e46e4fc5472772a936754e5579c5f8bc/output/res/layout/design_navigation_menu.xml"
+    },
+    {
+        "merged": "/Users/ulrikkowalk/Annotator/app/build/intermediates/res/merged/debug/layout/tab_finalise.xml",
+        "source": "/Users/ulrikkowalk/Annotator/app/src/main/res/layout/tab_finalise.xml"
     },
     {
         "merged": "/Users/ulrikkowalk/Annotator/app/build/intermediates/res/merged/debug/layout/abc_screen_simple.xml",
@@ -76,16 +76,16 @@
         "source": "/Users/ulrikkowalk/.android/build-cache/9a643dbcf97b90e10a960b4e8cc33420d9206549/output/res/layout/select_dialog_item_material.xml"
     },
     {
-        "merged": "/Users/ulrikkowalk/Annotator/app/build/intermediates/res/merged/debug/layout/select_dialog_singlechoice_material.xml",
-        "source": "/Users/ulrikkowalk/.android/build-cache/9a643dbcf97b90e10a960b4e8cc33420d9206549/output/res/layout/select_dialog_singlechoice_material.xml"
+        "merged": "/Users/ulrikkowalk/Annotator/app/build/intermediates/res/merged/debug/layout/activity_main.xml",
+        "source": "/Users/ulrikkowalk/Annotator/app/src/main/res/layout/activity_main.xml"
     },
     {
         "merged": "/Users/ulrikkowalk/Annotator/app/build/intermediates/res/merged/debug/layout/notification_template_media_custom.xml",
         "source": "/Users/ulrikkowalk/.android/build-cache/9a643dbcf97b90e10a960b4e8cc33420d9206549/output/res/layout/notification_template_media_custom.xml"
     },
     {
-        "merged": "/Users/ulrikkowalk/Annotator/app/build/intermediates/res/merged/debug/layout/activity_main.xml",
-        "source": "/Users/ulrikkowalk/Annotator/app/src/main/res/layout/activity_main.xml"
+        "merged": "/Users/ulrikkowalk/Annotator/app/build/intermediates/res/merged/debug/layout/select_dialog_singlechoice_material.xml",
+        "source": "/Users/ulrikkowalk/.android/build-cache/9a643dbcf97b90e10a960b4e8cc33420d9206549/output/res/layout/select_dialog_singlechoice_material.xml"
     },
     {
         "merged": "/Users/ulrikkowalk/Annotator/app/build/intermediates/res/merged/debug/layout/design_navigation_item_header.xml",

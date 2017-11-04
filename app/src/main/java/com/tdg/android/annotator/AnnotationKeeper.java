@@ -15,6 +15,7 @@ public class AnnotationKeeper {
     private String ID_RATER, ID_SUBJECT, ADDITIONAL_DATA, FREITEXT;
     private SimpleDateFormat DATE_FORMAT;
     private String TIME_START, TIME_END;
+    private boolean isUebung;
 
     AnnotationKeeper() {
         reset();
@@ -43,6 +44,10 @@ public class AnnotationKeeper {
 
     void setTimeEnd() {
         TIME_END = generateTimeNowUTC();
+    }
+
+    void setUebung(boolean uebung) {
+        isUebung = uebung;
     }
 
     public String getRaterID() {
@@ -120,6 +125,7 @@ public class AnnotationKeeper {
         setRaterID("");
         setAdditionalData("");
         setFreiText("");
+        isUebung = false;
     }
 
     private String generateTimeNowUTC() {

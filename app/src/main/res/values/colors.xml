@@ -2,10 +2,14 @@
 <resources>
     <color name="colorPrimary">#555555</color>
     <color name="colorPrimaryDark">#DDDDDD</color>
-    <color name="colorAccent">#FFDD00</color>
+    <color name="colorAccent">#113399</color>
+    <color name="colorLayoutStroke">#EEEEEE</color>
 
-    <color name="annoDarkerBlue">#7777FF</color>
-    <color name="annoDarkerBlueChecked">#3333BB</color>
+    <color name="colorButtonNormal">#555555</color>
+    <color name="colorButtonPressed">#333333</color>
+
+    <color name="annoDarkerBlue">#5577DD</color>
+    <color name="annoDarkerBlueChecked">#113399</color>
     <color name="annoLighterBlue">#AAAAFF</color>
     <color name="annoLighterBlueChecked">#6666DD</color>
     <color name="annoYellow">#FFDD00</color>

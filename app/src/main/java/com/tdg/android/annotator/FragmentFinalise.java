@@ -1,5 +1,6 @@
 package com.tdg.android.annotator;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.IdRes;
 import android.support.annotation.Nullable;
@@ -13,10 +14,12 @@ import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
+import java.util.Collections;
+
 import static android.R.id.button1;
 
 
-public class FragmentFinalise extends Fragment {
+public class FragmentFinalise extends Fragment implements Communicator {
 
     private String LOG = "FragmentFinalise";
     private Button buttonFinalise;
@@ -25,6 +28,7 @@ public class FragmentFinalise extends Fragment {
     private int resLichtverhaeltnisse, resLautstaerke, resRaumbeschreibung, resHoersituation;
     private String stringFreiText;
     private EditText freiText;
+    private Communicator communicator;
 
     @Nullable
     @Override
@@ -76,12 +80,18 @@ public class FragmentFinalise extends Fragment {
         return view;
     }
 
+    public void onAttach(Activity activity){
+        communicator = (Communicator)activity;
+        super.onAttach(activity);
+    }
+
     private void gatherResults() {
         getFreiText();
         String charakterisierung = resLichtverhaeltnisse+", "+resLautstaerke+", "+
                 resRaumbeschreibung+", "+resHoersituation;
 
-        ((MainActivity) getActivity()).finishAnnotation(charakterisierung, stringFreiText);
+        finishAnnotation(charakterisierung, stringFreiText);
+        //((MainActivity) getActivity()).finishAnnotation(charakterisierung, stringFreiText);
     }
 
     private void getFreiText() {
@@ -91,4 +101,16 @@ public class FragmentFinalise extends Fragment {
     private String formatText(String string) {
         return string.replaceAll(System.lineSeparator(), " ");
     }
+
+    /** Interface Methods **/
+
+    public void finishAnnotation(String sCharakter, String sFreitext) {
+        communicator.finishAnnotation(sCharakter, sFreitext);
+    }
+
+    public void beginAnnotation(String raterId, String subjectId, boolean isUebung) {}
+
+    public void addAnnotation(int Code){}
+
+    public void removeLastAnnotation(){}
 }

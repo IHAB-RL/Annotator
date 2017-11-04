@@ -164,6 +164,10 @@
         "source": "/Users/ulrikkowalk/Annotator/app/src/main/res/drawable/button_ripple_dark_blue.xml"
     },
     {
+        "merged": "/Users/ulrikkowalk/Annotator/app/build/intermediates/res/merged/debug/drawable/layout_border.xml",
+        "source": "/Users/ulrikkowalk/Annotator/app/src/main/res/drawable/layout_border.xml"
+    },
+    {
         "merged": "/Users/ulrikkowalk/Annotator/app/build/intermediates/res/merged/debug/drawable/abc_btn_check_material.xml",
         "source": "/Users/ulrikkowalk/.android/build-cache/9a643dbcf97b90e10a960b4e8cc33420d9206549/output/res/drawable/abc_btn_check_material.xml"
     },

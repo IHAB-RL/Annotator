@@ -5,119 +5,129 @@
     android:id="@+id/linearLayoutContainer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     android:gravity="center"
     android:layout_gravity="center"
     android:background="@color/colorPrimaryDark">
 
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="0.2">
+
+            <Button
+                android:id="@+id/buttonAnnotation1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="@string/category_1"
+                android:textColor="@color/colorButtonText"
+                android:background="@drawable/button_ripple_dark_blue"
+                android:layout_weight="0.5"/>
+
+            <Button
+                android:id="@+id/buttonAnnotation2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="@string/category_2"
+                android:textColor="@color/colorButtonText"
+                android:background="@drawable/button_ripple_dark_blue"
+                android:layout_weight="0.5"/>
+
+    </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayoutAnnotationMain"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center"
-        android:layout_gravity="center"
-        android:layout_marginTop="0dp"
-        android:layout_weight = "0"
-        android:background="@color/colorPrimaryDark">
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="0.2">
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            <Button
+                android:id="@+id/buttonAnnotation3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="@string/category_3"
+                android:textColor="@color/colorButtonText"
+                android:background="@drawable/button_ripple_dark_blue"
+                android:layout_weight="0.5"/>
 
-        <Button
-            android:id="@+id/buttonAnnotation1"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:text="@string/category_1"
-            android:layout_margin="0dp"
-            android:textColor="@color/colorButtonText"
-            android:background="@drawable/button_ripple_dark_blue"/>
+            <Button
+                android:id="@+id/buttonAnnotation4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="@string/category_4"
+                android:textColor="@color/colorButtonText"
+                android:background="@drawable/button_ripple_dark_blue"
+                android:layout_weight="0.5"/>
 
-        <Button
-            android:id="@+id/buttonAnnotation3"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:text="@string/category_3"
-            android:layout_margin="0dp"
-            android:textColor="@color/colorButtonText"
-            android:background="@drawable/button_ripple_dark_blue"/>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="0.2">
 
         <Button
             android:id="@+id/buttonAnnotation5"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
             android:text="@string/category_5"
-            android:layout_margin="0dp"
             android:textColor="@color/colorButtonText"
-            android:background="@drawable/button_ripple_light_blue"/>
-
-        <Button
-            android:id="@+id/buttonAnnotation7"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:text="@string/category_7"
-            android:layout_margin="0dp"
-            android:textColor="@color/colorButtonText"
-            android:background="@drawable/button_ripple_yellow"/>
-
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-        <Button
-            android:id="@+id/buttonAnnotation2"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:text="@string/category_2"
-            android:layout_margin="0dp"
-            android:textColor="@color/colorButtonText"
-            android:background="@drawable/button_ripple_dark_blue"/>
-
-        <Button
-            android:id="@+id/buttonAnnotation4"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:text="@string/category_4"
-            android:layout_margin="0dp"
-            android:textColor="@color/colorButtonText"
-            android:background="@drawable/button_ripple_dark_blue"/>
+            android:background="@drawable/button_ripple_light_blue"
+            android:layout_weight="0.5"/>
 
         <Button
             android:id="@+id/buttonAnnotation6"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
             android:text="@string/category_6"
-            android:layout_margin="0dp"
             android:textColor="@color/colorButtonText"
-            android:background="@drawable/button_ripple_light_blue"/>
-
-        <Button
-            android:id="@+id/buttonAnnotation8"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:text="@string/category_8"
-            android:layout_margin="0dp"
-            android:textColor="@color/colorButtonText"
-            android:background="@drawable/button_ripple_yellow"/>
+            android:background="@drawable/button_ripple_light_blue"
+            android:layout_weight="0.5"/>
 
         </LinearLayout>
 
-    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="0.2">
+
+        <Button
+            android:id="@+id/buttonAnnotation7"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="@string/category_7"
+            android:textColor="@color/colorButtonText"
+            android:background="@drawable/button_ripple_yellow"
+            android:layout_weight="0.5"/>
+
+        <Button
+            android:id="@+id/buttonAnnotation8"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="@string/category_8"
+            android:textColor="@color/colorButtonText"
+            android:background="@drawable/button_ripple_yellow"
+            android:layout_weight="0.5"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="0.2">
 
     <Button
         android:id="@+id/buttonRemove"
         android:layout_width="match_parent"
-        android:layout_height="100px"
+        android:layout_height="match_parent"
         android:text="@string/button_eraseLast"
         android:background="@drawable/button_ripple_red"
-        android:layout_weight = "1"
         android:textColor="@color/colorButtonText"/>
+
+        </LinearLayout>
 
 </LinearLayout>

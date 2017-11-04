@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/Users/ulrikkowalk/Annotator/app/build/intermediates/res/merged/debug/mipmap-mdpi/logo_hoerzentrum.png",
+        "source": "/Users/ulrikkowalk/Annotator/app/src/main/res/mipmap-mdpi/logo_hoerzentrum.png"
+    },
+    {
         "merged": "/Users/ulrikkowalk/Annotator/app/build/intermediates/res/merged/debug/mipmap-mdpi/ic_launcher_round.png",
         "source": "/Users/ulrikkowalk/Annotator/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
     },

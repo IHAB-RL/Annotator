@@ -25,8 +25,8 @@
     <color name="abc_search_url_text_selected">@android:color/black</color>
     <color name="accent_material_dark">@color/material_deep_teal_200</color>
     <color name="accent_material_light">@color/material_deep_teal_500</color>
-    <color name="annoDarkerBlue">#7777FF</color>
-    <color name="annoDarkerBlueChecked">#3333BB</color>
+    <color name="annoDarkerBlue">#5577DD</color>
+    <color name="annoDarkerBlueChecked">#113399</color>
     <color name="annoLighterBlue">#AAAAFF</color>
     <color name="annoLighterBlueChecked">#6666DD</color>
     <color name="annoRed">#FF0000</color>
@@ -45,8 +45,11 @@
     <color name="bright_foreground_material_light">@android:color/black</color>
     <color name="button_material_dark">#ff5a595b</color>
     <color name="button_material_light">#ffd6d7d7</color>
-    <color name="colorAccent">#FFDD00</color>
+    <color name="colorAccent">#113399</color>
+    <color name="colorButtonNormal">#555555</color>
+    <color name="colorButtonPressed">#333333</color>
     <color name="colorButtonText">#FFFFFF</color>
+    <color name="colorLayoutStroke">#EEEEEE</color>
     <color name="colorPrimary">#555555</color>
     <color name="colorPrimaryDark">#DDDDDD</color>
     <color name="design_bottom_navigation_shadow_color">#14000000</color>
@@ -637,7 +640,8 @@
     <string name="category_8">NichtSprache PR_D</string>
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="hint_Dateneingabe">Dateneingabe hier</string>
+    <string name="hint_Dateneingabe_Proband">Dateneingabe Proband</string>
+    <string name="hint_Dateneingabe_Rater">Dateneingabe Rater</string>
     <string name="hint_Texteingabe_hier">Texteingabe hier</string>
     <string name="option_Hoergeraete_erfahren">Hörgeräte - erfahrener Hörgeräteträger</string>
     <string name="option_Hoergeraete_unerfahren">Hörgeräte - unerfahrener Hörgerätertäger</string>
@@ -674,8 +678,6 @@
     <string name="tab_New_Session">Neue Session</string>
     <string name="title_Charakterisierung_der_situation">Charakterisierung der Situation</string>
     <string name="title_Neue_Datenaufnahme">Neue Datenaufnahme</string>
-    <string name="toast_No_Data_kept">No data is kept in Practise Mode.</string>
-    <string name="toast_PleaseFillForms">Please fill in Information or choose \'Exercise\'</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>
@@ -694,6 +696,7 @@
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
     </style>
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
     <style name="Base.AlertDialog.AppCompat" parent="android:Widget">
