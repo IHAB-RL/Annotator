@@ -22,7 +22,7 @@ public class FragmentStatistics extends Fragment {
 
         View view = inflater.inflate(R.layout.tab_statistics, container, false);
 
-        histData = ((MainActivity) getActivity()).getHistData();
+        //histData = ((MainActivity) getActivity()).getHistData();
 
         float sumHistData = 0.00000001f;
         float maxHistData = 0.00000001f;

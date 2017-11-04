@@ -15,7 +15,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/title_Neue_Datenaufnahme"
-        android:textSize="@dimen/headLineFontSize"
+        android:textSize="@dimen/textSizeHeadLine"
         android:textStyle="bold"
         android:layout_marginBottom="20dp"/>
 
@@ -43,6 +43,10 @@
         android:layout_marginTop="@dimen/radioElementsMargin"
         android:layout_marginBottom="@dimen/radioElementsMargin"/>
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
     <EditText
         android:id="@+id/editTextProband"
         android:layout_width="wrap_content"
@@ -56,6 +60,17 @@
         android:layout_marginTop="@dimen/radioElementsMargin"
         android:layout_marginBottom="@dimen/radioElementsMargin"/>
 
+        <TextView
+            android:id="@+id/textViewFehlerhaftProband"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="fehlerhafte Eingabe"
+            android:textColor="@color/annoRed"
+            android:layout_gravity="center"
+            android:paddingStart="8dp"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
     <TextView
         android:id="@+id/textViewCodenummerRater"
         android:layout_width="wrap_content"
@@ -64,6 +79,9 @@
         android:layout_marginTop="@dimen/radioElementsMargin"
         android:layout_marginBottom="@dimen/radioElementsMargin"/>
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
     <EditText
         android:id="@+id/editTextRater"
@@ -77,6 +95,18 @@
         android:background="@android:color/white"
         android:layout_marginTop="@dimen/radioElementsMargin"
         android:layout_marginBottom="@dimen/radioElementsMargin"/>
+
+    <TextView
+        android:id="@+id/textViewFehlerhaftRater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fehlerhafte Eingabe"
+        android:textColor="@color/annoRed"
+        android:layout_gravity="center"
+        android:paddingStart="8dp"
+        android:visibility="invisible"/>
+</LinearLayout>
+
 
     <Button
         android:id="@+id/buttonBeginn"

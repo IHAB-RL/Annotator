@@ -12,5 +12,11 @@
     <dimen name="radioElementsMargin">8dp</dimen>
     <dimen name="radioContainerPadding">16dp</dimen>
     <dimen name="hLineWidth">1dp</dimen>
-    <dimen name="headLineFontSize">20sp</dimen>
+
+    <dimen name="radioButtonMarginTop">6dp</dimen>
+    <dimen name="radioButtonMarginBottom">6dp</dimen>
+
+    <dimen name="textSizeHeadLine">30sp</dimen>
+    <dimen name="textSizeRadioButtons">20sp</dimen>
+    <dimen name="testSizeSubHeadLine">18sp</dimen>
 </resources>

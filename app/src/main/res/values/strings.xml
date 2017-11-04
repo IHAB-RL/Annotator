@@ -3,10 +3,10 @@
     <string name="action_settings">Settings</string>
     <string name="section_format">Hello World from section: %1$d</string>
 
-    <string name="tab_New_Session">New Session</string>
+    <string name="tab_New_Session">Neue Session</string>
     <string name="tab_Annotation">Annotation</string>
-    <string name="tab_Finalise">Finalise</string>
-    <string name="tab_Statistics">Statistics</string>
+    <string name="tab_Finalise">Abschließen</string>
+    <!--<string name="tab_Statistics">Statistics</string>-->
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_Charakterisierung_der_situation">Charakterisierung der Situation</string>
@@ -36,9 +36,8 @@
     <string name="subtitle_Laustaerke_der_Umgebungsgeraeusche">Lautstärke der Umgebungsgeräusche</string>
     <string name="hint_Dateneingabe">Dateneingabe hier</string>
     <string name="button_Ubeung">Übung</string>
-    <string name="button_Messung">Messung</string>
-    <string name="button_Beginn">Beginn</string>
-    <string name="toast_No_Data_kept">No data is kept in Practise Mode.</string>
+    <string name="button_Messung">Experiment</string>
+    <string name="button_Beginn">Start</string>
 
     <string name="category_1">F-t-F DP_N PR_N</string>
     <string name="category_2">F-t-F DP_N PR_D</string>
@@ -51,5 +50,8 @@
     <string name="button_eraseLast">Letzten Eintrag löschen</string>
 
     <string name="output_Charakterisierung">Charakterisierung</string>
+
+    <string name="toast_PleaseFillForms">Please fill in Information or choose \'Exercise\'</string>
+    <string name="toast_No_Data_kept">No data is kept in Practise Mode.</string>
 
 </resources>

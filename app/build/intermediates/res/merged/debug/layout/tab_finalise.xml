@@ -25,13 +25,14 @@
             android:layout_height="match_parent"
             android:layout_marginBottom="20dp"
             android:text="@string/title_Charakterisierung_der_situation"
-            android:textSize="@dimen/headLineFontSize"
+            android:textSize="@dimen/textSizeHeadLine"
             android:textStyle="bold"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/radioElementsMargin"
+            android:textSize="@dimen/testSizeSubHeadLine"
             android:text="@string/subtitle_Lichtverh_ltnisse"/>
 
         <RadioGroup
@@ -42,26 +43,41 @@
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="@dimen/textSizeRadioButtons"
+                android:layout_marginTop="@dimen/radioButtonMarginTop"
+                android:layout_marginBottom="@dimen/radioButtonMarginTop"
                 android:text="@string/option_sehr_hell"/>
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="@dimen/textSizeRadioButtons"
+                android:layout_marginTop="@dimen/radioButtonMarginTop"
+                android:layout_marginBottom="@dimen/radioButtonMarginTop"
                 android:text="@string/option_eher_hell"/>
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="@dimen/textSizeRadioButtons"
+                android:layout_marginTop="@dimen/radioButtonMarginTop"
+                android:layout_marginBottom="@dimen/radioButtonMarginTop"
                 android:text="@string/option_mittel_angenehmes_Tageslicht"/>
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="@dimen/textSizeRadioButtons"
+                android:layout_marginTop="@dimen/radioButtonMarginTop"
+                android:layout_marginBottom="@dimen/radioButtonMarginTop"
                 android:text="@string/option_eher_dunkel"/>
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="@dimen/textSizeRadioButtons"
+                android:layout_marginTop="@dimen/radioButtonMarginTop"
+                android:layout_marginBottom="@dimen/radioButtonMarginTop"
                 android:text="@string/option_sehr_dunkel"/>
 
         </RadioGroup>
@@ -85,6 +101,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/radioElementsMargin"
         android:layout_marginTop="@dimen/radioElementsMargin"
+        android:textSize="@dimen/testSizeSubHeadLine"
         android:text="@string/subtitle_Laustaerke_der_Umgebungsgeraeusche"/>
 
     <RadioGroup
@@ -95,26 +112,41 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="@dimen/textSizeRadioButtons"
+            android:layout_marginTop="@dimen/radioButtonMarginTop"
+            android:layout_marginBottom="@dimen/radioButtonMarginTop"
             android:text="@string/option_sehr_laut"/>
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="@dimen/textSizeRadioButtons"
+            android:layout_marginTop="@dimen/radioButtonMarginTop"
+            android:layout_marginBottom="@dimen/radioButtonMarginTop"
             android:text="@string/option_laut"/>
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="@dimen/textSizeRadioButtons"
+            android:layout_marginTop="@dimen/radioButtonMarginTop"
+            android:layout_marginBottom="@dimen/radioButtonMarginTop"
             android:text="@string/option_mittel"/>
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="@dimen/textSizeRadioButtons"
+            android:layout_marginTop="@dimen/radioButtonMarginTop"
+            android:layout_marginBottom="@dimen/radioButtonMarginTop"
             android:text="@string/option_leise"/>
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="@dimen/textSizeRadioButtons"
+            android:layout_marginTop="@dimen/radioButtonMarginTop"
+            android:layout_marginBottom="@dimen/radioButtonMarginTop"
             android:text="@string/option_sehr_leise"/>
 
     </RadioGroup>
@@ -138,6 +170,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/radioElementsMargin"
         android:layout_marginTop="@dimen/radioElementsMargin"
+        android:textSize="@dimen/testSizeSubHeadLine"
         android:text="@string/subtitle_Raumbeschreibung"/>
 
     <RadioGroup
@@ -148,16 +181,25 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="@dimen/textSizeRadioButtons"
+            android:layout_marginTop="@dimen/radioButtonMarginTop"
+            android:layout_marginBottom="@dimen/radioButtonMarginTop"
             android:text="@string/option_kleiner_beengter_Raum"/>
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="@dimen/textSizeRadioButtons"
+            android:layout_marginTop="@dimen/radioButtonMarginTop"
+            android:layout_marginBottom="@dimen/radioButtonMarginTop"
             android:text="@string/option_angemessene_Raumgroesse"/>
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="@dimen/textSizeRadioButtons"
+            android:layout_marginTop="@dimen/radioButtonMarginTop"
+            android:layout_marginBottom="@dimen/radioButtonMarginTop"
             android:text="@string/option_grosser_geraeumiger_Raum"/>
 
     </RadioGroup>
@@ -181,6 +223,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/radioElementsMargin"
         android:layout_marginTop="@dimen/radioElementsMargin"
+        android:textSize="@dimen/testSizeSubHeadLine"
         android:text="@string/subtitle_Hoersituation_des_Probanden"/>
 
     <RadioGroup
@@ -191,16 +234,25 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="@dimen/textSizeRadioButtons"
+            android:layout_marginTop="@dimen/radioButtonMarginTop"
+            android:layout_marginBottom="@dimen/radioButtonMarginTop"
             android:text="@string/option_keine_Hoergeraete"/>
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="@dimen/textSizeRadioButtons"
+            android:layout_marginTop="@dimen/radioButtonMarginTop"
+            android:layout_marginBottom="@dimen/radioButtonMarginTop"
             android:text="@string/option_Hoergeraete_unerfahren"/>
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="@dimen/textSizeRadioButtons"
+            android:layout_marginTop="@dimen/radioButtonMarginTop"
+            android:layout_marginBottom="@dimen/radioButtonMarginTop"
             android:text="@string/option_Hoergeraete_erfahren"/>
 
     </RadioGroup>
@@ -224,6 +276,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/radioElementsMargin"
             android:layout_marginTop="@dimen/radioElementsMargin"
+            android:textSize="@dimen/testSizeSubHeadLine"
             android:text="@string/subtitle_Weitere_Angaben"/>
 
         <EditText

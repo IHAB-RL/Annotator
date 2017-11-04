@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         annotationKeeper.setTimeStart();
         fileWriter = new FileWriter();
 
-        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
     }
 
     private void setupViewPager(ViewPager viewPager) {
@@ -64,12 +64,12 @@ public class MainActivity extends AppCompatActivity {
             mViewPager.setCurrentItem(0);
             fileWriter.saveToFile(this, annotationKeeper.getFileName(),
                     annotationKeeper.flushResults());
-            buildStatistics();
+            //buildStatistics();
             annotationKeeper.reset();
         } else {
             Toast.makeText(this, R.string.toast_No_Data_kept, Toast.LENGTH_SHORT).show();
             //mViewPager.setCurrentItem(0);
-            buildStatistics();
+            //buildStatistics();
             annotationKeeper.reset();
         }
     }
@@ -93,6 +93,9 @@ public class MainActivity extends AppCompatActivity {
         // Back button disabled
     }
 
+
+
+    /*
     private void buildStatistics() {
         if (mSectionsPagerAdapter.getCount() > 3) {
             mViewPager.setAdapter(null);
@@ -116,4 +119,5 @@ public class MainActivity extends AppCompatActivity {
         AnnotationStatistics Statistics = new AnnotationStatistics();
         return Statistics.getHist(annotationKeeper.getListOfAnnotations());
     }
+    */
 }
