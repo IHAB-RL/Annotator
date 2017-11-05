@@ -55,4 +55,14 @@
 
     <string name="output_Charakterisierung">Charakterisierung</string>
 
+    <string name="result_ID_Rater">ID Rater</string>
+    <string name="result_ID_Proband">ID Proband</string>
+    <string name="result_Situation">Situation</string>
+    <string name="result_Gesamtanzahl">Gesamtanzahl</string>
+    <string name="result_Haeufigkeit">Haeufigkeit</string>
+    <string name="result_Zusatzinformationen">Zusatzinformationen</string>
+    <string name="result_freiText">Freitext</string>
+    <string name="result_Zeit_Start">Zeit Start</string>
+    <string name="result_Zeit_Ende">Zeit Ende</string>
+
 </resources>

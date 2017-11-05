@@ -1,9 +1,6 @@
 package com.tdg.android.annotator;
 
 import java.util.ArrayList;
-import java.util.Date;
-
-import static android.R.attr.value;
 
 /**
  * Created by ulrikkowalk on 29.10.17.

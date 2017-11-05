@@ -1,11 +1,10 @@
 package com.tdg.android.annotator;
 
-import android.util.Log;
-
-import java.util.ArrayList;
-import java.util.Locale;
+import android.content.Context;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Locale;
 import java.util.TimeZone;
 
 public class AnnotationKeeper {
@@ -15,11 +14,16 @@ public class AnnotationKeeper {
     private String ID_RATER, ID_SUBJECT, ADDITIONAL_DATA, FREITEXT;
     private SimpleDateFormat DATE_FORMAT;
     private String TIME_START, TIME_END;
-    private boolean isUebung;
+    private boolean isUebung = false;
+    private AnnotationStatistics annotationStatistics;
+    private int[] histogram = new int[8];
+    private Context context;
 
-    AnnotationKeeper() {
+    AnnotationKeeper(Context ctx) {
+        context = ctx;
         reset();
         DATE_FORMAT = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss", Locale.ROOT);
+        annotationStatistics = new AnnotationStatistics();
     }
 
     void setRaterID(String string) {
@@ -50,6 +54,22 @@ public class AnnotationKeeper {
         isUebung = uebung;
     }
 
+    private String uebungOderMessung() {
+        if (isUebung) {
+            return "Uebung";
+        } else {
+            return "Messung";
+        }
+    }
+
+    private String getHistogram() {
+        histogram = annotationStatistics.getHist(listOfAnnotations);
+        String histString = "" + histogram[0] + ", " + histogram[1] + ", " + histogram[2] + ", "
+                + histogram[3] + ", " + histogram[4] + ", " + histogram[5] + ", " + histogram[6] + ", "
+                + histogram[7];
+        return histString;
+    }
+
     public String getRaterID() {
         return ID_RATER;
     }
@@ -75,44 +95,48 @@ public class AnnotationKeeper {
     String flushResults() {
         String streamOfAnnotations = "";
 
-        streamOfAnnotations += "Rater ID: ";
+        streamOfAnnotations += context.getString(R.string.result_ID_Rater) + ": ";
         streamOfAnnotations += ID_RATER;
         streamOfAnnotations += "\n";
-        streamOfAnnotations += "Subject ID: ";
+        streamOfAnnotations += context.getString(R.string.result_ID_Proband) + ": ";
         streamOfAnnotations += ID_SUBJECT;
         streamOfAnnotations += "\n";
-        streamOfAnnotations += "Number of Ratings: ";
-        streamOfAnnotations += ""+getNumberOfAnnotations();
+        streamOfAnnotations += context.getString(R.string.result_Situation) + ": ";
+        streamOfAnnotations += uebungOderMessung();
         streamOfAnnotations += "\n";
-        streamOfAnnotations += "Additional Data:";
+        streamOfAnnotations += context.getString(R.string.result_Gesamtanzahl) + ": ";
+        streamOfAnnotations += "" + getNumberOfAnnotations();
         streamOfAnnotations += "\n";
+        streamOfAnnotations += context.getString(R.string.result_Haeufigkeit) + ": ";
+        streamOfAnnotations += getHistogram();
+        streamOfAnnotations += "\n";
+        streamOfAnnotations += context.getString(R.string.result_Zusatzinformationen) + ": ";
         streamOfAnnotations += ADDITIONAL_DATA;
         streamOfAnnotations += "\n";
-        streamOfAnnotations += "Free Text:";
+        streamOfAnnotations += context.getString(R.string.result_freiText) + ": ";
         streamOfAnnotations += FREITEXT;
         streamOfAnnotations += "\n";
-        streamOfAnnotations += "Time Start: ";
+        streamOfAnnotations += context.getString(R.string.result_Zeit_Start) + ": ";
         streamOfAnnotations += TIME_START;
         streamOfAnnotations += "\n";
-        streamOfAnnotations += "Time End: ";
+        streamOfAnnotations += context.getString(R.string.result_Zeit_Ende) + ": ";
         streamOfAnnotations += TIME_END;
         streamOfAnnotations += "\n";
         streamOfAnnotations += "-----------------------------";
         streamOfAnnotations += "\n";
 
-        for (DateAndAnnotation annotation : listOfAnnotations) {
-            streamOfAnnotations += annotation.date;
-            streamOfAnnotations += ": " + annotation.annotation;
+        for (int iAnnotation = 0; iAnnotation < listOfAnnotations.size(); iAnnotation++) {
+            streamOfAnnotations += ""+iAnnotation+1+", ";
+            streamOfAnnotations += listOfAnnotations.get(iAnnotation).date;
+            streamOfAnnotations += ", " + listOfAnnotations.get(iAnnotation).annotation;
             streamOfAnnotations += "\n";
         }
-
-        streamOfAnnotations += "-----------------------------";
 
         return streamOfAnnotations;
     }
 
     String getFileName() {
-        return generateTimeNowUTC()+"_"+ID_SUBJECT+"_"+ID_RATER+".txt";
+        return generateTimeNowUTC() + "_" + ID_RATER + "_" + ID_SUBJECT + ".csv";
     }
 
     int getNumberOfAnnotations() {

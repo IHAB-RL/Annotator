@@ -1,4 +1,4 @@
-#Sat Nov 04 16:33:29 CET 2017
+#Sun Nov 05 01:32:22 CET 2017
 base.0=/Users/ulrikkowalk/Annotator/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_67577536006d982ae32e6bf9f64daa04e82e0cf3
 renamed.1=classes2.dex
 renamed.0=classes.dex

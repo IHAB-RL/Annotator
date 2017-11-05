@@ -26,6 +26,11 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
+        <View
+            android:layout_width="12dp"
+            android:layout_height="0dp"
+            android:visibility="invisible"></View>
+
     <Button
         android:id="@+id/buttonUebung"
         android:layout_width="wrap_content"
@@ -40,6 +45,16 @@
         android:layout_height="wrap_content"
         android:text="@string/button_Messung"
         android:layout_margin="@dimen/radioElementsMargin"/>
+
+        <TextView
+            android:id="@+id/textViewKeinButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="!"
+            android:textColor="@color/annoRed"
+            android:layout_gravity="center"
+            android:paddingStart="8dp"
+            android:visibility="invisible"/>
 
     </LinearLayout>
 

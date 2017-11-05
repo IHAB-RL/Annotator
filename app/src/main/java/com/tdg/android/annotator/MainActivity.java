@@ -1,6 +1,5 @@
 package com.tdg.android.annotator;
 
-import android.app.FragmentManager;
 import android.content.pm.ActivityInfo;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
@@ -9,10 +8,6 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
-import android.widget.Toast;
-
-import static android.R.attr.data;
-
 
 public class MainActivity extends AppCompatActivity implements Communicator{
 
@@ -21,8 +16,7 @@ public class MainActivity extends AppCompatActivity implements Communicator{
     public NoScrollViewPager mViewPager;
     private AnnotationKeeper annotationKeeper;
     private FileWriter fileWriter;
-    Communicator communicator;
-
+    private boolean wasTouched = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,32 +26,29 @@ public class MainActivity extends AppCompatActivity implements Communicator{
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
         mViewPager = (NoScrollViewPager) findViewById(R.id.container);
         setupViewPager(mViewPager);
-        mViewPager.setOffscreenPageLimit(1);
+        mViewPager.setOffscreenPageLimit(3);
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(mViewPager);
 
-        annotationKeeper = new AnnotationKeeper();
+        annotationKeeper = new AnnotationKeeper(this);
         fileWriter = new FileWriter();
 
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
-
-
     }
 
-    //@Override public void eventReset() {
-        //FragmentManager manager = getFragmentManager();
-        //FragmentNewSession fragmentNewSession = (FragmentNewSession) getFragmentManager().findFragmentById(R.id.fragment_newSession)
-        //fragmentNewSession.reset();
-    //}
-
-
-
-    /*public void eventReset(){ // Code that defines the method
-
-        }*/
+    @Override
+    public void onResume() {
+        mViewPager.setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_STABLE
+                | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
+                | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+                | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+                | View.SYSTEM_UI_FLAG_FULLSCREEN
+                | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
+        super.onResume();
+    }
 
     private void setupViewPager(ViewPager viewPager) {
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
@@ -78,7 +69,6 @@ public class MainActivity extends AppCompatActivity implements Communicator{
         annotationKeeper.setUebung(isUebung);
         annotationKeeper.setTimeStart();
         mViewPager.setCurrentItem(1);
-
     }
 
     @Override
@@ -89,24 +79,24 @@ public class MainActivity extends AppCompatActivity implements Communicator{
         fileWriter.saveToFile(this, annotationKeeper.getFileName(),
                 annotationKeeper.flushResults());
         annotationKeeper.reset();
-
-
-
-
-
+        ((FragmentNewSession) mSectionsPagerAdapter.getFragmentFromPos(0)).reset();
         mViewPager.setCurrentItem(0);
     }
 
     @Override
     public void addAnnotation(int code) {
-        annotationKeeper.addAnnotation(code);
-        Log.i(LOG, "New annotation ["+annotationKeeper.getNumberOfAnnotations()+"]: "+code);
+        if (wasTouched) {
+            annotationKeeper.addAnnotation(code);
+            Log.i(LOG, "New annotation [" + annotationKeeper.getNumberOfAnnotations() + "]: " + code);
+        }
     }
 
     @Override
     public void removeLastAnnotation() {
-        annotationKeeper.removeLastAnnotation();
-        Log.i(LOG, "Annotation removed ["+annotationKeeper.getNumberOfAnnotations()+"]");
+        if (wasTouched) {
+            annotationKeeper.removeLastAnnotation();
+            Log.i(LOG, "Annotation removed [" + annotationKeeper.getNumberOfAnnotations() + "]");
+        }
     }
 
     @Override
@@ -114,31 +104,11 @@ public class MainActivity extends AppCompatActivity implements Communicator{
         // Back button disabled
     }
 
-
-
-    /*
-    private void buildStatistics() {
-        if (mSectionsPagerAdapter.getCount() > 3) {
-            mViewPager.setAdapter(null);
-            mSectionsPagerAdapter.removeFragment(3);
-            mSectionsPagerAdapter.addFragment(new FragmentStatistics(),
-                    getResources().getString(R.string.tab_Statistics));
-            mViewPager.setOffscreenPageLimit(3);
-            mSectionsPagerAdapter.notifyDataSetChanged();
-            mViewPager.setAdapter(mSectionsPagerAdapter);
-        } else {
-            mViewPager.setAdapter(null);
-            mSectionsPagerAdapter.addFragment(new FragmentStatistics(),
-                    getResources().getString(R.string.tab_Statistics));
-            mViewPager.setOffscreenPageLimit(3);
-            mSectionsPagerAdapter.notifyDataSetChanged();
-            mViewPager.setAdapter(mSectionsPagerAdapter);
-        }
+    @Override
+    public void setWasTouched(boolean touched) {
+        wasTouched = touched;
+        Log.i(LOG, "Was touched: "+touched);
     }
 
-    public int[] getHistData() {
-        AnnotationStatistics Statistics = new AnnotationStatistics();
-        return Statistics.getHist(annotationKeeper.getListOfAnnotations());
-    }
-    */
+
 }

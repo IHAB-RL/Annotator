@@ -6,11 +6,13 @@ package com.tdg.android.annotator;
 
 public interface Communicator{
 
-    public void beginAnnotation(String raterId, String subjectId, boolean isUebung);
+    void beginAnnotation(String raterId, String subjectId, boolean isUebung);
 
-    public void finishAnnotation(String charakterisierung, String freiText);
+    void finishAnnotation(String charakterisierung, String freiText);
 
-    public void addAnnotation(int Code);
+    void addAnnotation(int Code);
 
-    public void removeLastAnnotation();
+    void removeLastAnnotation();
+
+    void setWasTouched(boolean wasTouched);
 }

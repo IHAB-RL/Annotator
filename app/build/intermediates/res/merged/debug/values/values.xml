@@ -665,6 +665,15 @@
     <string name="path_password_eye_mask_strike_through" translatable="false">M2,4.27 L19.73,22 L22.27,19.46 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="path_password_eye_mask_visible" translatable="false">M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="path_password_strike_through" translatable="false">M3.27,4.27 L19.74,20.74</string>
+    <string name="result_Gesamtanzahl">Gesamtanzahl</string>
+    <string name="result_Haeufigkeit">Haeufigkeit</string>
+    <string name="result_ID_Proband">ID Proband</string>
+    <string name="result_ID_Rater">ID Rater</string>
+    <string name="result_Situation">Situation</string>
+    <string name="result_Zeit_Ende">Zeit Ende</string>
+    <string name="result_Zeit_Start">Zeit Start</string>
+    <string name="result_Zusatzinformationen">Zusatzinformationen</string>
+    <string name="result_freiText">Freitext</string>
     <string name="search_menu_title">Search</string>
     <string name="section_format">Hello World from section: %1$d</string>
     <string name="status_bar_notification_info_overflow">999+</string>

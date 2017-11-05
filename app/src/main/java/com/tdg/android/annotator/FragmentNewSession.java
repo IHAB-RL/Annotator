@@ -22,10 +22,10 @@ public class FragmentNewSession extends Fragment implements Communicator{
     private String LOG = "FragmentNewSession";
     private Button buttonUebung, buttonMessung, buttonBeginn;
     private TextView textViewCodenummerProband, textViewCodenummerRater, textViewFehlerhaftProband,
-        textViewFehlerhaftRater;
+        textViewFehlerhaftRater, textViewKeinButton;
     private EditText editTextProband, editTextRater;
     private String raterID = "", subjectID = "";
-    private boolean isUebung = false;
+    private boolean isUebung = false, wasTouched = false;
     Communicator communicator;
 
     @Nullable
@@ -42,6 +42,7 @@ public class FragmentNewSession extends Fragment implements Communicator{
         textViewCodenummerProband = (TextView) view.findViewById(R.id.textViewCodenummerProband);
         textViewCodenummerRater = (TextView) view.findViewById(R.id.textViewCodenummerRater);
 
+        textViewKeinButton = (TextView) view.findViewById(R.id.textViewKeinButton);
         textViewFehlerhaftProband = (TextView) view.findViewById(R.id.textViewFehlerhaftProband);
         textViewFehlerhaftRater = (TextView) view.findViewById(R.id.textViewFehlerhaftRater);
 
@@ -53,11 +54,12 @@ public class FragmentNewSession extends Fragment implements Communicator{
         buttonUebung.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (!isUebung) {
+                if (!isUebung || !wasTouched) {
                     buttonUebung.getBackground().setColorFilter(ContextCompat.getColor(getActivity(),
                             R.color.colorButtonPressed), PorterDuff.Mode.OVERLAY);
                     buttonMessung.getBackground().clearColorFilter();
                     isUebung = true;
+                    wasTouched = true;
                 }
             }
         });
@@ -65,11 +67,12 @@ public class FragmentNewSession extends Fragment implements Communicator{
         buttonMessung.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (isUebung) {
+                if (isUebung || !wasTouched) {
                     buttonMessung.getBackground().setColorFilter(ContextCompat.getColor(getActivity(),
                             R.color.colorButtonPressed), PorterDuff.Mode.OVERLAY);
                     buttonUebung.getBackground().clearColorFilter();
                     isUebung = false;
+                    wasTouched = true;
                 }
             }
         });
@@ -83,14 +86,12 @@ public class FragmentNewSession extends Fragment implements Communicator{
                     disableButtonUebung();
                     disableButtonMessung();
                     disableButtonStart();
+                    setWasTouched(true);
 
                     subjectID = editTextProband.getText().toString();
                     raterID = editTextRater.getText().toString();
 
                     beginAnnotation(raterID, subjectID, isUebung);
-
-                    //((MainActivity) getActivity()).beginAnnotation(raterID, subjectID, isUebung);
-                    //((MainActivity) getActivity()).mViewPager.setCurrentItem(1);
                 }
             }
         });
@@ -163,18 +164,34 @@ public class FragmentNewSession extends Fragment implements Communicator{
             textViewFehlerhaftProband.setVisibility(View.INVISIBLE);
         }
 
+        if (!wasTouched) {
+            textViewKeinButton.setVisibility(View.VISIBLE);
+            result = false;
+        } else {
+            textViewKeinButton.setVisibility(View.INVISIBLE);
+        }
+
         return result;
+    }
+
+    private void resetInputFields() {
+        editTextProband.setText("");
+        editTextRater.setText("");
+        raterID = "";
+        subjectID = "";
     }
 
     public void reset() {
 
         isUebung = false;
+        wasTouched = false;
         buttonMessung.getBackground().clearColorFilter();
         buttonUebung.getBackground().clearColorFilter();
         enableButtonStart();
         enableButtonMessung();
         enableButtonUebung();
         enableInputFields();
+        resetInputFields();
     }
 
     /** Interface Methods **/
@@ -188,5 +205,9 @@ public class FragmentNewSession extends Fragment implements Communicator{
     public void addAnnotation(int Code){}
 
     public void removeLastAnnotation(){}
+
+    public void setWasTouched(boolean touched) {
+        communicator.setWasTouched(touched);
+    }
 
 }

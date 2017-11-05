@@ -5,19 +5,12 @@ import android.os.Bundle;
 import android.support.annotation.IdRes;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioGroup;
-import android.widget.Toast;
-
-import java.util.Collections;
-
-import static android.R.id.button1;
-
 
 public class FragmentFinalise extends Fragment implements Communicator {
 
@@ -41,6 +34,7 @@ public class FragmentFinalise extends Fragment implements Communicator {
             @Override
             public void onClick(View v) {
                 gatherResults();
+                setWasTouched(false);
             }
         });
 
@@ -91,7 +85,6 @@ public class FragmentFinalise extends Fragment implements Communicator {
                 resRaumbeschreibung+", "+resHoersituation;
 
         finishAnnotation(charakterisierung, stringFreiText);
-        //((MainActivity) getActivity()).finishAnnotation(charakterisierung, stringFreiText);
     }
 
     private void getFreiText() {
@@ -113,4 +106,8 @@ public class FragmentFinalise extends Fragment implements Communicator {
     public void addAnnotation(int Code){}
 
     public void removeLastAnnotation(){}
+
+    public void setWasTouched(boolean touched){
+        communicator.setWasTouched(touched);
+    }
 }
