@@ -37,6 +37,24 @@ public class MainActivity extends AppCompatActivity implements Communicator{
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
+        mViewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+            }
+
+            @Override
+            public void onPageSelected(int position) {
+                if ((position == 2) && (wasTouched)) {
+                    annotationKeeper.setTimeEnd();
+                    Log.i(LOG, "Endzeitpunkt wurde gesetzt.");
+                }
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
+            }
+        });
     }
 
     @Override
@@ -73,14 +91,15 @@ public class MainActivity extends AppCompatActivity implements Communicator{
 
     @Override
     public void finishAnnotation(String results, String freitext) {
-        annotationKeeper.setAdditionalData(results);
-        annotationKeeper.setFreiText(freitext);
-        annotationKeeper.setTimeEnd();
-        fileWriter.saveToFile(this, annotationKeeper.getFileName(),
-                annotationKeeper.flushResults());
-        annotationKeeper.reset();
-        ((FragmentNewSession) mSectionsPagerAdapter.getFragmentFromPos(0)).reset();
-        mViewPager.setCurrentItem(0);
+        if (wasTouched) {
+            annotationKeeper.setAdditionalData(results);
+            annotationKeeper.setFreiText(freitext);
+            fileWriter.saveToFile(this, annotationKeeper.getFileName(),
+                    annotationKeeper.flushResults());
+            annotationKeeper.reset();
+            ((FragmentNewSession) mSectionsPagerAdapter.getFragmentFromPos(0)).reset();
+            mViewPager.setCurrentItem(0);
+        }
     }
 
     @Override
@@ -107,7 +126,7 @@ public class MainActivity extends AppCompatActivity implements Communicator{
     @Override
     public void setWasTouched(boolean touched) {
         wasTouched = touched;
-        Log.i(LOG, "Was touched: "+touched);
+        ((FragmentFinalise) mSectionsPagerAdapter.getFragmentFromPos(2)).setTouched(wasTouched);
     }
 
 

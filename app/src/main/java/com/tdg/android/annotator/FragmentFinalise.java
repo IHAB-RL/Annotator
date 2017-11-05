@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.annotation.IdRes;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,6 +23,7 @@ public class FragmentFinalise extends Fragment implements Communicator {
     private String stringFreiText;
     private EditText freiText;
     private Communicator communicator;
+    private boolean wasTouched = false;
 
     @Nullable
     @Override
@@ -33,8 +35,10 @@ public class FragmentFinalise extends Fragment implements Communicator {
         buttonFinalise.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                gatherResults();
-                setWasTouched(false);
+                if (wasTouched) {
+                    gatherResults();
+                    setWasTouched(false);
+                }
             }
         });
 
@@ -93,6 +97,10 @@ public class FragmentFinalise extends Fragment implements Communicator {
 
     private String formatText(String string) {
         return string.replaceAll(System.lineSeparator(), " ");
+    }
+
+    public void setTouched(boolean touched) {
+        wasTouched = touched;
     }
 
     /** Interface Methods **/

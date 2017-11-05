@@ -40,12 +40,12 @@
         "source": "/Users/ulrikkowalk/.android/build-cache/9a643dbcf97b90e10a960b4e8cc33420d9206549/output/res/drawable-hdpi-v4/abc_list_selector_disabled_holo_light.9.png"
     },
     {
-        "merged": "/Users/ulrikkowalk/Annotator/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_list_divider_mtrl_alpha.9.png",
-        "source": "/Users/ulrikkowalk/.android/build-cache/9a643dbcf97b90e10a960b4e8cc33420d9206549/output/res/drawable-hdpi-v4/abc_list_divider_mtrl_alpha.9.png"
-    },
-    {
         "merged": "/Users/ulrikkowalk/Annotator/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/notify_panel_notification_icon_bg.png",
         "source": "/Users/ulrikkowalk/.android/build-cache/9a643dbcf97b90e10a960b4e8cc33420d9206549/output/res/drawable-hdpi-v4/notify_panel_notification_icon_bg.png"
+    },
+    {
+        "merged": "/Users/ulrikkowalk/Annotator/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_list_divider_mtrl_alpha.9.png",
+        "source": "/Users/ulrikkowalk/.android/build-cache/9a643dbcf97b90e10a960b4e8cc33420d9206549/output/res/drawable-hdpi-v4/abc_list_divider_mtrl_alpha.9.png"
     },
     {
         "merged": "/Users/ulrikkowalk/Annotator/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_list_selector_disabled_holo_dark.9.png",

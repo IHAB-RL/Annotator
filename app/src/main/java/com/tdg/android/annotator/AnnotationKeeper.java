@@ -14,6 +14,7 @@ public class AnnotationKeeper {
     private String ID_RATER, ID_SUBJECT, ADDITIONAL_DATA, FREITEXT;
     private SimpleDateFormat DATE_FORMAT;
     private String TIME_START, TIME_END;
+    private String[] categories = new String[8];
     private boolean isUebung = false;
     private AnnotationStatistics annotationStatistics;
     private int[] histogram = new int[8];
@@ -24,6 +25,7 @@ public class AnnotationKeeper {
         reset();
         DATE_FORMAT = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss", Locale.ROOT);
         annotationStatistics = new AnnotationStatistics();
+        categories = context.getResources().getStringArray(R.array.categories);
     }
 
     void setRaterID(String string) {
@@ -126,9 +128,9 @@ public class AnnotationKeeper {
         streamOfAnnotations += "\n";
 
         for (int iAnnotation = 0; iAnnotation < listOfAnnotations.size(); iAnnotation++) {
-            streamOfAnnotations += ""+iAnnotation+1+", ";
+            streamOfAnnotations += ""+(iAnnotation+1)+", ";
             streamOfAnnotations += listOfAnnotations.get(iAnnotation).date;
-            streamOfAnnotations += ", " + listOfAnnotations.get(iAnnotation).annotation;
+            streamOfAnnotations += ", " + categories[listOfAnnotations.get(iAnnotation).annotation-1];
             streamOfAnnotations += "\n";
         }
 
