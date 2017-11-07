@@ -13,26 +13,60 @@
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_weight="0.2">
+        android:layout_weight="0.2"
+        android:orientation="vertical">
 
-            <Button
-                android:id="@+id/buttonAnnotation1"
+        <RelativeLayout
+            android:id="@+id/buttonAnnotation1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/button_ripple_dark_blue">
+
+            <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:src="@drawable/f_t_f_dp_n_pr_n" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingBottom="10dp"
                 android:text="@string/category_1"
                 android:textColor="@color/colorButtonText"
-                android:background="@drawable/button_ripple_dark_blue"
-                android:layout_weight="0.5"/>
+                android:textSize="@dimen/textSizeRadioButtons"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true" />
 
-            <Button
-                android:id="@+id/buttonAnnotation2"
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/buttonAnnotation2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/button_ripple_dark_blue">
+
+            <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:src="@drawable/f_t_f_dp_n_pr_d" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingBottom="10dp"
                 android:text="@string/category_2"
                 android:textColor="@color/colorButtonText"
-                android:background="@drawable/button_ripple_dark_blue"
-                android:layout_weight="0.5"/>
+                android:textSize="@dimen/textSizeRadioButtons"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>
 
     </LinearLayout>
 
@@ -42,23 +76,57 @@
         android:orientation="vertical"
         android:layout_weight="0.2">
 
-            <Button
-                android:id="@+id/buttonAnnotation3"
+        <RelativeLayout
+            android:id="@+id/buttonAnnotation3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/button_ripple_dark_blue">
+
+            <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:src="@drawable/f_t_f_dp_d_pr_n" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingBottom="10dp"
                 android:text="@string/category_3"
                 android:textColor="@color/colorButtonText"
-                android:background="@drawable/button_ripple_dark_blue"
-                android:layout_weight="0.5"/>
+                android:textSize="@dimen/textSizeRadioButtons"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true" />
 
-            <Button
-                android:id="@+id/buttonAnnotation4"
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/buttonAnnotation4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/button_ripple_dark_blue">
+
+            <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:src="@drawable/f_t_f_dp_d_pr_d" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingBottom="10dp"
                 android:text="@string/category_4"
                 android:textColor="@color/colorButtonText"
-                android:background="@drawable/button_ripple_dark_blue"
-                android:layout_weight="0.5"/>
+                android:textSize="@dimen/textSizeRadioButtons"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>
 
         </LinearLayout>
 
@@ -68,23 +136,57 @@
         android:orientation="vertical"
         android:layout_weight="0.2">
 
-        <Button
+        <RelativeLayout
             android:id="@+id/buttonAnnotation5"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:text="@string/category_5"
-            android:textColor="@color/colorButtonText"
-            android:background="@drawable/button_ripple_light_blue"
-            android:layout_weight="0.5"/>
+            android:layout_weight="0.5"
+            android:background="@drawable/button_ripple_light_blue">
 
-        <Button
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:src="@drawable/gruppe_pr_n" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingBottom="10dp"
+                android:text="@string/category_5"
+                android:textColor="@color/colorButtonText"
+                android:textSize="@dimen/textSizeRadioButtons"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
             android:id="@+id/buttonAnnotation6"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:text="@string/category_6"
-            android:textColor="@color/colorButtonText"
-            android:background="@drawable/button_ripple_light_blue"
-            android:layout_weight="0.5"/>
+            android:layout_weight="0.5"
+            android:background="@drawable/button_ripple_light_blue">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:src="@drawable/gruppe_pr_d" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingBottom="10dp"
+                android:text="@string/category_6"
+                android:textColor="@color/colorButtonText"
+                android:textSize="@dimen/textSizeRadioButtons"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>
 
         </LinearLayout>
 
@@ -94,23 +196,57 @@
         android:orientation="vertical"
         android:layout_weight="0.2">
 
-        <Button
+        <RelativeLayout
             android:id="@+id/buttonAnnotation7"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:text="@string/category_7"
-            android:textColor="@color/colorButtonText"
-            android:background="@drawable/button_ripple_yellow"
-            android:layout_weight="0.5"/>
+            android:layout_weight="0.5"
+            android:background="@drawable/button_ripple_yellow">
 
-        <Button
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:src="@drawable/nichtsprache_pr_n" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingBottom="10dp"
+                android:text="@string/category_7"
+                android:textColor="@color/colorButtonText"
+                android:textSize="@dimen/textSizeRadioButtons"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
             android:id="@+id/buttonAnnotation8"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:text="@string/category_8"
-            android:textColor="@color/colorButtonText"
-            android:background="@drawable/button_ripple_yellow"
-            android:layout_weight="0.5"/>
+            android:layout_weight="0.5"
+            android:background="@drawable/button_ripple_yellow">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:src="@drawable/nichtsprache_pr_d" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingBottom="10dp"
+                android:text="@string/category_8"
+                android:textColor="@color/colorButtonText"
+                android:textSize="@dimen/textSizeRadioButtons"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>
 
         </LinearLayout>
 
@@ -125,6 +261,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="@string/button_eraseLast"
+        android:textSize="@dimen/textSizeRemoveLast"
         android:background="@drawable/button_ripple_red"
         android:textColor="@color/colorButtonText"/>
 

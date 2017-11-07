@@ -35,9 +35,11 @@ public class FragmentFinalise extends Fragment implements Communicator {
         buttonFinalise.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                setImmersiveMode();
                 if (wasTouched) {
                     gatherResults();
                     setWasTouched(false);
+                    resetFields();
                 }
             }
         });
@@ -103,6 +105,14 @@ public class FragmentFinalise extends Fragment implements Communicator {
         wasTouched = touched;
     }
 
+    private void resetFields() {
+        radioHoersituation.clearCheck();
+        radioLichtverhaeltnisse.clearCheck();
+        radioRaumbeschreibung.clearCheck();
+        radioLautstaerke.clearCheck();
+        freiText.setText("");
+    }
+
     /** Interface Methods **/
 
     public void finishAnnotation(String sCharakter, String sFreitext) {
@@ -118,4 +128,6 @@ public class FragmentFinalise extends Fragment implements Communicator {
     public void setWasTouched(boolean touched){
         communicator.setWasTouched(touched);
     }
+
+    public void setImmersiveMode(){ communicator.setImmersiveMode(); }
 }

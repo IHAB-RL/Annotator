@@ -10,7 +10,7 @@
     <dimen name="textFieldHeight">30dp</dimen>
     <dimen name="editTextPaddingStart">4dp</dimen>
     <dimen name="radioElementsMargin">8dp</dimen>
-    <dimen name="radioContainerPadding">16dp</dimen>
+    <dimen name="radioContainerPadding">32dp</dimen>
     <dimen name="hLineWidth">1dp</dimen>
 
     <dimen name="radioButtonMarginTop">6dp</dimen>
@@ -18,5 +18,10 @@
 
     <dimen name="textSizeHeadLine">30sp</dimen>
     <dimen name="textSizeRadioButtons">20sp</dimen>
-    <dimen name="testSizeSubHeadLine">18sp</dimen>
+    <dimen name="textSizeSubHeadLine">18sp</dimen>
+    <dimen name="textSizeRemoveLast">18sp</dimen>
+
+    <dimen name="underButtonPadding">12dp</dimen>
+
+    <dimen name="underFinaliseButtonMargin">48dp</dimen>
 </resources>

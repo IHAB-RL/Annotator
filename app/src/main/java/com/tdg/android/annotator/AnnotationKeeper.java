@@ -4,6 +4,7 @@ import android.content.Context;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.Locale;
 import java.util.TimeZone;
 
@@ -155,7 +156,9 @@ public class AnnotationKeeper {
     }
 
     private String generateTimeNowUTC() {
-        Calendar dateTime = Calendar.getInstance(TimeZone.getTimeZone("UTC"));
+        Calendar dateTime = Calendar.getInstance();
         return DATE_FORMAT.format(dateTime.getTime());
+
+
     }
 }

@@ -8,13 +8,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.RelativeLayout;
 
 public class FragmentAnnotation extends Fragment implements Communicator {
 
     private String LOG = "FragmentAnnotation";
-    private Button mButtonAnnotation1, mButtonAnnotation2, mButtonAnnotation3, mButtonAnnotation4,
-            mButtonAnnotation5, mButtonAnnotation6, mButtonAnnotation7, mButtonAnnotation8,
-            mButtonRemove;
+    private RelativeLayout mButtonAnnotation1, mButtonAnnotation2, mButtonAnnotation3, mButtonAnnotation4,
+            mButtonAnnotation5, mButtonAnnotation6, mButtonAnnotation7, mButtonAnnotation8;
+    private Button mButtonRemove;
     private View mainView;
     private Communicator communicator;
     private static int CODE_1 = 1, CODE_2 = 2, CODE_3 = 3, CODE_4 = 4,
@@ -27,14 +28,14 @@ public class FragmentAnnotation extends Fragment implements Communicator {
 
         mainView = inflater.inflate(R.layout.tab_annotation, container, false);
 
-        mButtonAnnotation1 = (Button) mainView.findViewById(R.id.buttonAnnotation1);
-        mButtonAnnotation2 = (Button) mainView.findViewById(R.id.buttonAnnotation2);
-        mButtonAnnotation3 = (Button) mainView.findViewById(R.id.buttonAnnotation3);
-        mButtonAnnotation4 = (Button) mainView.findViewById(R.id.buttonAnnotation4);
-        mButtonAnnotation5 = (Button) mainView.findViewById(R.id.buttonAnnotation5);
-        mButtonAnnotation6 = (Button) mainView.findViewById(R.id.buttonAnnotation6);
-        mButtonAnnotation7 = (Button) mainView.findViewById(R.id.buttonAnnotation7);
-        mButtonAnnotation8 = (Button) mainView.findViewById(R.id.buttonAnnotation8);
+        mButtonAnnotation1 = (RelativeLayout) mainView.findViewById(R.id.buttonAnnotation1);
+        mButtonAnnotation2 = (RelativeLayout) mainView.findViewById(R.id.buttonAnnotation2);
+        mButtonAnnotation3 = (RelativeLayout) mainView.findViewById(R.id.buttonAnnotation3);
+        mButtonAnnotation4 = (RelativeLayout) mainView.findViewById(R.id.buttonAnnotation4);
+        mButtonAnnotation5 = (RelativeLayout) mainView.findViewById(R.id.buttonAnnotation5);
+        mButtonAnnotation6 = (RelativeLayout) mainView.findViewById(R.id.buttonAnnotation6);
+        mButtonAnnotation7 = (RelativeLayout) mainView.findViewById(R.id.buttonAnnotation7);
+        mButtonAnnotation8 = (RelativeLayout) mainView.findViewById(R.id.buttonAnnotation8);
         mButtonRemove = (Button) mainView.findViewById(R.id.buttonRemove);
 
         mButtonAnnotation1.setOnClickListener(new View.OnClickListener() {
@@ -130,4 +131,6 @@ public class FragmentAnnotation extends Fragment implements Communicator {
     }
 
     public void setWasTouched(boolean touched) {}
+
+    public void setImmersiveMode(){}
 }

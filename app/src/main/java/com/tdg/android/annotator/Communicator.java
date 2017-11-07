@@ -15,4 +15,6 @@ public interface Communicator{
     void removeLastAnnotation();
 
     void setWasTouched(boolean wasTouched);
+
+    void setImmersiveMode();
 }

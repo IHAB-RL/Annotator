@@ -15,6 +15,7 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
+            android:icon="@drawable/annotator_logo"
             android:windowSoftInputMode="stateHidden"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -26,7 +27,8 @@
 
     <activity
         android:name=".IntroLogo"
-        android:label="IntroLogo"
+        android:label="Annotator"
+        android:icon="@drawable/annotator_logo"
         android:theme="@style/AppTheme.NoActionBar">
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />

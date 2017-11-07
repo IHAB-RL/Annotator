@@ -54,6 +54,9 @@ public class FragmentNewSession extends Fragment implements Communicator{
         buttonUebung.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                setImmersiveMode();
+
                 if (!isUebung || !wasTouched) {
                     buttonUebung.getBackground().setColorFilter(ContextCompat.getColor(getActivity(),
                             R.color.colorButtonPressed), PorterDuff.Mode.OVERLAY);
@@ -67,6 +70,9 @@ public class FragmentNewSession extends Fragment implements Communicator{
         buttonMessung.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                setImmersiveMode();
+
                 if (isUebung || !wasTouched) {
                     buttonMessung.getBackground().setColorFilter(ContextCompat.getColor(getActivity(),
                             R.color.colorButtonPressed), PorterDuff.Mode.OVERLAY);
@@ -80,6 +86,8 @@ public class FragmentNewSession extends Fragment implements Communicator{
         buttonBeginn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                setImmersiveMode();
 
                 if (checkFields()) {
                     disableInputFields();
@@ -209,5 +217,7 @@ public class FragmentNewSession extends Fragment implements Communicator{
     public void setWasTouched(boolean touched) {
         communicator.setWasTouched(touched);
     }
+
+    public void setImmersiveMode(){ communicator.setImmersiveMode(); }
 
 }
