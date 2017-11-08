@@ -27,6 +27,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:scaleType="fitCenter"
+                android:layout_centerInParent="true"
                 android:src="@drawable/f_t_f_dp_n_pr_n" />
 
             <TextView
@@ -53,6 +54,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:scaleType="fitCenter"
+                android:layout_centerInParent="true"
                 android:src="@drawable/f_t_f_dp_n_pr_d" />
 
             <TextView
@@ -87,6 +89,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:scaleType="fitCenter"
+                android:layout_centerInParent="true"
                 android:src="@drawable/f_t_f_dp_d_pr_n" />
 
             <TextView
@@ -113,6 +116,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:scaleType="fitCenter"
+                android:layout_centerInParent="true"
                 android:src="@drawable/f_t_f_dp_d_pr_d" />
 
             <TextView
@@ -147,6 +151,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:scaleType="fitCenter"
+                android:layout_centerInParent="true"
                 android:src="@drawable/gruppe_pr_n" />
 
             <TextView
@@ -173,6 +178,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:scaleType="fitCenter"
+                android:layout_centerInParent="true"
                 android:src="@drawable/gruppe_pr_d" />
 
             <TextView
@@ -207,6 +213,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:scaleType="fitCenter"
+                android:layout_centerInParent="true"
                 android:src="@drawable/nichtsprache_pr_n" />
 
             <TextView
@@ -233,6 +240,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:scaleType="fitCenter"
+                android:layout_centerInParent="true"
                 android:src="@drawable/nichtsprache_pr_d" />
 
             <TextView

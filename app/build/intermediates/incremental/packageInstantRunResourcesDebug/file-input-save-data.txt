@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Wed Nov 08 00:43:42 CET 2017
+#Wed Nov 08 01:04:17 CET 2017
 210.set=ANDROID_RESOURCE
 14.set=ANDROID_RESOURCE
 180.file=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_/res/layout/abc_activity_chooser_view.xml
