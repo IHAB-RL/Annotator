@@ -17,4 +17,5 @@ public interface Communicator{
     void setWasTouched(boolean wasTouched);
 
     void setImmersiveMode();
+
 }

@@ -6,7 +6,7 @@
     density="mdpi"
     format="10"
     plugin-version="2.3.3"
-    timestamp="1510099456453"
+    timestamp="1510863899597"
     token="6017043701756804809"
     verifier="COLD_SWAP_REQUESTED" >
 
@@ -29,14 +29,17 @@
 
     <build
         build-mode="FULL"
-        timestamp="1510099157550"
+        timestamp="1510856598875"
         verifier="FULL_BUILD_REQUESTED" >
-        <artifact
-            location="/Users/ulrikkowalk/Annotator/app/build/outputs/apk/app-debug.apk"
-            type="SPLIT_MAIN" />
         <artifact
             location="/Users/ulrikkowalk/Annotator/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
             type="SPLIT" />
+        <artifact
+            location="/Users/ulrikkowalk/Annotator/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/ulrikkowalk/Annotator/app/build/outputs/apk/app-debug.apk"
+            type="SPLIT_MAIN" />
         <artifact
             location="/Users/ulrikkowalk/Annotator/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
             type="SPLIT" />
@@ -59,9 +62,6 @@
             location="/Users/ulrikkowalk/Annotator/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/ulrikkowalk/Annotator/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
-            type="SPLIT" />
-        <artifact
             location="/Users/ulrikkowalk/Annotator/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
             type="SPLIT" />
         <artifact
@@ -70,7 +70,23 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1510099456453"
+        timestamp="1510863173675"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/Users/ulrikkowalk/Annotator/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+            type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        timestamp="1510863860968"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/Users/ulrikkowalk/Annotator/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+            type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        timestamp="1510863899597"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/ulrikkowalk/Annotator/app/build/outputs/apk/app-debug.apk"

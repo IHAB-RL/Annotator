@@ -2571,14 +2571,18 @@ containing a value of this type.
         public static final int radioButtonMarginTop=0x7f090093;
         public static final int radioContainerPadding=0x7f090094;
         public static final int radioElementsMargin=0x7f090095;
-        public static final int textFieldHeight=0x7f090096;
-        public static final int textSizeHeadLine=0x7f090097;
-        public static final int textSizeRadioButtons=0x7f090098;
-        public static final int textSizeRemoveLast=0x7f090099;
-        public static final int textSizeSubHeadLine=0x7f09009a;
-        public static final int toolBarHeightWithPadding=0x7f09009b;
-        public static final int underButtonPadding=0x7f09009c;
-        public static final int underFinaliseButtonMargin=0x7f09009d;
+        public static final int statPaddingColumnLR=0x7f090096;
+        public static final int statPaddingColumnTB=0x7f090097;
+        public static final int statPaddingViewLR=0x7f090098;
+        public static final int statPaddingViewTB=0x7f090099;
+        public static final int textFieldHeight=0x7f09009a;
+        public static final int textSizeHeadLine=0x7f09009b;
+        public static final int textSizeRadioButtons=0x7f09009c;
+        public static final int textSizeRemoveLast=0x7f09009d;
+        public static final int textSizeSubHeadLine=0x7f09009e;
+        public static final int toolBarHeightWithPadding=0x7f09009f;
+        public static final int underButtonPadding=0x7f0900a0;
+        public static final int underFinaliseButtonMargin=0x7f0900a1;
     }
     public static final class drawable {
         public static final int abc_ab_share_pack_mtrl_alpha=0x7f020000;
@@ -2724,7 +2728,7 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f0f0061;
         public static final int action_mode_bar_stub=0x7f0f0060;
         public static final int action_mode_close_button=0x7f0f0043;
-        public static final int action_settings=0x7f0f00d0;
+        public static final int action_settings=0x7f0f00e9;
         public static final int action_text=0x7f0f0086;
         public static final int actions=0x7f0f0093;
         public static final int activity_chooser_view_content=0x7f0f0044;
@@ -2787,14 +2791,14 @@ containing a value of this type.
         public static final int fixed=0x7f0f003f;
         public static final int fragment_newSession=0x7f0f00ab;
         public static final int freitext=0x7f0f00a9;
-        public static final int hist_category_1=0x7f0f00b6;
-        public static final int hist_category_2=0x7f0f00b9;
-        public static final int hist_category_3=0x7f0f00bc;
-        public static final int hist_category_4=0x7f0f00bf;
-        public static final int hist_category_5=0x7f0f00c2;
-        public static final int hist_category_6=0x7f0f00c5;
-        public static final int hist_category_7=0x7f0f00c8;
-        public static final int hist_category_8=0x7f0f00cb;
+        public static final int hist_category_1=0x7f0f00cf;
+        public static final int hist_category_2=0x7f0f00d2;
+        public static final int hist_category_3=0x7f0f00d5;
+        public static final int hist_category_4=0x7f0f00d8;
+        public static final int hist_category_5=0x7f0f00db;
+        public static final int hist_category_6=0x7f0f00de;
+        public static final int hist_category_7=0x7f0f00e1;
+        public static final int hist_category_8=0x7f0f00e4;
         public static final int home=0x7f0f0004;
         public static final int homeAsUp=0x7f0f0013;
         public static final int icon=0x7f0f0049;
@@ -2812,7 +2816,7 @@ containing a value of this type.
         public static final int listMode=0x7f0f000f;
         public static final int list_item=0x7f0f0048;
         public static final int main_content=0x7f0f0073;
-        public static final int masked=0x7f0f00cf;
+        public static final int masked=0x7f0f00e8;
         public static final int media_actions=0x7f0f008a;
         public static final int middle=0x7f0f0039;
         public static final int mini=0x7f0f0037;
@@ -2826,23 +2830,23 @@ containing a value of this type.
         public static final int notification_main_column_container=0x7f0f008c;
         public static final int parallax=0x7f0f0030;
         public static final int parentPanel=0x7f0f004d;
-        public static final int percentCategory_1=0x7f0f00b8;
-        public static final int percentCategory_2=0x7f0f00bb;
-        public static final int percentCategory_3=0x7f0f00be;
-        public static final int percentCategory_4=0x7f0f00c1;
-        public static final int percentCategory_5=0x7f0f00c4;
-        public static final int percentCategory_6=0x7f0f00c7;
-        public static final int percentCategory_7=0x7f0f00ca;
-        public static final int percentCategory_8=0x7f0f00cd;
+        public static final int percentCategory_1=0x7f0f00d1;
+        public static final int percentCategory_2=0x7f0f00d4;
+        public static final int percentCategory_3=0x7f0f00d7;
+        public static final int percentCategory_4=0x7f0f00da;
+        public static final int percentCategory_5=0x7f0f00dd;
+        public static final int percentCategory_6=0x7f0f00e0;
+        public static final int percentCategory_7=0x7f0f00e3;
+        public static final int percentCategory_8=0x7f0f00e6;
         public static final int pin=0x7f0f0031;
-        public static final int progressBar_1=0x7f0f00b7;
-        public static final int progressBar_2=0x7f0f00ba;
-        public static final int progressBar_3=0x7f0f00bd;
-        public static final int progressBar_4=0x7f0f00c0;
-        public static final int progressBar_5=0x7f0f00c3;
-        public static final int progressBar_6=0x7f0f00c6;
-        public static final int progressBar_7=0x7f0f00c9;
-        public static final int progressBar_8=0x7f0f00cc;
+        public static final int progressBar_1=0x7f0f00d0;
+        public static final int progressBar_2=0x7f0f00d3;
+        public static final int progressBar_3=0x7f0f00d6;
+        public static final int progressBar_4=0x7f0f00d9;
+        public static final int progressBar_5=0x7f0f00dc;
+        public static final int progressBar_6=0x7f0f00df;
+        public static final int progressBar_7=0x7f0f00e2;
+        public static final int progressBar_8=0x7f0f00e5;
         public static final int progress_circular=0x7f0f0006;
         public static final int progress_horizontal=0x7f0f0007;
         public static final int radio=0x7f0f005d;
@@ -2884,6 +2888,30 @@ containing a value of this type.
         public static final int src_in=0x7f0f0022;
         public static final int src_over=0x7f0f0023;
         public static final int start=0x7f0f002e;
+        public static final int stat_label_perc1=0x7f0f00b7;
+        public static final int stat_label_perc2=0x7f0f00ba;
+        public static final int stat_label_perc3=0x7f0f00bd;
+        public static final int stat_label_perc4=0x7f0f00c0;
+        public static final int stat_label_perc5=0x7f0f00c3;
+        public static final int stat_label_perc6=0x7f0f00c6;
+        public static final int stat_label_perc7=0x7f0f00c9;
+        public static final int stat_label_perc8=0x7f0f00cc;
+        public static final int statistics_prog_col1=0x7f0f00b9;
+        public static final int statistics_prog_col2=0x7f0f00bc;
+        public static final int statistics_prog_col3=0x7f0f00bf;
+        public static final int statistics_prog_col4=0x7f0f00c2;
+        public static final int statistics_prog_col5=0x7f0f00c5;
+        public static final int statistics_prog_col6=0x7f0f00c8;
+        public static final int statistics_prog_col7=0x7f0f00cb;
+        public static final int statistics_prog_col8=0x7f0f00ce;
+        public static final int statistics_reg_col1=0x7f0f00b8;
+        public static final int statistics_reg_col2=0x7f0f00bb;
+        public static final int statistics_reg_col3=0x7f0f00be;
+        public static final int statistics_reg_col4=0x7f0f00c1;
+        public static final int statistics_reg_col5=0x7f0f00c4;
+        public static final int statistics_reg_col6=0x7f0f00c7;
+        public static final int statistics_reg_col7=0x7f0f00ca;
+        public static final int statistics_reg_col8=0x7f0f00cd;
         public static final int status_bar_latest_event_content=0x7f0f0089;
         public static final int submenuarrow=0x7f0f005e;
         public static final int submit_area=0x7f0f006f;
@@ -2891,6 +2919,7 @@ containing a value of this type.
         public static final int tabs=0x7f0f0075;
         public static final int text=0x7f0f0099;
         public static final int text2=0x7f0f0097;
+        public static final int textInsgesamt=0x7f0f00b6;
         public static final int textSpacerNoButtons=0x7f0f0052;
         public static final int textSpacerNoTitle=0x7f0f0051;
         public static final int textViewCodenummerProband=0x7f0f00af;
@@ -2913,7 +2942,7 @@ containing a value of this type.
         public static final int up=0x7f0f000d;
         public static final int useLogo=0x7f0f0018;
         public static final int view_offset_helper=0x7f0f000e;
-        public static final int visible=0x7f0f00ce;
+        public static final int visible=0x7f0f00e7;
         public static final int withText=0x7f0f003e;
         public static final int wrap_content=0x7f0f0024;
     }
@@ -2994,7 +3023,8 @@ containing a value of this type.
         public static final int tab_annotation=0x7f04003e;
         public static final int tab_finalise=0x7f04003f;
         public static final int tab_new_session=0x7f040040;
-        public static final int tab_statistics=0x7f040041;
+        public static final int tab_new_statistics=0x7f040041;
+        public static final int tab_statistics=0x7f040042;
     }
     public static final class menu {
         public static final int menu_main=0x7f100000;
@@ -3103,8 +3133,9 @@ containing a value of this type.
         public static final int tab_Annotation=0x7f08005c;
         public static final int tab_Finalise=0x7f08005d;
         public static final int tab_New_Session=0x7f08005e;
-        public static final int title_Charakterisierung_der_situation=0x7f08005f;
-        public static final int title_Neue_Datenaufnahme=0x7f080060;
+        public static final int tab_Statistics=0x7f08005f;
+        public static final int title_Charakterisierung_der_situation=0x7f080060;
+        public static final int title_Neue_Datenaufnahme=0x7f080061;
     }
     public static final class style {
         public static final int AlertDialog_AppCompat=0x7f0a00a1;

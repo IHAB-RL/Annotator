@@ -559,6 +559,10 @@
     <dimen name="radioButtonMarginTop">6dp</dimen>
     <dimen name="radioContainerPadding">32dp</dimen>
     <dimen name="radioElementsMargin">8dp</dimen>
+    <dimen name="statPaddingColumnLR">8dp</dimen>
+    <dimen name="statPaddingColumnTB">4dp</dimen>
+    <dimen name="statPaddingViewLR">32dp</dimen>
+    <dimen name="statPaddingViewTB">4dp</dimen>
     <dimen name="textFieldHeight">30dp</dimen>
     <dimen name="textSizeHeadLine">30sp</dimen>
     <dimen name="textSizeRadioButtons">20sp</dimen>
@@ -688,6 +692,7 @@
     <string name="tab_Annotation">Annotation</string>
     <string name="tab_Finalise">Abschließen</string>
     <string name="tab_New_Session">Neue Session</string>
+    <string name="tab_Statistics">Statistik</string>
     <string name="title_Charakterisierung_der_situation">Charakterisierung der Situation</string>
     <string name="title_Neue_Datenaufnahme">Neue Datenaufnahme</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>

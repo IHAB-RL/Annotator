@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/statPaddingViewTB"
+    android:paddingBottom="@dimen/statPaddingViewTB"
+    android:paddingLeft="@dimen/statPaddingViewLR"
+    android:paddingRight="@dimen/statPaddingViewLR">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="@string/tab_Statistics"
+        android:gravity="center"
+        android:textSize="@dimen/textSizeHeadLine"
+        android:textStyle="bold"
+        android:layout_weight="0.07"/>
+
+    <TextView
+        android:id="@+id/textInsgesamt"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Insgesamt: "
+        android:gravity="center"
+        android:textSize="@dimen/textSizeSubHeadLine"
+        android:layout_weight="0.07"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="0.86">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="0.125"
+        android:paddingTop="@dimen/statPaddingColumnTB"
+        android:paddingBottom="@dimen/statPaddingColumnTB"
+        android:paddingLeft="@dimen/statPaddingColumnLR"
+        android:paddingRight="@dimen/statPaddingColumnLR">
+
+        <TextView
+            android:id="@+id/stat_label_perc1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:text="Res1"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/statistics_reg_col1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3"
+                android:background="@android:color/white"/>
+
+            <View
+                android:id="@+id/statistics_prog_col1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.7"
+                android:background="@color/annoDarkerBlue"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:text="@string/category_1"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="0.125"
+            android:paddingTop="@dimen/statPaddingColumnTB"
+            android:paddingBottom="@dimen/statPaddingColumnTB"
+            android:paddingLeft="@dimen/statPaddingColumnLR"
+            android:paddingRight="@dimen/statPaddingColumnLR">
+
+            <TextView
+                android:id="@+id/stat_label_perc2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:text="Res2"
+                android:gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.8"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/statistics_reg_col2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.3"
+                    android:background="@android:color/white"/>
+
+                <View
+                    android:id="@+id/statistics_prog_col2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.7"
+                    android:background="@color/annoDarkerBlue"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:text="@string/category_2"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="0.125"
+            android:paddingTop="@dimen/statPaddingColumnTB"
+            android:paddingBottom="@dimen/statPaddingColumnTB"
+            android:paddingLeft="@dimen/statPaddingColumnLR"
+            android:paddingRight="@dimen/statPaddingColumnLR">
+
+            <TextView
+                android:id="@+id/stat_label_perc3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:text="Res3"
+                android:gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.8"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/statistics_reg_col3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.3"
+                    android:background="@android:color/white"/>
+
+                <View
+                    android:id="@+id/statistics_prog_col3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.7"
+                    android:background="@color/annoDarkerBlue"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:text="@string/category_3"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="0.125"
+            android:paddingTop="@dimen/statPaddingColumnTB"
+            android:paddingBottom="@dimen/statPaddingColumnTB"
+            android:paddingLeft="@dimen/statPaddingColumnLR"
+            android:paddingRight="@dimen/statPaddingColumnLR">
+
+            <TextView
+                android:id="@+id/stat_label_perc4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:text="Res4"
+                android:gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.8"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/statistics_reg_col4"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.3"
+                    android:background="@android:color/white"/>
+
+                <View
+                    android:id="@+id/statistics_prog_col4"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.7"
+                    android:background="@color/annoDarkerBlue"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:text="@string/category_4"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="0.125"
+            android:paddingTop="@dimen/statPaddingColumnTB"
+            android:paddingBottom="@dimen/statPaddingColumnTB"
+            android:paddingLeft="@dimen/statPaddingColumnLR"
+            android:paddingRight="@dimen/statPaddingColumnLR">
+
+            <TextView
+                android:id="@+id/stat_label_perc5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:text="Res5"
+                android:gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.8"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/statistics_reg_col5"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.3"
+                    android:background="@android:color/white"/>
+
+                <View
+                    android:id="@+id/statistics_prog_col5"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.7"
+                    android:background="@color/annoDarkerBlue"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:text="@string/category_5"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="0.125"
+            android:paddingTop="@dimen/statPaddingColumnTB"
+            android:paddingBottom="@dimen/statPaddingColumnTB"
+            android:paddingLeft="@dimen/statPaddingColumnLR"
+            android:paddingRight="@dimen/statPaddingColumnLR">
+
+            <TextView
+                android:id="@+id/stat_label_perc6"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:text="Res6"
+                android:gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.8"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/statistics_reg_col6"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.3"
+                    android:background="@android:color/white"/>
+
+                <View
+                    android:id="@+id/statistics_prog_col6"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.7"
+                    android:background="@color/annoDarkerBlue"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:text="@string/category_6"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="0.125"
+            android:paddingTop="@dimen/statPaddingColumnTB"
+            android:paddingBottom="@dimen/statPaddingColumnTB"
+            android:paddingLeft="@dimen/statPaddingColumnLR"
+            android:paddingRight="@dimen/statPaddingColumnLR">
+
+            <TextView
+                android:id="@+id/stat_label_perc7"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:text="Res7"
+                android:gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.8"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/statistics_reg_col7"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.3"
+                    android:background="@android:color/white"/>
+
+                <View
+                    android:id="@+id/statistics_prog_col7"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.7"
+                    android:background="@color/annoDarkerBlue"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:text="@string/category_7"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="0.125"
+            android:paddingTop="@dimen/statPaddingColumnTB"
+            android:paddingBottom="@dimen/statPaddingColumnTB"
+            android:paddingLeft="@dimen/statPaddingColumnLR"
+            android:paddingRight="@dimen/statPaddingColumnLR">
+
+            <TextView
+                android:id="@+id/stat_label_perc8"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:text="Res8"
+                android:gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.8"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/statistics_reg_col8"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.3"
+                    android:background="@android:color/white"/>
+
+                <View
+                    android:id="@+id/statistics_prog_col8"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.7"
+                    android:background="@color/annoDarkerBlue"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:text="@string/category_8"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

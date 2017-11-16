@@ -24,4 +24,9 @@
     <dimen name="underButtonPadding">12dp</dimen>
 
     <dimen name="underFinaliseButtonMargin">48dp</dimen>
+
+    <dimen name="statPaddingViewTB">4dp</dimen>
+    <dimen name="statPaddingViewLR">32dp</dimen>
+    <dimen name="statPaddingColumnTB">4dp</dimen>
+    <dimen name="statPaddingColumnLR">8dp</dimen>
 </resources>

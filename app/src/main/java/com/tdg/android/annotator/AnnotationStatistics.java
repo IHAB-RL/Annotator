@@ -9,9 +9,14 @@ import java.util.ArrayList;
 public class AnnotationStatistics {
 
     int numCategories = 8;
-    int[] histogram = new int[numCategories];;
+    int[] histogram;
 
     public AnnotationStatistics() {
+        reset();
+    }
+
+    public void reset() {
+        histogram = new int[numCategories];
     }
 
     public int[] getHist(ArrayList<DateAndAnnotation> listOfAnnotations) {

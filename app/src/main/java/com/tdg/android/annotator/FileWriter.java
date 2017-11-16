@@ -22,10 +22,10 @@ public class FileWriter {
     public static String getFolderPath() {
         File baseDirectory = Environment.getExternalStoragePublicDirectory(MAIN_FOLDER);
         if (!baseDirectory.exists()) {
-            Log.e(LOG, "Directory does not exist -> create");
+            Log.i(LOG, "Directory does not exist -> create");
             baseDirectory.mkdir();
         }
-        Log.e(LOG, "Path: "+baseDirectory.getAbsolutePath());
+        Log.i(LOG, "Path: "+baseDirectory.getAbsolutePath());
         return baseDirectory.getAbsolutePath();
     }
 

@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity implements Communicator{
     private SectionsPagerAdapter mSectionsPagerAdapter;
     public NoScrollViewPager mViewPager;
     private AnnotationKeeper annotationKeeper;
+    private AnnotationStatistics annotationStatistics;
     private FileWriter fileWriter;
     private boolean wasTouched = false;
 
@@ -32,6 +33,7 @@ public class MainActivity extends AppCompatActivity implements Communicator{
         tabLayout.setupWithViewPager(mViewPager);
 
         annotationKeeper = new AnnotationKeeper(this);
+        annotationStatistics = new AnnotationStatistics();
         fileWriter = new FileWriter();
 
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
@@ -80,7 +82,13 @@ public class MainActivity extends AppCompatActivity implements Communicator{
                 getResources().getString(R.string.tab_Annotation));
         mSectionsPagerAdapter.addFragment(new FragmentFinalise(),
                 getResources().getString(R.string.tab_Finalise));
+        mSectionsPagerAdapter.addFragment(new FragmentStatistics(),
+                getResources().getString(R.string.tab_Statistics));
         viewPager.setAdapter(mSectionsPagerAdapter);
+    }
+
+    public int[] getHist() {
+        return annotationStatistics.getHist(annotationKeeper.getListOfAnnotations());
     }
 
     @Override
@@ -91,6 +99,7 @@ public class MainActivity extends AppCompatActivity implements Communicator{
         annotationKeeper.setUebung(isUebung);
         annotationKeeper.setTimeStart();
         mViewPager.setCurrentItem(1);
+        ((FragmentStatistics) mSectionsPagerAdapter.getFragmentFromPos(3)).updateColumns();
     }
 
     @Override
@@ -100,7 +109,9 @@ public class MainActivity extends AppCompatActivity implements Communicator{
             annotationKeeper.setFreiText(freitext);
             fileWriter.saveToFile(this, annotationKeeper.getFileName(),
                     annotationKeeper.flushResults());
+            ((FragmentStatistics) mSectionsPagerAdapter.getFragmentFromPos(3)).updateColumns();
             annotationKeeper.reset();
+            annotationStatistics.reset();
             ((FragmentNewSession) mSectionsPagerAdapter.getFragmentFromPos(0)).reset();
             mViewPager.setCurrentItem(0);
         }
