@@ -59,18 +59,17 @@ public class AnnotationKeeper {
 
     private String uebungOderMessung() {
         if (isUebung) {
-            return "Uebung";
+            return context.getString(R.string.button_Ubeung);
         } else {
-            return "Messung";
+            return context.getString(R.string.button_Messung);
         }
     }
 
     private String getHistogram() {
         histogram = annotationStatistics.getHist(listOfAnnotations);
-        String histString = "" + histogram[0] + ", " + histogram[1] + ", " + histogram[2] + ", "
-                + histogram[3] + ", " + histogram[4] + ", " + histogram[5] + ", " + histogram[6] + ", "
-                + histogram[7];
-        return histString;
+        return "" + histogram[0] + "; " + histogram[1] + "; " + histogram[2] + "; "
+                + histogram[3] + "; " + histogram[4] + "; " + histogram[5] + "; " +
+                histogram[6] + "; " + histogram[7];
     }
 
     public String getRaterID() {
@@ -131,6 +130,7 @@ public class AnnotationKeeper {
         for (int iAnnotation = 0; iAnnotation < listOfAnnotations.size(); iAnnotation++) {
             streamOfAnnotations += ""+(iAnnotation+1)+", ";
             streamOfAnnotations += listOfAnnotations.get(iAnnotation).date;
+            streamOfAnnotations += ", " + listOfAnnotations.get(iAnnotation).annotation;
             streamOfAnnotations += ", " + categories[listOfAnnotations.get(iAnnotation).annotation-1];
             streamOfAnnotations += "\n";
         }
@@ -158,7 +158,5 @@ public class AnnotationKeeper {
     private String generateTimeNowUTC() {
         Calendar dateTime = Calendar.getInstance();
         return DATE_FORMAT.format(dateTime.getTime());
-
-
     }
 }

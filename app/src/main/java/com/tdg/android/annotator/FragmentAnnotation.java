@@ -25,7 +25,6 @@ public class FragmentAnnotation extends Fragment implements Communicator {
     private static int CODE_1 = 1, CODE_2 = 2, CODE_3 = 3, CODE_4 = 4,
             CODE_5 = 5, CODE_6 = 6, CODE_7 = 7, CODE_8 = 8;
     private Vibrator mVibration;
-    private boolean isVibration = true;
     private int mVibrationDuration_ms = 40;
 
     @Nullable
@@ -44,7 +43,6 @@ public class FragmentAnnotation extends Fragment implements Communicator {
         mButtonAnnotation7 = (RelativeLayout) mainView.findViewById(R.id.buttonAnnotation7);
         mButtonAnnotation8 = (RelativeLayout) mainView.findViewById(R.id.buttonAnnotation8);
         mButtonRemove = (Button) mainView.findViewById(R.id.buttonRemove);
-
 
         mButtonAnnotation1.setOnTouchListener(new View.OnTouchListener() {
             @Override
