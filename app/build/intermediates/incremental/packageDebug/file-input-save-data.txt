@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Thu Nov 16 21:25:00 CET 2017
+#Mon Nov 20 16:42:53 CET 2017
 210.set=ANDROID_RESOURCE
 14.set=ANDROID_RESOURCE
 180.file=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_/res/drawable-xhdpi-v4/gruppe_pr_d.png

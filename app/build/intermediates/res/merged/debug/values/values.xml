@@ -564,8 +564,9 @@
     <dimen name="statPaddingViewLR">32dp</dimen>
     <dimen name="statPaddingViewTB">4dp</dimen>
     <dimen name="textFieldHeight">30dp</dimen>
+    <dimen name="textSizeEditHint">24sp</dimen>
     <dimen name="textSizeHeadLine">30sp</dimen>
-    <dimen name="textSizeRadioButtons">20sp</dimen>
+    <dimen name="textSizeRadioButtons">30sp</dimen>
     <dimen name="textSizeRemoveLast">18sp</dimen>
     <dimen name="textSizeSubHeadLine">18sp</dimen>
     <dimen name="toolBarHeightWithPadding">48dp</dimen>
@@ -650,6 +651,7 @@
     <string name="hint_Dateneingabe_Proband">Dateneingabe Proband</string>
     <string name="hint_Dateneingabe_Rater">Dateneingabe Rater</string>
     <string name="hint_Texteingabe_hier">Texteingabe hier</string>
+    <string name="menu_insgesamt">Insgesamt</string>
     <string name="option_Hoergeraete_erfahren">Hörgeräte - erfahrener Hörgeräteträger</string>
     <string name="option_Hoergeraete_unerfahren">Hörgeräte - unerfahrener Hörgerätertäger</string>
     <string name="option_angemessene_Raumgroesse">angemessene Raumgröße</string>

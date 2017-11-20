@@ -1,22 +1,13 @@
 package com.tdg.android.annotator;
 
-import android.content.Context;
 import android.os.Bundle;
-import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v4.content.ContextCompat;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
-import android.widget.ProgressBar;
 import android.widget.TextView;
-
-import org.w3c.dom.Text;
-
-import static android.R.attr.data;
 
 public class FragmentStatistics extends Fragment {
 
@@ -61,10 +52,6 @@ public class FragmentStatistics extends Fragment {
         progCol6 = view.findViewById(R.id.statistics_prog_col6);
         progCol7 = view.findViewById(R.id.statistics_prog_col7);
         progCol8 = view.findViewById(R.id.statistics_prog_col8);
-
-
-        //histData = new int[numCategories];
-        //histFraction = new float[numCategories];
 
         resetColumns();
 
@@ -144,7 +131,7 @@ public class FragmentStatistics extends Fragment {
         tvCat6.setText(""+histData[5]);
         tvCat7.setText(""+histData[6]);
         tvCat8.setText(""+histData[7]);
-        tvInsgesamt.setText("Insgesamt: "+sumHist);
+        tvInsgesamt.setText(getResources().getString(R.string.menu_insgesamt)+": "+sumHist);
     }
 
     private void getHist() {
@@ -164,6 +151,4 @@ public class FragmentStatistics extends Fragment {
             histFraction[iData] = (float) histData[iData]/maxHist;
         }
     }
-
-
 }

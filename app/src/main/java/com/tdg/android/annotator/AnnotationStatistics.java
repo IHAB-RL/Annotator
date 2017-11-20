@@ -8,18 +8,18 @@ import java.util.ArrayList;
 
 public class AnnotationStatistics {
 
-    int numCategories = 8;
-    int[] histogram;
+    private int numCategories = 8;
+    private int[] histogram;
 
-    public AnnotationStatistics() {
+    AnnotationStatistics() {
         reset();
     }
 
-    public void reset() {
+    void reset() {
         histogram = new int[numCategories];
     }
 
-    public int[] getHist(ArrayList<DateAndAnnotation> listOfAnnotations) {
+    int[] getHist(ArrayList<DateAndAnnotation> listOfAnnotations) {
 
         for (DateAndAnnotation item : listOfAnnotations) {
             switch (item.getAnnotation()) {

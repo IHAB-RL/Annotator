@@ -11,6 +11,8 @@
     android:orientation="vertical"
     android:gravity="center"
     android:layout_gravity="center"
+    android:scaleX="1.5"
+    android:scaleY="1.5"
     android:padding="@dimen/radioContainerPadding"
     android:background="@color/colorPrimaryDark">
 
@@ -162,6 +164,6 @@
         android:layout_marginTop="@dimen/radioElementsMargin"
         android:layout_marginBottom="@dimen/underFinaliseButtonMargin"/>
 
-
 </LinearLayout>
+
 </ScrollView>

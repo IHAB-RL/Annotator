@@ -305,6 +305,7 @@
             android:inputType="textMultiLine"
             android:padding="@dimen/editTextPaddingStart"
             android:hint="@string/hint_Texteingabe_hier"
+            android:textSize="@dimen/textSizeEditHint"
             android:paddingStart="@dimen/editTextPaddingStart"/>
 
     </LinearLayout>
@@ -316,7 +317,9 @@
         android:layout_gravity="center"
         android:layout_marginTop="@dimen/radioElementsMargin"
         android:layout_marginBottom="48dp"
-        android:text="@string/button_Abschliessen" />
+        android:text="@string/button_Abschliessen"
+        android:scaleY="1.5"
+        android:scaleX="1.5"/>
 
 </LinearLayout>
 

@@ -66,4 +66,6 @@
     <string name="result_Zeit_Start">Zeit Start</string>
     <string name="result_Zeit_Ende">Zeit Ende</string>
 
+    <string name="menu_insgesamt">Insgesamt</string>
+
 </resources>

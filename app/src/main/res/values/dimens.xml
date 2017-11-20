@@ -17,9 +17,10 @@
     <dimen name="radioButtonMarginBottom">6dp</dimen>
 
     <dimen name="textSizeHeadLine">30sp</dimen>
-    <dimen name="textSizeRadioButtons">20sp</dimen>
+    <dimen name="textSizeRadioButtons">30sp</dimen>
     <dimen name="textSizeSubHeadLine">18sp</dimen>
     <dimen name="textSizeRemoveLast">18sp</dimen>
+    <dimen name="textSizeEditHint">24sp</dimen>
 
     <dimen name="underButtonPadding">12dp</dimen>
 

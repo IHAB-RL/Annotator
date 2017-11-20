@@ -16,7 +16,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="657bb2c3a0e3cde716b28141b5d8ddd58d16b68a">
+        sha1="545fc72bdd8bc6249d9695c93c58abac2e4c44a8">
         <dex dex="/Users/ulrikkowalk/Annotator/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_67577536006d982ae32e6bf9f64daa04e82e0cf3/classes.dex" />
     </item>
 
