@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Mon Nov 20 16:42:53 CET 2017
+#Mon Nov 20 20:14:39 CET 2017
 210.set=ANDROID_RESOURCE
 14.set=ANDROID_RESOURCE
 180.file=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_/res/drawable-xhdpi-v4/gruppe_pr_d.png
@@ -105,7 +105,7 @@
 10.base=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_
 66.file=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_/res/drawable-mdpi-v4/abc_list_pressed_holo_light.9.png
 218.file=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_/res/drawable/button_ripple_yellow.xml
-41.file=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_/res/color/abc_tint_spinner.xml
+41.file=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_/res/anim/abc_slide_in_top.xml
 255.set=ANDROID_RESOURCE
 196.set=ANDROID_RESOURCE
 116.file=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_/res/layout/tab_new_statistics.xml
@@ -176,7 +176,7 @@
 11.base=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_
 67.file=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_/res/drawable-mdpi-v4/notification_bg_normal_pressed.9.png
 219.file=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_/res/layout/abc_screen_simple_overlay_action_mode.xml
-42.file=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_/res/anim/abc_slide_in_top.xml
+42.file=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_/res/color/abc_tint_spinner.xml
 117.file=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_/res/drawable/abc_ratingbar_indicator_material.xml
 94.file=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_/res/layout/abc_search_view.xml
 148.base=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_
@@ -538,7 +538,7 @@ count=265
 103.base=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_
 232.base=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_
 155.base=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_
-7.file=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_/res/color/abc_tint_default.xml
+7.file=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_/res/drawable-ldrtl-mdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png
 130.base=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_
 182.base=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_
 131.set=ANDROID_RESOURCE
@@ -607,7 +607,7 @@ count=265
 104.base=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_
 233.base=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_
 156.base=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_
-8.file=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_/res/drawable-ldrtl-mdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png
+8.file=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_/res/color/abc_tint_default.xml
 131.base=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_
 260.base=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_
 183.base=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_

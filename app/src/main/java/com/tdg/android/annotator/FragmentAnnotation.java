@@ -24,8 +24,6 @@ public class FragmentAnnotation extends Fragment implements Communicator {
     private Communicator communicator;
     private static int CODE_1 = 1, CODE_2 = 2, CODE_3 = 3, CODE_4 = 4,
             CODE_5 = 5, CODE_6 = 6, CODE_7 = 7, CODE_8 = 8;
-    private Vibrator mVibration;
-    private int mVibrationDuration_ms = 40;
 
     @Nullable
     @Override
@@ -43,70 +41,6 @@ public class FragmentAnnotation extends Fragment implements Communicator {
         mButtonAnnotation7 = (RelativeLayout) mainView.findViewById(R.id.buttonAnnotation7);
         mButtonAnnotation8 = (RelativeLayout) mainView.findViewById(R.id.buttonAnnotation8);
         mButtonRemove = (Button) mainView.findViewById(R.id.buttonRemove);
-
-        mButtonAnnotation1.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                vibrateFeedback();
-                return false;
-            }
-        });
-        mButtonAnnotation2.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                vibrateFeedback();
-                return false;
-            }
-        });
-        mButtonAnnotation3.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                vibrateFeedback();
-                return false;
-            }
-        });
-        mButtonAnnotation4.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                vibrateFeedback();
-                return false;
-            }
-        });
-        mButtonAnnotation5.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                vibrateFeedback();
-                return false;
-            }
-        });
-        mButtonAnnotation6.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                vibrateFeedback();
-                return false;
-            }
-        });
-        mButtonAnnotation7.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                vibrateFeedback();
-                return false;
-            }
-        });
-        mButtonAnnotation8.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                vibrateFeedback();
-                return false;
-            }
-        });
-        mButtonRemove.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                vibrateFeedback();
-                return false;
-            }
-        });
 
         mButtonAnnotation1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -163,9 +97,6 @@ public class FragmentAnnotation extends Fragment implements Communicator {
             }
         });
 
-        mVibration = ((Vibrator) getActivity().
-                getSystemService(VIBRATOR_SERVICE));
-
         return mainView;
     }
 
@@ -182,6 +113,7 @@ public class FragmentAnnotation extends Fragment implements Communicator {
 
     public void onAttach(Activity activity) {
         communicator = (Communicator) activity;
+        setImmersiveMode();
         super.onAttach(activity);
     }
 
@@ -205,9 +137,5 @@ public class FragmentAnnotation extends Fragment implements Communicator {
 
     public void setWasTouched(boolean touched) {}
 
-    public void setImmersiveMode() {}
-
-    private void vibrateFeedback() {
-        mVibration.vibrate(mVibrationDuration_ms);
-    }
+    public void setImmersiveMode() { communicator.setImmersiveMode(); }
 }

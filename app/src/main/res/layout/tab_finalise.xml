@@ -60,6 +60,7 @@
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:paddingStart="@dimen/startPaddingRadio"
                 android:textSize="@dimen/textSizeRadioButtons"
                 android:layout_marginTop="@dimen/radioButtonMarginTop"
                 android:layout_marginBottom="@dimen/radioButtonMarginTop"
@@ -68,6 +69,7 @@
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:paddingStart="@dimen/startPaddingRadio"
                 android:textSize="@dimen/textSizeRadioButtons"
                 android:layout_marginTop="@dimen/radioButtonMarginTop"
                 android:layout_marginBottom="@dimen/radioButtonMarginTop"
@@ -76,6 +78,7 @@
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:paddingStart="@dimen/startPaddingRadio"
                 android:textSize="@dimen/textSizeRadioButtons"
                 android:layout_marginTop="@dimen/radioButtonMarginTop"
                 android:layout_marginBottom="@dimen/radioButtonMarginTop"
@@ -84,6 +87,7 @@
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:paddingStart="@dimen/startPaddingRadio"
                 android:textSize="@dimen/textSizeRadioButtons"
                 android:layout_marginTop="@dimen/radioButtonMarginTop"
                 android:layout_marginBottom="@dimen/radioButtonMarginTop"
@@ -92,6 +96,7 @@
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:paddingStart="@dimen/startPaddingRadio"
                 android:textSize="@dimen/textSizeRadioButtons"
                 android:layout_marginTop="@dimen/radioButtonMarginTop"
                 android:layout_marginBottom="@dimen/radioButtonMarginTop"
@@ -129,6 +134,7 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingStart="@dimen/startPaddingRadio"
             android:textSize="@dimen/textSizeRadioButtons"
             android:layout_marginTop="@dimen/radioButtonMarginTop"
             android:layout_marginBottom="@dimen/radioButtonMarginTop"
@@ -137,6 +143,7 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingStart="@dimen/startPaddingRadio"
             android:textSize="@dimen/textSizeRadioButtons"
             android:layout_marginTop="@dimen/radioButtonMarginTop"
             android:layout_marginBottom="@dimen/radioButtonMarginTop"
@@ -145,6 +152,7 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingStart="@dimen/startPaddingRadio"
             android:textSize="@dimen/textSizeRadioButtons"
             android:layout_marginTop="@dimen/radioButtonMarginTop"
             android:layout_marginBottom="@dimen/radioButtonMarginTop"
@@ -153,6 +161,7 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingStart="@dimen/startPaddingRadio"
             android:textSize="@dimen/textSizeRadioButtons"
             android:layout_marginTop="@dimen/radioButtonMarginTop"
             android:layout_marginBottom="@dimen/radioButtonMarginTop"
@@ -161,6 +170,7 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingStart="@dimen/startPaddingRadio"
             android:textSize="@dimen/textSizeRadioButtons"
             android:layout_marginTop="@dimen/radioButtonMarginTop"
             android:layout_marginBottom="@dimen/radioButtonMarginTop"
@@ -198,6 +208,7 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingStart="@dimen/startPaddingRadio"
             android:textSize="@dimen/textSizeRadioButtons"
             android:layout_marginTop="@dimen/radioButtonMarginTop"
             android:layout_marginBottom="@dimen/radioButtonMarginTop"
@@ -206,6 +217,7 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingStart="@dimen/startPaddingRadio"
             android:textSize="@dimen/textSizeRadioButtons"
             android:layout_marginTop="@dimen/radioButtonMarginTop"
             android:layout_marginBottom="@dimen/radioButtonMarginTop"
@@ -214,6 +226,7 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingStart="@dimen/startPaddingRadio"
             android:textSize="@dimen/textSizeRadioButtons"
             android:layout_marginTop="@dimen/radioButtonMarginTop"
             android:layout_marginBottom="@dimen/radioButtonMarginTop"
@@ -251,6 +264,7 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingStart="@dimen/startPaddingRadio"
             android:textSize="@dimen/textSizeRadioButtons"
             android:layout_marginTop="@dimen/radioButtonMarginTop"
             android:layout_marginBottom="@dimen/radioButtonMarginTop"
@@ -259,6 +273,7 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingStart="@dimen/startPaddingRadio"
             android:textSize="@dimen/textSizeRadioButtons"
             android:layout_marginTop="@dimen/radioButtonMarginTop"
             android:layout_marginBottom="@dimen/radioButtonMarginTop"
@@ -267,6 +282,7 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingStart="@dimen/startPaddingRadio"
             android:textSize="@dimen/textSizeRadioButtons"
             android:layout_marginTop="@dimen/radioButtonMarginTop"
             android:layout_marginBottom="@dimen/radioButtonMarginTop"
@@ -315,8 +331,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="@dimen/radioElementsMargin"
-        android:layout_marginBottom="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="96dp"
         android:text="@string/button_Abschliessen"
         android:scaleY="1.5"
         android:scaleX="1.5"/>

@@ -1,23 +1,41 @@
 package com.tdg.android.annotator;
 
+import android.accessibilityservice.AccessibilityService;
 import android.app.Activity;
+import android.app.Service;
+import android.content.Context;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.content.ContextCompat;
+import android.util.DisplayMetrics;
 import android.util.Log;
+import android.util.TypedValue;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.ViewTreeObserver;
+import android.view.inputmethod.EditorInfo;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
+import android.widget.ScrollView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import static android.R.attr.data;
+import static android.R.attr.key;
+import static android.R.attr.keyEdgeFlags;
 
-public class FragmentNewSession extends Fragment implements Communicator{
+public class FragmentNewSession extends Fragment implements Communicator {
 
     private String LOG = "FragmentNewSession";
     private Button buttonUebung, buttonMessung, buttonBeginn;
@@ -35,6 +53,10 @@ public class FragmentNewSession extends Fragment implements Communicator{
         View view = inflater.inflate(R.layout.tab_new_session, container, false);
         view.setId(R.id.fragment_newSession);
 
+
+
+
+
         buttonUebung = (Button) view.findViewById(R.id.buttonUebung);
         buttonMessung = (Button) view.findViewById(R.id.buttonMessung);
         buttonBeginn = (Button) view.findViewById(R.id.buttonBeginn);
@@ -50,6 +72,38 @@ public class FragmentNewSession extends Fragment implements Communicator{
         editTextProband.setText(subjectID);
         editTextRater = (EditText) view.findViewById(R.id.editTextRater);
         editTextRater.setText(raterID);
+
+        editTextProband.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+
+            @Override
+            public boolean onEditorAction(TextView v, int actionId,
+                                          KeyEvent event) {
+                if (actionId == 6) {
+                    InputMethodManager imm = (InputMethodManager) v.getContext().
+                            getSystemService(Context.INPUT_METHOD_SERVICE);
+                    imm.hideSoftInputFromWindow(v.getWindowToken(), 0);
+                    setImmersiveMode();
+                    return true;
+                }
+                return false;
+            }
+        });
+
+        editTextRater.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+
+            @Override
+            public boolean onEditorAction(TextView v, int actionId,
+                                          KeyEvent event) {
+                if (actionId == 6) {
+                    InputMethodManager imm = (InputMethodManager) v.getContext().
+                            getSystemService(Context.INPUT_METHOD_SERVICE);
+                    imm.hideSoftInputFromWindow(v.getWindowToken(), 0);
+                    setImmersiveMode();
+                    return true;
+                }
+                return false;
+            }
+        });
 
         buttonUebung.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -203,6 +257,7 @@ public class FragmentNewSession extends Fragment implements Communicator{
     }
 
     /** Interface Methods **/
+
 
     public void beginAnnotation(String rId, String sId, boolean isuebung) {
         communicator.beginAnnotation(rId, sId, isuebung);

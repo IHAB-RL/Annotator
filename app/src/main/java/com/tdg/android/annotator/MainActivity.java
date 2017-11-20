@@ -1,15 +1,17 @@
 package com.tdg.android.annotator;
 
 import android.content.pm.ActivityInfo;
+import android.os.Bundle;
+import android.os.Vibrator;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.View;
 import android.view.WindowManager;
 
-public class MainActivity extends AppCompatActivity implements Communicator{
+public class MainActivity extends AppCompatActivity implements Communicator {
 
     private String LOG = "MainActivity";
     private SectionsPagerAdapter mSectionsPagerAdapter;
@@ -18,6 +20,9 @@ public class MainActivity extends AppCompatActivity implements Communicator{
     private AnnotationStatistics annotationStatistics;
     private FileWriter fileWriter;
     private boolean wasTouched = false;
+    private Vibrator mVibration;
+    private int mVibrationDuration_ms = 40;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +44,8 @@ public class MainActivity extends AppCompatActivity implements Communicator{
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
+        mVibration = ((Vibrator) getSystemService(VIBRATOR_SERVICE));
 
         mViewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
@@ -64,6 +71,7 @@ public class MainActivity extends AppCompatActivity implements Communicator{
         setImmersive();
         super.onResume();
     }
+
 
     private void setImmersive() {
         mViewPager.setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_STABLE
@@ -121,6 +129,7 @@ public class MainActivity extends AppCompatActivity implements Communicator{
     public void addAnnotation(int code) {
         if (wasTouched) {
             annotationKeeper.addAnnotation(code);
+            vibrateFeedback();
             Log.i(LOG, "New annotation [" + annotationKeeper.getNumberOfAnnotations() + "]: " + code);
         }
     }
@@ -129,6 +138,7 @@ public class MainActivity extends AppCompatActivity implements Communicator{
     public void removeLastAnnotation() {
         if (wasTouched) {
             annotationKeeper.removeLastAnnotation();
+            vibrateFeedback();
             Log.i(LOG, "Annotation removed [" + annotationKeeper.getNumberOfAnnotations() + "]");
         }
     }
@@ -147,5 +157,9 @@ public class MainActivity extends AppCompatActivity implements Communicator{
     @Override
     public void setImmersiveMode() {
         setImmersive();
+    }
+
+    private void vibrateFeedback() {
+        mVibration.vibrate(mVibrationDuration_ms);
     }
 }

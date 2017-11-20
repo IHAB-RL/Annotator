@@ -7,11 +7,13 @@ import android.util.Log;
 import android.view.MotionEvent;
 
 import static android.R.attr.offset;
+import static android.os.Build.VERSION_CODES.M;
 
 public class NoScrollViewPager extends ViewPager {
 
     private boolean isPagingEnabled = false;
     private String LOG = "NoScrollViewPager";
+    private Communicator communicator;
 
     public NoScrollViewPager(Context context) {
         super(context);

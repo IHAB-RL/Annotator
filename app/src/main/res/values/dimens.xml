@@ -30,4 +30,5 @@
     <dimen name="statPaddingViewLR">32dp</dimen>
     <dimen name="statPaddingColumnTB">4dp</dimen>
     <dimen name="statPaddingColumnLR">8dp</dimen>
+    <dimen name="startPaddingRadio">8dp</dimen>
 </resources>
