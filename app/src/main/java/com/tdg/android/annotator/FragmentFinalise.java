@@ -95,7 +95,6 @@ public class FragmentFinalise extends Fragment implements Communicator {
 
                 if (keypadHeight > 0) {
                 } else {
-                    Log.e(LOG, "closed");
                     setImmersiveMode();
                 }
             }

@@ -31,6 +31,7 @@
                 android:src="@drawable/f_t_f_dp_n_pr_n" />
 
             <TextView
+                android:id="@+id/annoText1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
@@ -58,6 +59,7 @@
                 android:src="@drawable/f_t_f_dp_n_pr_d" />
 
             <TextView
+                android:id="@+id/annoText2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
@@ -93,6 +95,7 @@
                 android:src="@drawable/f_t_f_dp_d_pr_n" />
 
             <TextView
+                android:id="@+id/annoText3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
@@ -120,6 +123,7 @@
                 android:src="@drawable/f_t_f_dp_d_pr_d" />
 
             <TextView
+                android:id="@+id/annoText4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
@@ -155,6 +159,7 @@
                 android:src="@drawable/gruppe_pr_n" />
 
             <TextView
+                android:id="@+id/annoText5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
@@ -182,6 +187,7 @@
                 android:src="@drawable/gruppe_pr_d" />
 
             <TextView
+                android:id="@+id/annoText6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
@@ -217,6 +223,7 @@
                 android:src="@drawable/nichtsprache_pr_n" />
 
             <TextView
+                android:id="@+id/annoText7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
@@ -244,6 +251,7 @@
                 android:src="@drawable/nichtsprache_pr_d" />
 
             <TextView
+                android:id="@+id/annoText8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"

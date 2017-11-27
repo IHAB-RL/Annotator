@@ -53,10 +53,6 @@ public class FragmentNewSession extends Fragment implements Communicator {
         View view = inflater.inflate(R.layout.tab_new_session, container, false);
         view.setId(R.id.fragment_newSession);
 
-
-
-
-
         buttonUebung = (Button) view.findViewById(R.id.buttonUebung);
         buttonMessung = (Button) view.findViewById(R.id.buttonMessung);
         buttonBeginn = (Button) view.findViewById(R.id.buttonBeginn);

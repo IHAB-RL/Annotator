@@ -12,9 +12,10 @@
     android:orientation="vertical"
     android:gravity="center"
     android:layout_gravity="center"
-    android:scaleX="1.5"
-    android:scaleY="1.5"
+    android:scaleX="1.2"
+    android:scaleY="1.2"
     android:padding="@dimen/radioContainerPadding"
+    android:layout_marginTop="32dp"
     android:background="@color/colorPrimaryDark">
 
     <TextView

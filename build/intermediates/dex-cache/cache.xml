@@ -2,6 +2,33 @@
 <items version="2" >
 
     <item
+        is-multidex="false"
+        jar="/Users/ulrikkowalk/.android/build-cache/d824b2d9a6e4d95a90ed502549f6f1d844e5539e/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="95519720620b553f63afc789beba9ad582807f7c">
+        <dex dex="/Users/ulrikkowalk/Annotator/app/build/intermediates/pre-dexed/debug/classes_f2a8e35fcf481a74764c0543f410ded41ea80398.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ulrikkowalk/Annotator/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f7d88ff345239c87ff8f4f630ea4f7dd35749c35">
+        <dex dex="/Users/ulrikkowalk/Annotator/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_67577536006d982ae32e6bf9f64daa04e82e0cf3/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/ulrikkowalk/.android/build-cache/b38bbdae0e7b2a7a01f8422db030e3623a39b989/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
+        <dex dex="/Users/ulrikkowalk/Annotator/app/build/intermediates/pre-dexed/debug/classes_14915bc388aeb3f556be5f9645dececf54139739.jar" />
+    </item>
+    <item
         is-multidex="true"
         jar="/Users/ulrikkowalk/Annotator/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
@@ -11,13 +38,13 @@
         <dex dex="/Users/ulrikkowalk/Annotator/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_62c69dd47dfba88781de78cca96f08390e91efdb/classes.dex" />
     </item>
     <item
-        is-multidex="true"
-        jar="/Users/ulrikkowalk/Annotator/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/Users/ulrikkowalk/.android/build-cache/d266fe42e46e4fc5472772a936754e5579c5f8bc/output/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="3be635c1ad81c27a23a0a64eba8c669e1b19660d">
-        <dex dex="/Users/ulrikkowalk/Annotator/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_67577536006d982ae32e6bf9f64daa04e82e0cf3/classes.dex" />
+        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
+        <dex dex="/Users/ulrikkowalk/Annotator/app/build/intermediates/pre-dexed/debug/classes_6c293b24c601741898276b1379162179554f08dd.jar" />
     </item>
 
 </items>

@@ -1,6 +1,7 @@
 package com.tdg.android.annotator;
 
 import android.content.pm.ActivityInfo;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Vibrator;
 import android.support.design.widget.TabLayout;
@@ -10,6 +11,8 @@ import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.WindowManager;
+
+
 
 public class MainActivity extends AppCompatActivity implements Communicator {
 
@@ -22,6 +25,7 @@ public class MainActivity extends AppCompatActivity implements Communicator {
     private boolean wasTouched = false;
     private Vibrator mVibration;
     private int mVibrationDuration_ms = 40;
+    private boolean enableImmersive = false;
 
 
     @Override
@@ -42,8 +46,8 @@ public class MainActivity extends AppCompatActivity implements Communicator {
         fileWriter = new FileWriter();
 
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        /*getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);*/
 
         mVibration = ((Vibrator) getSystemService(VIBRATOR_SERVICE));
 
@@ -74,12 +78,14 @@ public class MainActivity extends AppCompatActivity implements Communicator {
 
 
     private void setImmersive() {
+        if(android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT && enableImmersive) {
         mViewPager.setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_STABLE
                 | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
                 | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
                 | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
                 | View.SYSTEM_UI_FLAG_FULLSCREEN
                 | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
+        }
     }
 
     private void setupViewPager(ViewPager viewPager) {

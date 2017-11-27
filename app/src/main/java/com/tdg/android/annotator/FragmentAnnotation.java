@@ -5,12 +5,14 @@ import android.os.Bundle;
 import android.os.Vibrator;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.widget.TextViewCompat;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import static android.content.Context.VIBRATOR_SERVICE;
 
@@ -19,11 +21,14 @@ public class FragmentAnnotation extends Fragment implements Communicator {
     private String LOG = "FragmentAnnotation";
     private RelativeLayout mButtonAnnotation1, mButtonAnnotation2, mButtonAnnotation3, mButtonAnnotation4,
             mButtonAnnotation5, mButtonAnnotation6, mButtonAnnotation7, mButtonAnnotation8;
+    private TextView mAnnoText1, mAnnoText2, mAnnoText3, mAnnoText4, mAnnoText5, mAnnoText6,
+            mAnnoText7, mAnnoText8;
     private Button mButtonRemove;
     private View mainView;
     private Communicator communicator;
     private static int CODE_1 = 1, CODE_2 = 2, CODE_3 = 3, CODE_4 = 4,
             CODE_5 = 5, CODE_6 = 6, CODE_7 = 7, CODE_8 = 8;
+    private boolean showAnnoText = true;
 
     @Nullable
     @Override
@@ -41,6 +46,34 @@ public class FragmentAnnotation extends Fragment implements Communicator {
         mButtonAnnotation7 = (RelativeLayout) mainView.findViewById(R.id.buttonAnnotation7);
         mButtonAnnotation8 = (RelativeLayout) mainView.findViewById(R.id.buttonAnnotation8);
         mButtonRemove = (Button) mainView.findViewById(R.id.buttonRemove);
+        mAnnoText1 = (TextView) mainView.findViewById(R.id.annoText1);
+        mAnnoText2 = (TextView) mainView.findViewById(R.id.annoText2);
+        mAnnoText3 = (TextView) mainView.findViewById(R.id.annoText3);
+        mAnnoText4 = (TextView) mainView.findViewById(R.id.annoText4);
+        mAnnoText5 = (TextView) mainView.findViewById(R.id.annoText5);
+        mAnnoText6 = (TextView) mainView.findViewById(R.id.annoText6);
+        mAnnoText7 = (TextView) mainView.findViewById(R.id.annoText7);
+        mAnnoText8 = (TextView) mainView.findViewById(R.id.annoText8);
+
+        if (showAnnoText) {
+            mAnnoText1.setText(R.string.category_1);
+            mAnnoText2.setText(R.string.category_2);
+            mAnnoText3.setText(R.string.category_3);
+            mAnnoText4.setText(R.string.category_4);
+            mAnnoText5.setText(R.string.category_5);
+            mAnnoText6.setText(R.string.category_6);
+            mAnnoText7.setText(R.string.category_7);
+            mAnnoText8.setText(R.string.category_8);
+        } else {
+            mAnnoText1.setText("");
+            mAnnoText2.setText("");
+            mAnnoText3.setText("");
+            mAnnoText4.setText("");
+            mAnnoText5.setText("");
+            mAnnoText6.setText("");
+            mAnnoText7.setText("");
+            mAnnoText8.setText("");
+        }
 
         mButtonAnnotation1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -102,12 +135,7 @@ public class FragmentAnnotation extends Fragment implements Communicator {
 
     @Override
     public void onResume() {
-        mainView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_STABLE
-                | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
-                | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
-                | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
-                | View.SYSTEM_UI_FLAG_FULLSCREEN
-                | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
+        setImmersiveMode();
         super.onResume();
     }
 
