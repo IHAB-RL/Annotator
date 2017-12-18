@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Fri Nov 24 19:00:57 CET 2017
+#Tue Nov 28 16:48:38 CET 2017
 210.set=ANDROID_RESOURCE
 14.set=ANDROID_RESOURCE
 180.file=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_/res/color/abc_hint_foreground_material_light.xml
@@ -11,7 +11,7 @@
 209.base=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_
 78.file=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_/res/drawable/abc_vector_test.xml
 21.set=ANDROID_RESOURCE
-53.file=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_/res/drawable-hdpi-v4/abc_list_longpressed_holo.9.png
+53.file=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_/res/drawable-hdpi-v4/notification_bg_low_pressed.9.png
 107.base=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_
 236.base=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_
 159.base=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_
@@ -60,7 +60,7 @@
 21.base=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_
 17.set=ANDROID_RESOURCE
 73.base=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_
-229.file=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_/res/drawable-hdpi-v4/abc_btn_radio_to_on_mtrl_000.png
+229.file=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_/res/drawable-hdpi-v4/notify_panel_notification_icon_bg.png
 225.base=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_
 204.file=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_/res/drawable-v21/notification_action_background.xml
 127.file=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_/res/layout/abc_list_menu_item_checkbox.xml
@@ -81,7 +81,7 @@
 27.file=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_/res/layout/abc_list_menu_item_layout.xml
 79.file=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_/res/raw/splash.mp4
 31.set=ANDROID_RESOURCE
-54.file=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_/res/drawable-hdpi-v4/notification_bg_low_pressed.9.png
+54.file=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_/res/drawable-hdpi-v4/abc_list_longpressed_holo.9.png
 108.base=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_
 237.base=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_
 135.set=ANDROID_RESOURCE
@@ -456,7 +456,7 @@
 229.base=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_
 114.set=ANDROID_RESOURCE
 98.file=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_/res/animator-v21/design_appbar_state_list_animator.xml
-21.file=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_/res/drawable-hdpi-v4/abc_list_selector_disabled_holo_light.9.png
+21.file=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_/res/drawable-hdpi-v4/abc_ic_star_black_16dp.png
 204.base=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_
 73.file=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_/res/mipmap-hdpi-v4/ic_launcher_round.png
 127.base=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_
@@ -522,7 +522,7 @@ count=263
 16.base=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_
 20.set=ANDROID_RESOURCE
 47.file=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_/res/layout/abc_screen_content_include.xml
-22.file=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_/res/drawable-hdpi-v4/abc_ic_star_black_16dp.png
+22.file=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_/res/drawable-hdpi-v4/abc_list_selector_disabled_holo_light.9.png
 124.set=ANDROID_RESOURCE
 99.file=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_/res/drawable-anydpi-v21/design_ic_visibility.xml
 205.base=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_
@@ -565,7 +565,7 @@ count=263
 159.set=ANDROID_RESOURCE
 212.set=ANDROID_RESOURCE
 16.set=ANDROID_RESOURCE
-36.file=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_/res/drawable-hdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png
+36.file=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_/res/drawable-hdpi-v4/abc_list_selector_disabled_holo_dark.9.png
 67.base=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_
 219.base=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_
 88.file=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_/res/drawable-hdpi-v4/notification_bg_normal.9.png
@@ -638,7 +638,7 @@ count=263
 169.set=ANDROID_RESOURCE
 222.set=ANDROID_RESOURCE
 26.set=ANDROID_RESOURCE
-37.file=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_/res/drawable-hdpi-v4/abc_list_selector_disabled_holo_dark.9.png
+37.file=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_/res/drawable-hdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png
 68.base=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_
 89.file=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_/res/drawable/design_fab_background.xml
 12.file=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_/res/layout/design_text_input_password_icon.xml
@@ -777,7 +777,7 @@ count=263
 20.base=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_
 249.base=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_
 72.base=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_
-228.file=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_/res/drawable-hdpi-v4/notify_panel_notification_icon_bg.png
+228.file=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_/res/drawable-hdpi-v4/abc_btn_radio_to_on_mtrl_000.png
 224.base=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_
 190.set=ANDROID_RESOURCE
 203.file=/Users/ulrikkowalk/Annotator/app/build/intermediates/res/resources-debug.ap_/res/layout-v21/notification_action.xml

@@ -49,7 +49,7 @@ MERGED from [com.android.support:support-compat:25.3.1] /Users/ulrikkowalk/.andr
 	android:allowBackup
 		ADDED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml:10:9-35
 	android:icon
-		ADDED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml:11:9-43
+		ADDED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml:11:9-48
 	android:theme
 		ADDED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml:16:9-40
 activity#com.tdg.android.annotator.MainActivity

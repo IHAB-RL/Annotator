@@ -271,4 +271,6 @@ public class FragmentNewSession extends Fragment implements Communicator {
 
     public void setImmersiveMode(){ communicator.setImmersiveMode(); }
 
+    public void scrollUp() {}
+
 }

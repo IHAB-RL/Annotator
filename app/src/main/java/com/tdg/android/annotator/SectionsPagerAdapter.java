@@ -7,21 +7,25 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.util.Log;
 import android.util.SparseArray;
 import android.view.ViewGroup;
+import android.widget.ScrollView;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 import java.util.List;
 
+import static com.tdg.android.annotator.R.id.container;
+
 /**
  * Created by ulrikkowalk on 26.10.17.
  */
 
-public class SectionsPagerAdapter extends FragmentPagerAdapter {
+public class SectionsPagerAdapter extends FragmentPagerAdapter implements Communicator{
 
     private String LOG = "SectionsPagerAdapter";
     private List<Fragment> mListOfFragments = new ArrayList<>();
     private List<String> mListOfFragmentTitles = new ArrayList<>();
     private final SparseArray<WeakReference<Fragment>> instantiatedFragments = new SparseArray<>();
+    private Communicator communicator;
 
     public SectionsPagerAdapter(FragmentManager fm) {
         super(fm);
@@ -83,4 +87,20 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
     public int getCount() {
         return mListOfFragments.size();
     }
+
+    public void finishAnnotation(String sCharakter, String sFreitext) {}
+
+    public void beginAnnotation(String raterId, String subjectId, boolean isUebung) {}
+
+    public void addAnnotation(int Code){}
+
+    public void removeLastAnnotation(){}
+
+    public void setWasTouched(boolean touched){}
+
+    public void setImmersiveMode(){}
+
+    @Override
+    public void scrollUp() { communicator.scrollUp(); }
+
 }

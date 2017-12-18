@@ -6,37 +6,37 @@
     density="tvdpi"
     format="10"
     plugin-version="2.3.3"
-    timestamp="1511797721092"
+    timestamp="1511884815452"
     token="6017043701756804809"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="130" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="20" />
     <task
         name="verifier"
-        duration="0" />
+        duration="1" />
 
     <artifact
-        location="/Users/ulrikkowalk/Annotator/app/build/outputs/apk/app-debug.apk"
-        type="SPLIT_MAIN" />
+        location="/Users/ulrikkowalk/Annotator/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+        type="SPLIT" />
 
     <build
         build-mode="FULL"
-        timestamp="1511797572720"
+        timestamp="1511883526937"
         verifier="FULL_BUILD_REQUESTED" >
-        <artifact
-            location="/Users/ulrikkowalk/Annotator/app/build/outputs/apk/app-debug.apk"
-            type="SPLIT_MAIN" />
         <artifact
             location="/Users/ulrikkowalk/Annotator/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
             type="SPLIT" />
+        <artifact
+            location="/Users/ulrikkowalk/Annotator/app/build/outputs/apk/app-debug.apk"
+            type="SPLIT_MAIN" />
         <artifact
             location="/Users/ulrikkowalk/Annotator/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
             type="SPLIT" />
@@ -70,11 +70,19 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1511797721092"
+        timestamp="1511884116457"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/ulrikkowalk/Annotator/app/build/outputs/apk/app-debug.apk"
             type="SPLIT_MAIN" />
+    </build>
+    <build
+        build-mode="COLD"
+        timestamp="1511884815452"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/Users/ulrikkowalk/Annotator/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+            type="SPLIT" />
     </build>
 
 </instant-run>

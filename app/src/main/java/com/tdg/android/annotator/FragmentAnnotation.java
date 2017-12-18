@@ -166,4 +166,6 @@ public class FragmentAnnotation extends Fragment implements Communicator {
     public void setWasTouched(boolean touched) {}
 
     public void setImmersiveMode() { communicator.setImmersiveMode(); }
+
+    public void scrollUp() {};
 }

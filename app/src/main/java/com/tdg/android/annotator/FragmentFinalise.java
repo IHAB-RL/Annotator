@@ -17,6 +17,7 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioGroup;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 import static com.tdg.android.annotator.R.id.editTextProband;
@@ -25,6 +26,7 @@ public class FragmentFinalise extends Fragment implements Communicator {
 
     private String LOG = "FragmentFinalise";
     private Button buttonFinalise;
+    private ScrollView mScrollView;
     private RadioGroup radioLichtverhaeltnisse, radioLautstaerke, radioRaumbeschreibung,
         radioHoersituation;
     private int resLichtverhaeltnisse, resLautstaerke, resRaumbeschreibung, resHoersituation;
@@ -39,6 +41,8 @@ public class FragmentFinalise extends Fragment implements Communicator {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
         mRootView = inflater.inflate(R.layout.tab_finalise, container, false);
+
+        mScrollView = (ScrollView) mRootView.findViewById(R.id.scrollView);
 
         buttonFinalise = (Button) mRootView.findViewById(R.id.buttonFinalise);
         buttonFinalise.setOnClickListener(new View.OnClickListener() {
@@ -152,4 +156,8 @@ public class FragmentFinalise extends Fragment implements Communicator {
     }
 
     public void setImmersiveMode(){ communicator.setImmersiveMode(); }
+
+    public void scrollUp() {
+        mScrollView.smoothScrollTo(0,0);
+    }
 }

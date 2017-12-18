@@ -1,4 +1,4 @@
-#Thu Oct 26 17:39:36 CEST 2017
+#Mon Nov 27 17:40:18 CET 2017
 file.2=/Users/ulrikkowalk/Annotator/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9dbb028012cb3f26b9c09f9435d5e64515884a46/classes.dex
 base.2=/Users/ulrikkowalk/Annotator/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9dbb028012cb3f26b9c09f9435d5e64515884a46
 file.1=/Users/ulrikkowalk/Annotator/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f8cd40c7339a2a64a226450566c03067f6d30a1c/classes.dex

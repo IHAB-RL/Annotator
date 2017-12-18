@@ -69,6 +69,7 @@ public class FragmentStatistics extends Fragment {
         histFraction = new float[] {0f,0f,0f,0f,0f,0f,0f,0f};
         setFracs();
         setColumns();
+        sumHist = 0;
     }
 
     private void setColumns() {
@@ -140,6 +141,7 @@ public class FragmentStatistics extends Fragment {
 
     public void setFracs() {
         int maxHist = 0;
+        sumHist = 0;
         for (int data : histData) {
             if (data > maxHist) {
                 maxHist = data;

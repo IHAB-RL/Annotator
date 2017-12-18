@@ -18,4 +18,6 @@ public interface Communicator{
 
     void setImmersiveMode();
 
+    void scrollUp();
+
 }
