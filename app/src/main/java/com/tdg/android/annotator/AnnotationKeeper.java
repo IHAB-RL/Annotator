@@ -97,41 +97,41 @@ public class AnnotationKeeper {
     String flushResults() {
         String streamOfAnnotations = "";
 
-        streamOfAnnotations += context.getString(R.string.result_ID_Rater) + ": ";
+        streamOfAnnotations += context.getString(R.string.result_ID_Rater) + ", ";
         streamOfAnnotations += ID_RATER;
         streamOfAnnotations += "\n";
-        streamOfAnnotations += context.getString(R.string.result_ID_Proband) + ": ";
+        streamOfAnnotations += context.getString(R.string.result_ID_Proband) + ", ";
         streamOfAnnotations += ID_SUBJECT;
         streamOfAnnotations += "\n";
-        streamOfAnnotations += context.getString(R.string.result_Situation) + ": ";
+        streamOfAnnotations += context.getString(R.string.result_Situation) + ", ";
         streamOfAnnotations += uebungOderMessung();
         streamOfAnnotations += "\n";
-        streamOfAnnotations += context.getString(R.string.result_Gesamtanzahl) + ": ";
+        streamOfAnnotations += context.getString(R.string.result_Gesamtanzahl) + ", ";
         streamOfAnnotations += "" + getNumberOfAnnotations();
         streamOfAnnotations += "\n";
-        streamOfAnnotations += context.getString(R.string.result_Haeufigkeit) + ": ";
+        streamOfAnnotations += context.getString(R.string.result_Haeufigkeit) + ", ";
         streamOfAnnotations += getHistogram();
         streamOfAnnotations += "\n";
-        streamOfAnnotations += context.getString(R.string.result_Zusatzinformationen) + ": ";
+        streamOfAnnotations += context.getString(R.string.result_Zusatzinformationen) + ", ";
         streamOfAnnotations += ADDITIONAL_DATA;
         streamOfAnnotations += "\n";
-        streamOfAnnotations += context.getString(R.string.result_freiText) + ": ";
+        streamOfAnnotations += context.getString(R.string.result_freiText) + ", ";
         streamOfAnnotations += FREITEXT;
         streamOfAnnotations += "\n";
-        streamOfAnnotations += context.getString(R.string.result_Zeit_Start) + ": ";
-        streamOfAnnotations += TIME_START;
+        streamOfAnnotations += context.getString(R.string.result_Zeit_Start) + ", ";
+        streamOfAnnotations += TIME_START.replace('T','_');
         streamOfAnnotations += "\n";
-        streamOfAnnotations += context.getString(R.string.result_Zeit_Ende) + ": ";
-        streamOfAnnotations += TIME_END;
+        streamOfAnnotations += context.getString(R.string.result_Zeit_Ende) + ", ";
+        streamOfAnnotations += TIME_END.replace('T','_');
         streamOfAnnotations += "\n";
         streamOfAnnotations += "-----------------------------";
         streamOfAnnotations += "\n";
 
         for (int iAnnotation = 0; iAnnotation < listOfAnnotations.size(); iAnnotation++) {
             streamOfAnnotations += ""+(iAnnotation+1)+", ";
-            streamOfAnnotations += listOfAnnotations.get(iAnnotation).date;
+            streamOfAnnotations += listOfAnnotations.get(iAnnotation).date.replace('T','_');
             streamOfAnnotations += ", " + listOfAnnotations.get(iAnnotation).annotation;
-            streamOfAnnotations += ", " + categories[listOfAnnotations.get(iAnnotation).annotation-1];
+            //streamOfAnnotations += ", " + categories[listOfAnnotations.get(iAnnotation).annotation-1];
             streamOfAnnotations += "\n";
         }
 

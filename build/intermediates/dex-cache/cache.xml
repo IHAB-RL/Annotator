@@ -3,21 +3,21 @@
 
     <item
         is-multidex="true"
+        jar="/Users/ulrikkowalk/Annotator/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3f155514788c2f5670f8c7902fc9953a33321dbf">
+        <dex dex="/Users/ulrikkowalk/Annotator/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_67577536006d982ae32e6bf9f64daa04e82e0cf3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/ulrikkowalk/Annotator/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
         <dex dex="/Users/ulrikkowalk/Annotator/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_62c69dd47dfba88781de78cca96f08390e91efdb/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ulrikkowalk/Annotator/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="3cdf8cc18237401155c20cd68635f4eeafd66ab7">
-        <dex dex="/Users/ulrikkowalk/Annotator/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_67577536006d982ae32e6bf9f64daa04e82e0cf3/classes.dex" />
     </item>
 
 </items>
