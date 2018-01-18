@@ -1,18 +1,38 @@
 -- Merging decision tree log ---
 manifest
 ADDED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml:2:1-43:12
+INJECTED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml:2:1-43:12
+INJECTED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml:2:1-43:12
+INJECTED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml:2:1-43:12
+MERGED from [com.android.support:design:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/d7194f71eda9e092d8d1f5727e6f5d33/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/7930d1f7f05e8016a5de271983920d6d/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:transition:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/transition-25.3.1.aar/249fbeee257d8e383b26c1dfff0847c0/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/1b103d5a47ff8e8cdf48e796c77bb22e/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/887299014994543827b2e0c276e58c61/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/18abd60609c2564244acd3fd3b1d16e0/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:recyclerview-v7:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-25.3.1.aar/37eb207ce5e8f31e3e0ddf81c16f2de7/AndroidManifest.xml:17:1-26:12
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/90254d8bb1d86f89d8390f799f69f693/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/1f41163fd12968c03d1b6713cfc18ce5/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/a7c08f4e45f39b10ae4f72531f73daa5/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/31c74afd2ee89a7d4a23291365ac4183/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/14b6efdcb7e8943f87063ccfc83c5fb3/AndroidManifest.xml:17:1-31:12
+INJECTED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml:2:1-43:12
+INJECTED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml:2:1-43:12
+INJECTED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml:2:1-43:12
 	package
 		ADDED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml:3:5-40
 		INJECTED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml
+		ADDED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml:2:1-43:12
+		INJECTED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml
+		ADDED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml:2:1-43:12
 		INJECTED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml:2:11-69
-	android:versionCode
-		INJECTED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
 ADDED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml:5:5-80
 	android:name
@@ -27,29 +47,40 @@ ADDED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml:7:5-65
 		ADDED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml:7:22-63
 application
 ADDED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml:9:5-42:19
-MERGED from [com.android.support:design:25.3.1] /Users/ulrikkowalk/.android/build-cache/d266fe42e46e4fc5472772a936754e5579c5f8bc/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/ulrikkowalk/.android/build-cache/9a643dbcf97b90e10a960b4e8cc33420d9206549/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/ulrikkowalk/.android/build-cache/998d2ce4775efa96e08770dba24bf14b650fa514/output/AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/ulrikkowalk/.android/build-cache/6df1ac2573715b3b40eb526007f95e842f69f0d6/output/AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:transition:25.3.1] /Users/ulrikkowalk/.android/build-cache/b38bbdae0e7b2a7a01f8422db030e3623a39b989/output/AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-v4:25.3.1] /Users/ulrikkowalk/.android/build-cache/e158679b4068922dff194a8648d7e68eaf7e1656/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-fragment:25.3.1] /Users/ulrikkowalk/.android/build-cache/11aa1039b8bf3f207b2c23bb3da01e6ae145750a/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-media-compat:25.3.1] /Users/ulrikkowalk/.android/build-cache/5a35622eb8a1632f92f70cba136b2382d804889e/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-ui:25.3.1] /Users/ulrikkowalk/.android/build-cache/f9bda220b354c604aaeb99ea9966161d9c6797bb/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-utils:25.3.1] /Users/ulrikkowalk/.android/build-cache/1cdbd58777684d38d74e4bdd04ee1e5fb9f0b905/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-compat:25.3.1] /Users/ulrikkowalk/.android/build-cache/3617abc4b5137c6f2840e763cfb00cef26d8f4cd/output/AndroidManifest.xml:29:5-20
-	android:label
-		ADDED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml:12:9-41
+MERGED from [com.android.support:design:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/d7194f71eda9e092d8d1f5727e6f5d33/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:design:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/d7194f71eda9e092d8d1f5727e6f5d33/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/7930d1f7f05e8016a5de271983920d6d/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/7930d1f7f05e8016a5de271983920d6d/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:transition:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/transition-25.3.1.aar/249fbeee257d8e383b26c1dfff0847c0/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:transition:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/transition-25.3.1.aar/249fbeee257d8e383b26c1dfff0847c0/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-v4:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/1b103d5a47ff8e8cdf48e796c77bb22e/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-v4:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/1b103d5a47ff8e8cdf48e796c77bb22e/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/887299014994543827b2e0c276e58c61/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/887299014994543827b2e0c276e58c61/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/18abd60609c2564244acd3fd3b1d16e0/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/18abd60609c2564244acd3fd3b1d16e0/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/90254d8bb1d86f89d8390f799f69f693/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/90254d8bb1d86f89d8390f799f69f693/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/1f41163fd12968c03d1b6713cfc18ce5/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/1f41163fd12968c03d1b6713cfc18ce5/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/a7c08f4e45f39b10ae4f72531f73daa5/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/a7c08f4e45f39b10ae4f72531f73daa5/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/31c74afd2ee89a7d4a23291365ac4183/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/31c74afd2ee89a7d4a23291365ac4183/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/14b6efdcb7e8943f87063ccfc83c5fb3/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/14b6efdcb7e8943f87063ccfc83c5fb3/AndroidManifest.xml:29:5-20
 	android:supportsRtl
 		ADDED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml:14:9-35
+	android:label
+		ADDED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml:12:9-41
 	android:windowSoftInputMode
 		ADDED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml:15:9-51
 	android:roundIcon
 		ADDED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml:13:9-54
-	android:allowBackup
-		ADDED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml:10:9-35
 	android:icon
 		ADDED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml:11:9-48
+	android:allowBackup
+		ADDED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml:10:9-35
 	android:theme
 		ADDED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml:16:9-40
 activity#com.tdg.android.annotator.MainActivity
@@ -88,40 +119,69 @@ ADDED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml:39:13-7
 		ADDED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml:39:23-70
 uses-sdk
 INJECTED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support:design:25.3.1] /Users/ulrikkowalk/.android/build-cache/d266fe42e46e4fc5472772a936754e5579c5f8bc/output/AndroidManifest.xml:21:5-23:62
-MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/ulrikkowalk/.android/build-cache/9a643dbcf97b90e10a960b4e8cc33420d9206549/output/AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/ulrikkowalk/.android/build-cache/998d2ce4775efa96e08770dba24bf14b650fa514/output/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/ulrikkowalk/.android/build-cache/6df1ac2573715b3b40eb526007f95e842f69f0d6/output/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:recyclerview-v7:25.3.1] /Users/ulrikkowalk/.android/build-cache/d824b2d9a6e4d95a90ed502549f6f1d844e5539e/output/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:transition:25.3.1] /Users/ulrikkowalk/.android/build-cache/b38bbdae0e7b2a7a01f8422db030e3623a39b989/output/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:25.3.1] /Users/ulrikkowalk/.android/build-cache/e158679b4068922dff194a8648d7e68eaf7e1656/output/AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-fragment:25.3.1] /Users/ulrikkowalk/.android/build-cache/11aa1039b8bf3f207b2c23bb3da01e6ae145750a/output/AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-media-compat:25.3.1] /Users/ulrikkowalk/.android/build-cache/5a35622eb8a1632f92f70cba136b2382d804889e/output/AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-core-ui:25.3.1] /Users/ulrikkowalk/.android/build-cache/f9bda220b354c604aaeb99ea9966161d9c6797bb/output/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-utils:25.3.1] /Users/ulrikkowalk/.android/build-cache/1cdbd58777684d38d74e4bdd04ee1e5fb9f0b905/output/AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-compat:25.3.1] /Users/ulrikkowalk/.android/build-cache/3617abc4b5137c6f2840e763cfb00cef26d8f4cd/output/AndroidManifest.xml:21:5-23:58
+INJECTED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml
+INJECTED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:design:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/d7194f71eda9e092d8d1f5727e6f5d33/AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:design:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/d7194f71eda9e092d8d1f5727e6f5d33/AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/7930d1f7f05e8016a5de271983920d6d/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/7930d1f7f05e8016a5de271983920d6d/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:transition:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/transition-25.3.1.aar/249fbeee257d8e383b26c1dfff0847c0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/transition-25.3.1.aar/249fbeee257d8e383b26c1dfff0847c0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/1b103d5a47ff8e8cdf48e796c77bb22e/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/1b103d5a47ff8e8cdf48e796c77bb22e/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/887299014994543827b2e0c276e58c61/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/887299014994543827b2e0c276e58c61/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/18abd60609c2564244acd3fd3b1d16e0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/18abd60609c2564244acd3fd3b1d16e0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-25.3.1.aar/37eb207ce5e8f31e3e0ddf81c16f2de7/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-25.3.1.aar/37eb207ce5e8f31e3e0ddf81c16f2de7/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/90254d8bb1d86f89d8390f799f69f693/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/90254d8bb1d86f89d8390f799f69f693/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/1f41163fd12968c03d1b6713cfc18ce5/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/1f41163fd12968c03d1b6713cfc18ce5/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/a7c08f4e45f39b10ae4f72531f73daa5/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/a7c08f4e45f39b10ae4f72531f73daa5/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/31c74afd2ee89a7d4a23291365ac4183/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/31c74afd2ee89a7d4a23291365ac4183/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/14b6efdcb7e8943f87063ccfc83c5fb3/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/14b6efdcb7e8943f87063ccfc83c5fb3/AndroidManifest.xml:21:5-23:58
+INJECTED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml
+INJECTED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml
 	tools:overrideLibrary
-		ADDED from [com.android.support:design:25.3.1] /Users/ulrikkowalk/.android/build-cache/d266fe42e46e4fc5472772a936754e5579c5f8bc/output/AndroidManifest.xml:23:9-59
+		ADDED from [com.android.support:design:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/d7194f71eda9e092d8d1f5727e6f5d33/AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
 		INJECTED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml
+		ADDED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
 		INJECTED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml
+		ADDED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/ulrikkowalk/Annotator/app/src/main/AndroidManifest.xml
 meta-data#android.support.VERSION
-ADDED from [com.android.support:design:25.3.1] /Users/ulrikkowalk/.android/build-cache/d266fe42e46e4fc5472772a936754e5579c5f8bc/output/AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/ulrikkowalk/.android/build-cache/9a643dbcf97b90e10a960b4e8cc33420d9206549/output/AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/ulrikkowalk/.android/build-cache/998d2ce4775efa96e08770dba24bf14b650fa514/output/AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/ulrikkowalk/.android/build-cache/6df1ac2573715b3b40eb526007f95e842f69f0d6/output/AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:recyclerview-v7:25.3.1] /Users/ulrikkowalk/.android/build-cache/d824b2d9a6e4d95a90ed502549f6f1d844e5539e/output/AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:transition:25.3.1] /Users/ulrikkowalk/.android/build-cache/b38bbdae0e7b2a7a01f8422db030e3623a39b989/output/AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:support-v4:25.3.1] /Users/ulrikkowalk/.android/build-cache/e158679b4068922dff194a8648d7e68eaf7e1656/output/AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-fragment:25.3.1] /Users/ulrikkowalk/.android/build-cache/11aa1039b8bf3f207b2c23bb3da01e6ae145750a/output/AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-media-compat:25.3.1] /Users/ulrikkowalk/.android/build-cache/5a35622eb8a1632f92f70cba136b2382d804889e/output/AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-core-ui:25.3.1] /Users/ulrikkowalk/.android/build-cache/f9bda220b354c604aaeb99ea9966161d9c6797bb/output/AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-core-utils:25.3.1] /Users/ulrikkowalk/.android/build-cache/1cdbd58777684d38d74e4bdd04ee1e5fb9f0b905/output/AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-compat:25.3.1] /Users/ulrikkowalk/.android/build-cache/3617abc4b5137c6f2840e763cfb00cef26d8f4cd/output/AndroidManifest.xml:25:5-27:34
+ADDED from [com.android.support:design:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/d7194f71eda9e092d8d1f5727e6f5d33/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/7930d1f7f05e8016a5de271983920d6d/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/7930d1f7f05e8016a5de271983920d6d/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:transition:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/transition-25.3.1.aar/249fbeee257d8e383b26c1dfff0847c0/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:transition:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/transition-25.3.1.aar/249fbeee257d8e383b26c1dfff0847c0/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-v4:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/1b103d5a47ff8e8cdf48e796c77bb22e/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-v4:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/1b103d5a47ff8e8cdf48e796c77bb22e/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/887299014994543827b2e0c276e58c61/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/887299014994543827b2e0c276e58c61/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/18abd60609c2564244acd3fd3b1d16e0/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/18abd60609c2564244acd3fd3b1d16e0/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:recyclerview-v7:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-25.3.1.aar/37eb207ce5e8f31e3e0ddf81c16f2de7/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:recyclerview-v7:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-25.3.1.aar/37eb207ce5e8f31e3e0ddf81c16f2de7/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/90254d8bb1d86f89d8390f799f69f693/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/90254d8bb1d86f89d8390f799f69f693/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/1f41163fd12968c03d1b6713cfc18ce5/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/1f41163fd12968c03d1b6713cfc18ce5/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/a7c08f4e45f39b10ae4f72531f73daa5/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/a7c08f4e45f39b10ae4f72531f73daa5/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/31c74afd2ee89a7d4a23291365ac4183/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/31c74afd2ee89a7d4a23291365ac4183/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/14b6efdcb7e8943f87063ccfc83c5fb3/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/14b6efdcb7e8943f87063ccfc83c5fb3/AndroidManifest.xml:25:5-27:34
 	android:value
-		ADDED from [com.android.support:design:25.3.1] /Users/ulrikkowalk/.android/build-cache/d266fe42e46e4fc5472772a936754e5579c5f8bc/output/AndroidManifest.xml:27:9-31
+		ADDED from [com.android.support:design:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/d7194f71eda9e092d8d1f5727e6f5d33/AndroidManifest.xml:27:9-31
 	android:name
-		ADDED from [com.android.support:design:25.3.1] /Users/ulrikkowalk/.android/build-cache/d266fe42e46e4fc5472772a936754e5579c5f8bc/output/AndroidManifest.xml:26:9-47
+		ADDED from [com.android.support:design:25.3.1] /Users/ulrikkowalk/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/d7194f71eda9e092d8d1f5727e6f5d33/AndroidManifest.xml:26:9-47

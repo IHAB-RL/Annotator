@@ -1,6 +1,8 @@
 package com.tdg.android.annotator;
 
 import android.content.Context;
+import android.util.Log;
+
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -15,6 +17,7 @@ public class AnnotationKeeper {
     private String ID_RATER, ID_SUBJECT, ADDITIONAL_DATA, FREITEXT;
     private SimpleDateFormat DATE_FORMAT;
     private String TIME_START, TIME_END;
+    private String KEY_END_FULL = ";;;;;;;";
     private String[] categories = new String[8];
     private boolean isUebung = false;
     private AnnotationStatistics annotationStatistics;
@@ -23,9 +26,9 @@ public class AnnotationKeeper {
 
     AnnotationKeeper(Context ctx) {
         context = ctx;
+        annotationStatistics = new AnnotationStatistics();
         reset();
         DATE_FORMAT = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss", Locale.ROOT);
-        annotationStatistics = new AnnotationStatistics();
         categories = context.getResources().getStringArray(R.array.categories);
     }
 
@@ -97,41 +100,51 @@ public class AnnotationKeeper {
     String flushResults() {
         String streamOfAnnotations = "";
 
-        streamOfAnnotations += context.getString(R.string.result_ID_Rater) + ", ";
+        streamOfAnnotations += context.getString(R.string.result_ID_Rater) + ": ;";
         streamOfAnnotations += ID_RATER;
+        streamOfAnnotations += KEY_END_FULL;
         streamOfAnnotations += "\n";
-        streamOfAnnotations += context.getString(R.string.result_ID_Proband) + ", ";
+        streamOfAnnotations += context.getString(R.string.result_ID_Proband) + ": ;";
         streamOfAnnotations += ID_SUBJECT;
+        streamOfAnnotations += KEY_END_FULL;
         streamOfAnnotations += "\n";
-        streamOfAnnotations += context.getString(R.string.result_Situation) + ", ";
+        streamOfAnnotations += context.getString(R.string.result_Situation) + ": ;";
         streamOfAnnotations += uebungOderMessung();
+        streamOfAnnotations += KEY_END_FULL;
         streamOfAnnotations += "\n";
-        streamOfAnnotations += context.getString(R.string.result_Gesamtanzahl) + ", ";
+        streamOfAnnotations += context.getString(R.string.result_Gesamtanzahl) + ": ;";
         streamOfAnnotations += "" + getNumberOfAnnotations();
+        streamOfAnnotations += KEY_END_FULL;
         streamOfAnnotations += "\n";
-        streamOfAnnotations += context.getString(R.string.result_Haeufigkeit) + ", ";
+        streamOfAnnotations += context.getString(R.string.result_Haeufigkeit) + ": ;";
         streamOfAnnotations += getHistogram();
         streamOfAnnotations += "\n";
-        streamOfAnnotations += context.getString(R.string.result_Zusatzinformationen) + ", ";
+        streamOfAnnotations += context.getString(R.string.result_Zusatzinformationen) + ": ;";
         streamOfAnnotations += ADDITIONAL_DATA;
+        streamOfAnnotations += ";;;;";
         streamOfAnnotations += "\n";
-        streamOfAnnotations += context.getString(R.string.result_freiText) + ", ";
+        streamOfAnnotations += context.getString(R.string.result_freiText) + ": ;";
         streamOfAnnotations += FREITEXT;
+        streamOfAnnotations += KEY_END_FULL;
         streamOfAnnotations += "\n";
-        streamOfAnnotations += context.getString(R.string.result_Zeit_Start) + ", ";
+        streamOfAnnotations += context.getString(R.string.result_Zeit_Start) + ": ;";
         streamOfAnnotations += TIME_START.replace('T','_');
+        streamOfAnnotations += KEY_END_FULL;
         streamOfAnnotations += "\n";
-        streamOfAnnotations += context.getString(R.string.result_Zeit_Ende) + ", ";
+        streamOfAnnotations += context.getString(R.string.result_Zeit_Ende) + ": ;";
         streamOfAnnotations += TIME_END.replace('T','_');
+        streamOfAnnotations += KEY_END_FULL;
         streamOfAnnotations += "\n";
         streamOfAnnotations += "-----------------------------";
+        streamOfAnnotations += KEY_END_FULL + ";";
         streamOfAnnotations += "\n";
 
         for (int iAnnotation = 0; iAnnotation < listOfAnnotations.size(); iAnnotation++) {
             streamOfAnnotations += ""+(iAnnotation+1)+", ";
             streamOfAnnotations += listOfAnnotations.get(iAnnotation).date.replace('T','_');
             streamOfAnnotations += ", " + listOfAnnotations.get(iAnnotation).annotation;
-            //streamOfAnnotations += ", " + categories[listOfAnnotations.get(iAnnotation).annotation-1];
+            streamOfAnnotations += ", " + categories[listOfAnnotations.get(iAnnotation).annotation-1];
+            streamOfAnnotations += KEY_END_FULL + ";";
             streamOfAnnotations += "\n";
         }
 
@@ -148,6 +161,7 @@ public class AnnotationKeeper {
 
     void reset() {
         listOfAnnotations = new ArrayList<>();
+        annotationStatistics.reset();
         setSubjectID("");
         setRaterID("");
         setAdditionalData("");

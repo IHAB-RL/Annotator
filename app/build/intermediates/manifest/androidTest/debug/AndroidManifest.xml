@@ -13,7 +13,7 @@
         android:label="Tests for com.tdg.android.annotator"
         android:targetPackage="com.tdg.android.annotator" />
 
-    <application>
+    <application android:debuggable="true" >
         <uses-library android:name="android.test.runner" />
     </application>
 

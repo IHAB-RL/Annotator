@@ -24,6 +24,13 @@
         android:text="@string/title_Neue_Datenaufnahme"
         android:textSize="@dimen/textSizeHeadLine"
         android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="v.03"
+        android:textSize="10sp"
         android:layout_marginBottom="20dp"/>
 
     <LinearLayout
@@ -165,6 +172,7 @@
         android:text="@string/button_Beginn"
         android:layout_marginTop="@dimen/radioElementsMargin"
         android:layout_marginBottom="@dimen/underFinaliseButtonMargin"/>
+
 
 </LinearLayout>
 

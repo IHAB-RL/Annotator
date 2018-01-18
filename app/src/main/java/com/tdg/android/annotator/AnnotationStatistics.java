@@ -17,9 +17,14 @@ public class AnnotationStatistics {
 
     void reset() {
         histogram = new int[numCategories];
+        for (int i = 0; i < numCategories; i++) {
+            histogram[i] = 0;
+        }
     }
 
     int[] getHist(ArrayList<DateAndAnnotation> listOfAnnotations) {
+
+        reset();
 
         for (DateAndAnnotation item : listOfAnnotations) {
             switch (item.getAnnotation()) {
